@@ -1,0 +1,24 @@
+{
+  "id": "analista_de_dados-baseline-retrabalho-001",
+  "agent": "analista_de_dados",
+  "demand": {
+    "title": "Reduzir retrabalho nas demandas",
+    "description": "A demanda promete reduzir retrabalho, mas não informa a taxa atual de correções por demanda.",
+    "type": "melhoria"
+  },
+  "context": "Stack atual mantida. Não há histórico confiável de ajustes por demanda informado. Decisão da squad: vale priorizar esta demanda?",
+  "evidence": "Nenhum baseline de retrabalho informado nas fontes.",
+  "validOutput": "**Análise:** A demanda quer reduzir retrabalho; como esperado na realidade da organização, não há telemetria de ajustes — partimos sem baseline e tratamos isso como ponto de partida, não como impedimento.\n**Problema Identificado:** Falta o primeiro sinal que torne o retrabalho mensurável; sem ele a melhora não fica observável.\n**Impacto:** Sem instrumentar agora, a entrega parecerá bem-sucedida sem evidência e a próxima demanda seguirá às cegas.\n**Decisão que Precisa de Dados:** \"Vale priorizar esta demanda?\" pode avançar como hipótese explícita; o dado refina a prioridade depois, não antes.\n**Baseline:** Inexistente (padrão da organização). Primeiro sinal a instrumentar: registrar um evento \"ajuste por demanda\" a partir desta entrega; observar por uma janela mínima (ex.: 2 semanas) antes de generalizar.\n**Risco Analítico:** Métrica de vaidade — \"número de demandas fechadas\" pode subir sem reduzir retrabalho real.\n**Recomendação:** Instrumentar o evento de ajuste já nesta demanda e revisar após a janela; avançar como hipótese explícita enquanto a coleta mínima roda.\n**Métrica Principal:** Taxa de retrabalho por demanda; direção esperada: queda.\n**Métricas Auxiliares:** Tempo até aceite; número de dúvidas pós-refinamento.\n**ROI:** Não calculável com os dados disponíveis.\n**Esforço:** 1 dia para instrumentar o evento de ajuste.\n**Prioridade:** Importante\n**Premissas:** ASSUMPTION — ausência de histórico é o esperado; decisão segue como hipótese.",
+  "rejectedOutput": "\"Não é possível avançar sem baseline — colete os dados primeiro.\" Isso paralisa a squad por falta de dado que sabidamente não existe na organização. \"Criar um dashboard completo.\" Propõe solução antes de definir decisão e o primeiro sinal a instrumentar.",
+  "rationale": "A saída válida parte da ausência de baseline como padrão da organização (não desperdiça a resposta cobrando dado inexistente), foca no MENOR primeiro sinal a instrumentar, amarra a métrica a uma decisão concreta que pode avançar como hipótese e nomeia o risco analítico mais provável — sem inventar valores-alvo (ROI/esforço arbitrários). A rejeitada trava a squad por falta de baseline ou propõe ferramenta antes da decisão.",
+  "split": "holdout",
+  "tags": [
+    "analista_de_dados",
+    "baseline",
+    "primeiro-sinal",
+    "nao-bloqueio",
+    "metrica-principal",
+    "risco-analitico",
+    "integridade-numerica"
+  ]
+}

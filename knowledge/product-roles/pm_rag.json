@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "PM_PRIOR_001",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-rice",
+    "description": "Framework RICE para priorização de backlog.",
+    "content": {
+      "theory": "O framework RICE foca em Reach, Impact, Confidence, Effort...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template RICE no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/rice",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "RICE"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_002",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-ice",
+    "description": "Framework ICE para priorização de backlog.",
+    "content": {
+      "theory": "O framework ICE foca em Impact, Confidence, Ease...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template ICE no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ice",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "ICE"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_003",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-moscow",
+    "description": "Framework MoSCoW para priorização de backlog.",
+    "content": {
+      "theory": "O framework MoSCoW foca em Must have, Should have, Could have, Won't have...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template MoSCoW no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/moscow",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "MoSCoW"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_004",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-kano-model",
+    "description": "Framework Kano Model para priorização de backlog.",
+    "content": {
+      "theory": "O framework Kano Model foca em Basic, Performance, Excitement...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Kano Model no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kano-model",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "Kano"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_005",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-value-vs-effort",
+    "description": "Framework Value vs Effort para priorização de backlog.",
+    "content": {
+      "theory": "O framework Value vs Effort foca em Matriz de Valor vs Esforço...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Value vs Effort no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/value-vs-effort",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "matriz"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_006",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-wsjf",
+    "description": "Framework WSJF para priorização de backlog.",
+    "content": {
+      "theory": "O framework WSJF foca em Weighted Shortest Job First...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template WSJF no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/wsjf",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "WSJF", "SAFe"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_007",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-opportunity-scoring",
+    "description": "Framework Opportunity Scoring para priorização de backlog.",
+    "content": {
+      "theory": "O framework Opportunity Scoring foca em Importância vs Satisfação...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Opportunity Scoring no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/opportunity-scoring",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "oportunidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_008",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-cost-of-delay",
+    "description": "Framework Cost of Delay para priorização de backlog.",
+    "content": {
+      "theory": "O framework Cost of Delay foca em Custo do Atraso...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Cost of Delay no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cost-of-delay",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "custo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_009",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-buy-a-feature",
+    "description": "Framework Buy a Feature para priorização de backlog.",
+    "content": {
+      "theory": "O framework Buy a Feature foca em Comprar uma Feature...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Buy a Feature no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/buy-a-feature",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "colaborativo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_PRIOR_010",
+    "role": ["Product Manager"],
+    "title": "framework-priorizacao-story-mapping",
+    "description": "Framework Story Mapping para priorização de backlog.",
+    "content": {
+      "theory": "O framework Story Mapping foca em Mapeamento de Histórias...",
+      "practical_example": {
+        "scenario": "Priorização de features para Q3",
+        "input": ["Feature A", "Feature B"],
+        "output": "Feature A priorizada"
+      },
+      "template": "Link para template Story Mapping no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/story-mapping",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["priorização", "framework", "story mapping"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_001",
+    "role": ["Product Manager"],
+    "title": "estrategia-product-vision-board",
+    "description": "Ferramenta Product Vision Board para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Product Vision Board ajuda a definir Quadro de Visão do Produto...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Product Vision Board preenchido"
+      },
+      "template": "Link para template Product Vision Board no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/product-vision-board",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["visão", "estratégia", "board"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_002",
+    "role": ["Product Manager"],
+    "title": "estrategia-lean-canvas",
+    "description": "Ferramenta Lean Canvas para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Lean Canvas ajuda a definir Canvas Enxuto...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Lean Canvas preenchido"
+      },
+      "template": "Link para template Lean Canvas no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-canvas",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "canvas", "lean"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_003",
+    "role": ["Product Manager"],
+    "title": "estrategia-business-model-canvas",
+    "description": "Ferramenta Business Model Canvas para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Business Model Canvas ajuda a definir Canvas de Modelo de Negócios...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Business Model Canvas preenchido"
+      },
+      "template": "Link para template Business Model Canvas no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/business-model-canvas",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "canvas", "negócios"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_004",
+    "role": ["Product Manager"],
+    "title": "estrategia-okrs",
+    "description": "Ferramenta OKRs para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta OKRs ajuda a definir Objectives and Key Results...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento OKRs preenchido"
+      },
+      "template": "Link para template OKRs no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/okrs",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "metas", "OKR"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_005",
+    "role": ["Product Manager"],
+    "title": "estrategia-north-star-metric",
+    "description": "Ferramenta North Star Metric para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta North Star Metric ajuda a definir Métrica Estrela Guia...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento North Star Metric preenchido"
+      },
+      "template": "Link para template North Star Metric no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/north-star-metric",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "métricas", "north star"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_006",
+    "role": ["Product Manager"],
+    "title": "estrategia-swot-analysis",
+    "description": "Ferramenta SWOT Analysis para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta SWOT Analysis ajuda a definir Análise SWOT...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento SWOT Analysis preenchido"
+      },
+      "template": "Link para template SWOT Analysis no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/swot-analysis",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "análise", "SWOT"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_007",
+    "role": ["Product Manager"],
+    "title": "estrategia-porter's-five-forces",
+    "description": "Ferramenta Porter's Five Forces para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Porter's Five Forces ajuda a definir Cinco Forças de Porter...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Porter's Five Forces preenchido"
+      },
+      "template": "Link para template Porter's Five Forces no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/porter's-five-forces",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "análise", "Porter"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_008",
+    "role": ["Product Manager"],
+    "title": "estrategia-value-proposition-canvas",
+    "description": "Ferramenta Value Proposition Canvas para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Value Proposition Canvas ajuda a definir Canvas de Proposta de Valor...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Value Proposition Canvas preenchido"
+      },
+      "template": "Link para template Value Proposition Canvas no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/value-proposition-canvas",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "canvas", "valor"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_009",
+    "role": ["Product Manager"],
+    "title": "estrategia-product-roadmap",
+    "description": "Ferramenta Product Roadmap para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Product Roadmap ajuda a definir Roadmap de Produto...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Product Roadmap preenchido"
+      },
+      "template": "Link para template Product Roadmap no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/product-roadmap",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "roadmap"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_STRAT_010",
+    "role": ["Product Manager"],
+    "title": "estrategia-go-to-market-strategy",
+    "description": "Ferramenta Go-to-Market Strategy para definição de estratégia.",
+    "content": {
+      "theory": "A ferramenta Go-to-Market Strategy ajuda a definir Estratégia de Go-to-Market...",
+      "practical_example": {
+        "scenario": "Definição de estratégia anual",
+        "input": ["Dados de mercado", "Feedback de usuários"],
+        "output": "Documento Go-to-Market Strategy preenchido"
+      },
+      "template": "Link para template Go-to-Market Strategy no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/go-to-market-strategy",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["estratégia", "GTM"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_001",
+    "role": ["Product Manager"],
+    "title": "discovery-user-interviews",
+    "description": "Técnica User Interviews para product discovery.",
+    "content": {
+      "theory": "A técnica User Interviews é usada para Entrevistas com Usuários...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template User Interviews no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-interviews",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "pesquisa", "entrevistas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_002",
+    "role": ["Product Manager"],
+    "title": "discovery-surveys",
+    "description": "Técnica Surveys para product discovery.",
+    "content": {
+      "theory": "A técnica Surveys é usada para Pesquisas Quantitativas...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Surveys no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/surveys",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "pesquisa", "surveys"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_003",
+    "role": ["Product Manager"],
+    "title": "discovery-a/b-testing",
+    "description": "Técnica A/B Testing para product discovery.",
+    "content": {
+      "theory": "A técnica A/B Testing é usada para Testes A/B...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template A/B Testing no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/a/b-testing",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "testes", "A/B"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_004",
+    "role": ["Product Manager"],
+    "title": "discovery-usability-testing",
+    "description": "Técnica Usability Testing para product discovery.",
+    "content": {
+      "theory": "A técnica Usability Testing é usada para Testes de Usabilidade...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Usability Testing no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/usability-testing",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "testes", "usabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_005",
+    "role": ["Product Manager"],
+    "title": "discovery-customer-journey-mapping",
+    "description": "Técnica Customer Journey Mapping para product discovery.",
+    "content": {
+      "theory": "A técnica Customer Journey Mapping é usada para Mapeamento da Jornada do Cliente...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Customer Journey Mapping no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/customer-journey-mapping",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "jornada", "mapa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_006",
+    "role": ["Product Manager"],
+    "title": "discovery-jobs-to-be-done",
+    "description": "Técnica Jobs to be Done para product discovery.",
+    "content": {
+      "theory": "A técnica Jobs to be Done é usada para Trabalhos a Serem Feitos...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Jobs to be Done no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/jobs-to-be-done",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "JTBD"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_007",
+    "role": ["Product Manager"],
+    "title": "discovery-persona-development",
+    "description": "Técnica Persona Development para product discovery.",
+    "content": {
+      "theory": "A técnica Persona Development é usada para Desenvolvimento de Personas...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Persona Development no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/persona-development",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "personas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_008",
+    "role": ["Product Manager"],
+    "title": "discovery-competitor-analysis",
+    "description": "Técnica Competitor Analysis para product discovery.",
+    "content": {
+      "theory": "A técnica Competitor Analysis é usada para Análise de Concorrentes...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Competitor Analysis no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/competitor-analysis",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "análise", "concorrentes"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_009",
+    "role": ["Product Manager"],
+    "title": "discovery-fake-door-testing",
+    "description": "Técnica Fake Door Testing para product discovery.",
+    "content": {
+      "theory": "A técnica Fake Door Testing é usada para Teste de Porta Falsa...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Fake Door Testing no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/fake-door-testing",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "testes", "fake door"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_DISC_010",
+    "role": ["Product Manager"],
+    "title": "discovery-concierge-mvp",
+    "description": "Técnica Concierge MVP para product discovery.",
+    "content": {
+      "theory": "A técnica Concierge MVP é usada para MVP Concierge...",
+      "practical_example": {
+        "scenario": "Validação de nova feature",
+        "input": ["Hipótese", "Público-alvo"],
+        "output": "Resultados da validação"
+      },
+      "template": "Link para template Concierge MVP no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/concierge-mvp",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["discovery", "MVP", "concierge"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_001",
+    "role": ["Product Manager"],
+    "title": "metricas-aarrr-funnel",
+    "description": "Métrica/Framework AARRR Funnel para análise de produto.",
+    "content": {
+      "theory": "A métrica AARRR Funnel mede Pirâmide de Métricas Pirata...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de AARRR Funnel"
+      },
+      "template": "Link para dashboard AARRR Funnel no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/aarrr-funnel",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "funil", "AARRR"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_002",
+    "role": ["Product Manager"],
+    "title": "metricas-heart-framework",
+    "description": "Métrica/Framework HEART Framework para análise de produto.",
+    "content": {
+      "theory": "A métrica HEART Framework mede Happiness, Engagement, Adoption, Retention, Task Success...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de HEART Framework"
+      },
+      "template": "Link para dashboard HEART Framework no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/heart-framework",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "framework", "HEART"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_003",
+    "role": ["Product Manager"],
+    "title": "metricas-cohort-analysis",
+    "description": "Métrica/Framework Cohort Analysis para análise de produto.",
+    "content": {
+      "theory": "A métrica Cohort Analysis mede Análise de Cohort...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de Cohort Analysis"
+      },
+      "template": "Link para dashboard Cohort Analysis no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cohort-analysis",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "análise", "cohort"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_004",
+    "role": ["Product Manager"],
+    "title": "metricas-ltv-cac-ratio",
+    "description": "Métrica/Framework LTV/CAC Ratio para análise de produto.",
+    "content": {
+      "theory": "A métrica LTV/CAC Ratio mede Lifetime Value / Customer Acquisition Cost...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de LTV/CAC Ratio"
+      },
+      "template": "Link para dashboard LTV/CAC Ratio no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ltv-cac-ratio",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "LTV", "CAC"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_005",
+    "role": ["Product Manager"],
+    "title": "metricas-nps",
+    "description": "Métrica/Framework NPS para análise de produto.",
+    "content": {
+      "theory": "A métrica NPS mede Net Promoter Score...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de NPS"
+      },
+      "template": "Link para dashboard NPS no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/nps",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "NPS", "satisfação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_006",
+    "role": ["Product Manager"],
+    "title": "metricas-csat",
+    "description": "Métrica/Framework CSAT para análise de produto.",
+    "content": {
+      "theory": "A métrica CSAT mede Customer Satisfaction Score...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de CSAT"
+      },
+      "template": "Link para dashboard CSAT no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/csat",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "CSAT", "satisfação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_007",
+    "role": ["Product Manager"],
+    "title": "metricas-ces",
+    "description": "Métrica/Framework CES para análise de produto.",
+    "content": {
+      "theory": "A métrica CES mede Customer Effort Score...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de CES"
+      },
+      "template": "Link para dashboard CES no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ces",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "CES", "esforço"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_008",
+    "role": ["Product Manager"],
+    "title": "metricas-churn-rate",
+    "description": "Métrica/Framework Churn Rate para análise de produto.",
+    "content": {
+      "theory": "A métrica Churn Rate mede Taxa de Cancelamento...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de Churn Rate"
+      },
+      "template": "Link para dashboard Churn Rate no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/churn-rate",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "churn", "retenção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_009",
+    "role": ["Product Manager"],
+    "title": "metricas-dau-mau",
+    "description": "Métrica/Framework DAU/MAU para análise de produto.",
+    "content": {
+      "theory": "A métrica DAU/MAU mede Daily/Monthly Active Users...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de DAU/MAU"
+      },
+      "template": "Link para dashboard DAU/MAU no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dau-mau",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "engajamento", "DAU", "MAU"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_METR_010",
+    "role": ["Product Manager"],
+    "title": "metricas-time-to-value",
+    "description": "Métrica/Framework Time to Value para análise de produto.",
+    "content": {
+      "theory": "A métrica Time to Value mede Tempo até o Valor...",
+      "practical_example": {
+        "scenario": "Análise de saúde do produto",
+        "input": ["Dados de uso", "Dados financeiros"],
+        "output": "Relatório de Time to Value"
+      },
+      "template": "Link para dashboard Time to Value no Tableau/Looker"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/time-to-value",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "TTV", "onboarding"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_001",
+    "role": ["Product Manager"],
+    "title": "comunicacao-stakeholder-map",
+    "description": "Ferramenta Stakeholder Map para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Stakeholder Map é utilizada para Mapa de Stakeholders...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Stakeholder Map finalizado"
+      },
+      "template": "Link para template Stakeholder Map no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/stakeholder-map",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "stakeholders", "mapa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_002",
+    "role": ["Product Manager"],
+    "title": "comunicacao-raci-matrix",
+    "description": "Ferramenta RACI Matrix para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta RACI Matrix é utilizada para Matriz RACI...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento RACI Matrix finalizado"
+      },
+      "template": "Link para template RACI Matrix no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/raci-matrix",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "responsabilidades", "RACI"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_003",
+    "role": ["Product Manager"],
+    "title": "comunicacao-release-notes",
+    "description": "Ferramenta Release Notes para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Release Notes é utilizada para Notas de Lançamento...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Release Notes finalizado"
+      },
+      "template": "Link para template Release Notes no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/release-notes",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "release notes"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_004",
+    "role": ["Product Manager"],
+    "title": "comunicacao-product-prd",
+    "description": "Ferramenta Product PRD para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Product PRD é utilizada para Product Requirements Document...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Product PRD finalizado"
+      },
+      "template": "Link para template Product PRD no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/product-prd",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "PRD", "requisitos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_005",
+    "role": ["Product Manager"],
+    "title": "comunicacao-one-pager",
+    "description": "Ferramenta One Pager para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta One Pager é utilizada para Documento de Uma Página...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento One Pager finalizado"
+      },
+      "template": "Link para template One Pager no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/one-pager",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "one pager", "resumo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_006",
+    "role": ["Product Manager"],
+    "title": "comunicacao-status-report",
+    "description": "Ferramenta Status Report para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Status Report é utilizada para Relatório de Status...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Status Report finalizado"
+      },
+      "template": "Link para template Status Report no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/status-report",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "status", "reporte"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_007",
+    "role": ["Product Manager"],
+    "title": "comunicacao-all-hands-update",
+    "description": "Ferramenta All Hands Update para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta All Hands Update é utilizada para Atualização Geral...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento All Hands Update finalizado"
+      },
+      "template": "Link para template All Hands Update no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/all-hands-update",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "all hands", "apresentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_008",
+    "role": ["Product Manager"],
+    "title": "comunicacao-feedback-loop",
+    "description": "Ferramenta Feedback Loop para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Feedback Loop é utilizada para Ciclo de Feedback...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Feedback Loop finalizado"
+      },
+      "template": "Link para template Feedback Loop no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/feedback-loop",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "feedback"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_009",
+    "role": ["Product Manager"],
+    "title": "comunicacao-product-demo",
+    "description": "Ferramenta Product Demo para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Product Demo é utilizada para Demonstração de Produto...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Product Demo finalizado"
+      },
+      "template": "Link para template Product Demo no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/product-demo",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "demo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PM_COMM_010",
+    "role": ["Product Manager"],
+    "title": "comunicacao-post-mortem",
+    "description": "Ferramenta Post-Mortem para comunicação e gestão de stakeholders.",
+    "content": {
+      "theory": "A ferramenta Post-Mortem é utilizada para Análise Pós-Incidente...",
+      "practical_example": {
+        "scenario": "Alinhamento com diretoria",
+        "input": ["Atualizações do trimestre", "Riscos"],
+        "output": "Documento Post-Mortem finalizado"
+      },
+      "template": "Link para template Post-Mortem no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/post-mortem",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "post-mortem", "aprendizado"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

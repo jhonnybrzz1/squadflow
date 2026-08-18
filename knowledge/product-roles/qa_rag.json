@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "QA_TEST_001",
+    "role": ["QA"],
+    "title": "tipo-teste-unit-testing",
+    "description": "Conceito e aplicação de Unit Testing.",
+    "content": {
+      "theory": "O Unit Testing é focado em Testes Unitários...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Unit Testing"
+      },
+      "template": "Link para checklist de Unit Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/unit-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "unitário", "código"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_002",
+    "role": ["QA"],
+    "title": "tipo-teste-integration-testing",
+    "description": "Conceito e aplicação de Integration Testing.",
+    "content": {
+      "theory": "O Integration Testing é focado em Testes de Integração...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Integration Testing"
+      },
+      "template": "Link para checklist de Integration Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/integration-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "integração", "API"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_003",
+    "role": ["QA"],
+    "title": "tipo-teste-system-testing",
+    "description": "Conceito e aplicação de System Testing.",
+    "content": {
+      "theory": "O System Testing é focado em Testes de Sistema...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de System Testing"
+      },
+      "template": "Link para checklist de System Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/system-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "sistema", "end-to-end"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_004",
+    "role": ["QA"],
+    "title": "tipo-teste-acceptance-testing",
+    "description": "Conceito e aplicação de Acceptance Testing.",
+    "content": {
+      "theory": "O Acceptance Testing é focado em Testes de Aceitação...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Acceptance Testing"
+      },
+      "template": "Link para checklist de Acceptance Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/acceptance-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "aceite", "UAT"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_005",
+    "role": ["QA"],
+    "title": "tipo-teste-regression-testing",
+    "description": "Conceito e aplicação de Regression Testing.",
+    "content": {
+      "theory": "O Regression Testing é focado em Testes de Regressão...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Regression Testing"
+      },
+      "template": "Link para checklist de Regression Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/regression-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "regressão", "bugs"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_006",
+    "role": ["QA"],
+    "title": "tipo-teste-smoke-testing",
+    "description": "Conceito e aplicação de Smoke Testing.",
+    "content": {
+      "theory": "O Smoke Testing é focado em Smoke Testing...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Smoke Testing"
+      },
+      "template": "Link para checklist de Smoke Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/smoke-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "smoke", "build"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_007",
+    "role": ["QA"],
+    "title": "tipo-teste-sanity-testing",
+    "description": "Conceito e aplicação de Sanity Testing.",
+    "content": {
+      "theory": "O Sanity Testing é focado em Sanity Testing...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Sanity Testing"
+      },
+      "template": "Link para checklist de Sanity Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sanity-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "sanity", "build"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_008",
+    "role": ["QA"],
+    "title": "tipo-teste-performance-testing",
+    "description": "Conceito e aplicação de Performance Testing.",
+    "content": {
+      "theory": "O Performance Testing é focado em Testes de Performance...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Performance Testing"
+      },
+      "template": "Link para checklist de Performance Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/performance-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "performance", "carga"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_009",
+    "role": ["QA"],
+    "title": "tipo-teste-load-testing",
+    "description": "Conceito e aplicação de Load Testing.",
+    "content": {
+      "theory": "O Load Testing é focado em Testes de Carga...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Load Testing"
+      },
+      "template": "Link para checklist de Load Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/load-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "carga", "stress"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_010",
+    "role": ["QA"],
+    "title": "tipo-teste-stress-testing",
+    "description": "Conceito e aplicação de Stress Testing.",
+    "content": {
+      "theory": "O Stress Testing é focado em Testes de Stress...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Stress Testing"
+      },
+      "template": "Link para checklist de Stress Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/stress-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "stress", "limite"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_011",
+    "role": ["QA"],
+    "title": "tipo-teste-security-testing",
+    "description": "Conceito e aplicação de Security Testing.",
+    "content": {
+      "theory": "O Security Testing é focado em Testes de Segurança...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Security Testing"
+      },
+      "template": "Link para checklist de Security Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/security-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "segurança", "vulnerabilidades"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_012",
+    "role": ["QA"],
+    "title": "tipo-teste-usability-testing",
+    "description": "Conceito e aplicação de Usability Testing.",
+    "content": {
+      "theory": "O Usability Testing é focado em Testes de Usabilidade...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Usability Testing"
+      },
+      "template": "Link para checklist de Usability Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/usability-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "usabilidade", "UX"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_013",
+    "role": ["QA"],
+    "title": "tipo-teste-accessibility-testing",
+    "description": "Conceito e aplicação de Accessibility Testing.",
+    "content": {
+      "theory": "O Accessibility Testing é focado em Testes de Acessibilidade...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Accessibility Testing"
+      },
+      "template": "Link para checklist de Accessibility Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/accessibility-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "acessibilidade", "a11y"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_014",
+    "role": ["QA"],
+    "title": "tipo-teste-exploratory-testing",
+    "description": "Conceito e aplicação de Exploratory Testing.",
+    "content": {
+      "theory": "O Exploratory Testing é focado em Testes Exploratórios...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de Exploratory Testing"
+      },
+      "template": "Link para checklist de Exploratory Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/exploratory-testing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "exploratório", "manual"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TEST_015",
+    "role": ["QA"],
+    "title": "tipo-teste-ab-testing-validation",
+    "description": "Conceito e aplicação de A/B Testing Validation.",
+    "content": {
+      "theory": "O A/B Testing Validation é focado em Validação de Testes A/B...",
+      "practical_example": {
+        "scenario": "Validação de nova release",
+        "input": ["Plano de testes"],
+        "output": "Execução de A/B Testing Validation"
+      },
+      "template": "Link para checklist de A/B Testing Validation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ab-testing-validation",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["testes", "A/B", "validação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_001",
+    "role": ["QA"],
+    "title": "ferramenta-selenium-webdriver",
+    "description": "Uso da ferramenta Selenium WebDriver para QA.",
+    "content": {
+      "theory": "A ferramenta Selenium WebDriver é utilizada para Automação Web com Selenium...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Selenium WebDriver"
+      },
+      "template": "Link para repositório de exemplos Selenium WebDriver"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/selenium-webdriver",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "web", "Selenium"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_002",
+    "role": ["QA"],
+    "title": "ferramenta-cypress",
+    "description": "Uso da ferramenta Cypress para QA.",
+    "content": {
+      "theory": "A ferramenta Cypress é utilizada para Automação E2E com Cypress...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Cypress"
+      },
+      "template": "Link para repositório de exemplos Cypress"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cypress",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "E2E", "Cypress"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_003",
+    "role": ["QA"],
+    "title": "ferramenta-playwright",
+    "description": "Uso da ferramenta Playwright para QA.",
+    "content": {
+      "theory": "A ferramenta Playwright é utilizada para Automação E2E com Playwright...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Playwright"
+      },
+      "template": "Link para repositório de exemplos Playwright"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/playwright",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "E2E", "Playwright"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_004",
+    "role": ["QA"],
+    "title": "ferramenta-appium",
+    "description": "Uso da ferramenta Appium para QA.",
+    "content": {
+      "theory": "A ferramenta Appium é utilizada para Automação Web/Mobile com Appium...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Appium"
+      },
+      "template": "Link para repositório de exemplos Appium"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/appium",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "mobile", "Appium"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_005",
+    "role": ["QA"],
+    "title": "ferramenta-postman-newman",
+    "description": "Uso da ferramenta Postman/Newman para QA.",
+    "content": {
+      "theory": "A ferramenta Postman/Newman é utilizada para Testes de API com Postman...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Postman/Newman"
+      },
+      "template": "Link para repositório de exemplos Postman/Newman"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/postman-newman",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "API", "Postman"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_006",
+    "role": ["QA"],
+    "title": "ferramenta-restassured",
+    "description": "Uso da ferramenta RestAssured para QA.",
+    "content": {
+      "theory": "A ferramenta RestAssured é utilizada para Testes de API com RestAssured...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em RestAssured"
+      },
+      "template": "Link para repositório de exemplos RestAssured"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/restassured",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["automação", "API", "RestAssured"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_007",
+    "role": ["QA"],
+    "title": "ferramenta-jmeter",
+    "description": "Uso da ferramenta JMeter para QA.",
+    "content": {
+      "theory": "A ferramenta JMeter é utilizada para Testes de Performance com JMeter...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em JMeter"
+      },
+      "template": "Link para repositório de exemplos JMeter"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/jmeter",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["performance", "JMeter", "carga"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_008",
+    "role": ["QA"],
+    "title": "ferramenta-gatling",
+    "description": "Uso da ferramenta Gatling para QA.",
+    "content": {
+      "theory": "A ferramenta Gatling é utilizada para Testes de Performance com Gatling...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Gatling"
+      },
+      "template": "Link para repositório de exemplos Gatling"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/gatling",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["performance", "Gatling", "carga"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_009",
+    "role": ["QA"],
+    "title": "ferramenta-k6",
+    "description": "Uso da ferramenta K6 para QA.",
+    "content": {
+      "theory": "A ferramenta K6 é utilizada para Testes de Performance com K6...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em K6"
+      },
+      "template": "Link para repositório de exemplos K6"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/k6",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["performance", "K6", "carga"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_010",
+    "role": ["QA"],
+    "title": "ferramenta-owasp-zap",
+    "description": "Uso da ferramenta OWASP ZAP para QA.",
+    "content": {
+      "theory": "A ferramenta OWASP ZAP é utilizada para Testes de Segurança com ZAP...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em OWASP ZAP"
+      },
+      "template": "Link para repositório de exemplos OWASP ZAP"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/owasp-zap",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["segurança", "OWASP", "ZAP"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_011",
+    "role": ["QA"],
+    "title": "ferramenta-sonarqube",
+    "description": "Uso da ferramenta SonarQube para QA.",
+    "content": {
+      "theory": "A ferramenta SonarQube é utilizada para Análise Estática com SonarQube...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em SonarQube"
+      },
+      "template": "Link para repositório de exemplos SonarQube"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sonarqube",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["qualidade", "SonarQube", "código"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_012",
+    "role": ["QA"],
+    "title": "ferramenta-testrail",
+    "description": "Uso da ferramenta TestRail para QA.",
+    "content": {
+      "theory": "A ferramenta TestRail é utilizada para Gestão de Testes com TestRail...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em TestRail"
+      },
+      "template": "Link para repositório de exemplos TestRail"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/testrail",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["gestão", "TestRail", "casos de teste"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_013",
+    "role": ["QA"],
+    "title": "ferramenta-xray-(jira)",
+    "description": "Uso da ferramenta Xray (Jira) para QA.",
+    "content": {
+      "theory": "A ferramenta Xray (Jira) é utilizada para Gestão de Testes com Xray...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Xray (Jira)"
+      },
+      "template": "Link para repositório de exemplos Xray (Jira)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/xray-(jira)",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["gestão", "Xray", "Jira"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_014",
+    "role": ["QA"],
+    "title": "ferramenta-cucumber",
+    "description": "Uso da ferramenta Cucumber para QA.",
+    "content": {
+      "theory": "A ferramenta Cucumber é utilizada para BDD com Cucumber...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Cucumber"
+      },
+      "template": "Link para repositório de exemplos Cucumber"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cucumber",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["BDD", "Cucumber", "Gherkin"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_TOOL_015",
+    "role": ["QA"],
+    "title": "ferramenta-jenkins-gitlab-ci",
+    "description": "Uso da ferramenta Jenkins/GitLab CI para QA.",
+    "content": {
+      "theory": "A ferramenta Jenkins/GitLab CI é utilizada para Integração Contínua para Testes...",
+      "practical_example": {
+        "scenario": "Configuração de automação",
+        "input": ["Requisitos de teste"],
+        "output": "Script em Jenkins/GitLab CI"
+      },
+      "template": "Link para repositório de exemplos Jenkins/GitLab CI"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/jenkins-gitlab-ci",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["CI/CD", "automação", "pipeline"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_001",
+    "role": ["QA"],
+    "title": "processo-test-strategy",
+    "description": "Prática de Test Strategy em QA.",
+    "content": {
+      "theory": "A prática de Test Strategy envolve Estratégia de Testes...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Test Strategy"
+      },
+      "template": "Link para template de Test Strategy"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-strategy",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "estratégia", "planejamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_002",
+    "role": ["QA"],
+    "title": "processo-test-plan",
+    "description": "Prática de Test Plan em QA.",
+    "content": {
+      "theory": "A prática de Test Plan envolve Plano de Testes...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Test Plan"
+      },
+      "template": "Link para template de Test Plan"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-plan",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "plano", "documentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_003",
+    "role": ["QA"],
+    "title": "processo-test-case-design",
+    "description": "Prática de Test Case Design em QA.",
+    "content": {
+      "theory": "A prática de Test Case Design envolve Design de Casos de Teste...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Test Case Design"
+      },
+      "template": "Link para template de Test Case Design"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-case-design",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "casos de teste", "design"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_004",
+    "role": ["QA"],
+    "title": "processo-defect-life-cycle",
+    "description": "Prática de Defect Life Cycle em QA.",
+    "content": {
+      "theory": "A prática de Defect Life Cycle envolve Ciclo de Vida do Defeito...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Defect Life Cycle"
+      },
+      "template": "Link para template de Defect Life Cycle"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/defect-life-cycle",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "bugs", "ciclo de vida"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_005",
+    "role": ["QA"],
+    "title": "processo-bug-triage",
+    "description": "Prática de Bug Triage em QA.",
+    "content": {
+      "theory": "A prática de Bug Triage envolve Triagem de Bugs...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Bug Triage"
+      },
+      "template": "Link para template de Bug Triage"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/bug-triage",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "bugs", "triagem"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_006",
+    "role": ["QA"],
+    "title": "processo-test-data-management",
+    "description": "Prática de Test Data Management em QA.",
+    "content": {
+      "theory": "A prática de Test Data Management envolve Gestão de Dados de Teste...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Test Data Management"
+      },
+      "template": "Link para template de Test Data Management"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-data-management",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "dados", "gestão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_007",
+    "role": ["QA"],
+    "title": "processo-test-environment-management",
+    "description": "Prática de Test Environment Management em QA.",
+    "content": {
+      "theory": "A prática de Test Environment Management envolve Gestão de Ambientes de Teste...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Test Environment Management"
+      },
+      "template": "Link para template de Test Environment Management"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-environment-management",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "ambientes", "gestão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_008",
+    "role": ["QA"],
+    "title": "processo-shift-left-testing",
+    "description": "Prática de Shift-Left Testing em QA.",
+    "content": {
+      "theory": "A prática de Shift-Left Testing envolve Testes Shift-Left...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Shift-Left Testing"
+      },
+      "template": "Link para template de Shift-Left Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/shift-left-testing",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "shift-left", "agilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_009",
+    "role": ["QA"],
+    "title": "processo-continuous-testing",
+    "description": "Prática de Continuous Testing em QA.",
+    "content": {
+      "theory": "A prática de Continuous Testing envolve Testes Contínuos...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Continuous Testing"
+      },
+      "template": "Link para template de Continuous Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/continuous-testing",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "contínuo", "CI/CD"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_PROC_010",
+    "role": ["QA"],
+    "title": "processo-quality-metrics",
+    "description": "Prática de Quality Metrics em QA.",
+    "content": {
+      "theory": "A prática de Quality Metrics envolve Métricas de Qualidade...",
+      "practical_example": {
+        "scenario": "Melhoria de processo de QA",
+        "input": ["Processo atual"],
+        "output": "Implementação de Quality Metrics"
+      },
+      "template": "Link para template de Quality Metrics"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/quality-metrics",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processo", "métricas", "KPIs"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_001",
+    "role": ["QA"],
+    "title": "design-teste-equivalence-partitioning",
+    "description": "Técnica de Equivalence Partitioning para design de testes.",
+    "content": {
+      "theory": "A técnica de Equivalence Partitioning é baseada em Particionamento de Equivalência...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Equivalence Partitioning"
+      },
+      "template": "Link para exemplos de Equivalence Partitioning"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/equivalence-partitioning",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "equivalência", "caixa preta"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_002",
+    "role": ["QA"],
+    "title": "design-teste-boundary-value-analysis",
+    "description": "Técnica de Boundary Value Analysis para design de testes.",
+    "content": {
+      "theory": "A técnica de Boundary Value Analysis é baseada em Análise de Valor Limite...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Boundary Value Analysis"
+      },
+      "template": "Link para exemplos de Boundary Value Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/boundary-value-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "limite", "caixa preta"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_003",
+    "role": ["QA"],
+    "title": "design-teste-decision-table-testing",
+    "description": "Técnica de Decision Table Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de Decision Table Testing é baseada em Testes de Tabela de Decisão...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Decision Table Testing"
+      },
+      "template": "Link para exemplos de Decision Table Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/decision-table-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "tabela de decisão", "lógica"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_004",
+    "role": ["QA"],
+    "title": "design-teste-state-transition-testing",
+    "description": "Técnica de State Transition Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de State Transition Testing é baseada em Testes de Transição de Estado...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando State Transition Testing"
+      },
+      "template": "Link para exemplos de State Transition Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/state-transition-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "estados", "transição"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_005",
+    "role": ["QA"],
+    "title": "design-teste-use-case-testing",
+    "description": "Técnica de Use Case Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de Use Case Testing é baseada em Testes de Caso de Uso...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Use Case Testing"
+      },
+      "template": "Link para exemplos de Use Case Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/use-case-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "casos de uso", "cenários"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_006",
+    "role": ["QA"],
+    "title": "design-teste-error-guessing",
+    "description": "Técnica de Error Guessing para design de testes.",
+    "content": {
+      "theory": "A técnica de Error Guessing é baseada em Adivinhação de Erros...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Error Guessing"
+      },
+      "template": "Link para exemplos de Error Guessing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/error-guessing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "intuição", "experiência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_007",
+    "role": ["QA"],
+    "title": "design-teste-exploratory-testing-charters",
+    "description": "Técnica de Exploratory Testing Charters para design de testes.",
+    "content": {
+      "theory": "A técnica de Exploratory Testing Charters é baseada em Cartas de Teste Exploratório...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Exploratory Testing Charters"
+      },
+      "template": "Link para exemplos de Exploratory Testing Charters"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/exploratory-testing-charters",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "exploratório", "charters"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_008",
+    "role": ["QA"],
+    "title": "design-teste-pair-testing",
+    "description": "Técnica de Pair Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de Pair Testing é baseada em Testes em Par...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Pair Testing"
+      },
+      "template": "Link para exemplos de Pair Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pair-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "colaboração", "pair testing"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_009",
+    "role": ["QA"],
+    "title": "design-teste-crowdsourced-testing",
+    "description": "Técnica de Crowdsourced Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de Crowdsourced Testing é baseada em Testes Crowdsourced...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Crowdsourced Testing"
+      },
+      "template": "Link para exemplos de Crowdsourced Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/crowdsourced-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "crowdsourcing", "usuários"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "QA_DES_010",
+    "role": ["QA"],
+    "title": "design-teste-mutation-testing",
+    "description": "Técnica de Mutation Testing para design de testes.",
+    "content": {
+      "theory": "A técnica de Mutation Testing é baseada em Testes de Mutação...",
+      "practical_example": {
+        "scenario": "Criação de cenários de teste",
+        "input": ["Requisitos"],
+        "output": "Casos de teste usando Mutation Testing"
+      },
+      "template": "Link para exemplos de Mutation Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mutation-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design", "mutação", "código"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

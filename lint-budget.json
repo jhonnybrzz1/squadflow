@@ -1,0 +1,12 @@
+{
+  "@typescript-eslint/no-explicit-any": 510,
+  "@typescript-eslint/no-unused-vars": 173,
+  "react-hooks/set-state-in-effect": 15,
+  "react-hooks/exhaustive-deps": 12,
+  "react-hooks/preserve-manual-memoization": 3,
+  "react-hooks/static-components": 2,
+  "react-hooks/refs": 2,
+  "@typescript-eslint/ban-ts-comment": 2,
+  "react-hooks/incompatible-library": 1,
+  "react-hooks/immutability": 1
+}

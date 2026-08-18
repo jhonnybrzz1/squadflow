@@ -1,0 +1,16 @@
+{
+  "id": "ux-feedback-validacao-cadastro-001",
+  "agent": "ux",
+  "demand": {
+    "title": "Feedback de validação no cadastro",
+    "description": "O usuário precisa concluir o cadastro, mas a demanda não explica como ele entende erros de preenchimento nos campos obrigatórios.",
+    "type": "melhoria"
+  },
+  "context": "Stack atual mantida. Não há dados de abandono disponíveis. Foco em experiência observável: fluxo, microcopy, estados de UI e acessibilidade.",
+  "evidence": "Tela de cadastro existente sem feedback inline por campo.",
+  "validOutput": "**Análise:** O usuário precisa concluir o cadastro, mas a demanda não explica como ele entende erros de preenchimento.\n**Problema Identificado:** Ausência de feedback claro em campos obrigatórios.\n**Impacto:** Pode aumentar abandono e chamados de suporte.\n**Recomendação:** Mostrar mensagem inline por campo, manter dados já digitados e exibir resumo no topo apenas após tentativa de envio.\n**Estados de UI:** Sucesso (toast verde + redirect); erro inline por campo; erro de servidor com retry sem perder dados digitados.\n**Acessibilidade:** WCAG 2.1 AA — mensagem associada via aria-describedby e role=\"alert\" no resumo.\n**ROI:** 3:1\n**Esforço:** 2 dias\n**Prioridade:** Importante\n**Validação UX:** Medir taxa de erro no envio e tempo até conclusão.\n**Premissas:** Não há dados de abandono disponíveis.",
+  "rejectedOutput": "\"Criar uma experiência encantadora.\" Isso é subjetivo, sem fluxo, estado, microcopy ou critério de validação.",
+  "rationale": "A saída válida descreve fluxo e microcopy concretos, cobre estados de UI (incluindo erro recuperável que preserva dados), cita critério WCAG aplicável e define validação observável (taxa de erro, tempo até conclusão). A rejeitada é subjetiva e sem nada testável — viola a regra de ouro do UX.",
+  "split": "holdout",
+  "tags": ["ux", "estados-de-ui", "microcopy", "acessibilidade", "validacao-observavel"]
+}

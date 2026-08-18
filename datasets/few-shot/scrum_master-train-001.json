@@ -1,0 +1,16 @@
+{
+  "id": "scrum_master-train-deploy-002",
+  "agent": "scrum_master",
+  "split": "train",
+  "demand": {
+    "title": "Automatizar deploy de staging",
+    "description": "Deploy manual para staging toma 30min e é feito 2x/semana. Squad quer automatizar.",
+    "type": "melhoria"
+  },
+  "context": "CI já existe (GitHub Actions). Deploy é manual via SSH. Sem pipeline de staging.",
+  "evidence": "Deploy manual documentado no README; 2h/semana em deploy.",
+  "validOutput": "**Análise:** Deploy manual consome 2h/semana da squad.\n**Problema Identificado:** Sem pipeline automatizado para staging.\n**Impacto:** Tempo desperdiçado + risco de erro humano no deploy.\n**Recomendação:** Fatiar em 2 etapas: pipeline CI/CD básico + validação pós-deploy.\n**Impedimentos:** Acesso ao servidor de staging (verificar com DevOps, 1 dia).\n**Fatiamento:** F1 (3d) pipeline GitHub Actions → staging; F2 (1d) smoke test automatizado pós-deploy.\n**ROI:** 4:1\n**Esforço:** 4 dias\n**Prioridade:** Alta\n**Checklist de Execução:** Verificar acesso staging; criar workflow GitHub Actions; testar deploy manual vs automatizado; smoke test pós-deploy.\n**Premissas:** GitHub Actions já configurado.",
+  "rejectedOutput": "\"Migrar para Kubernetes.\" Propõe infraestrutura complexa para um problema simples de automação.",
+  "rationale": "Fatia em etapas menores, identifica impedimento concreto e define checklist. Rejeitada amplia escopo desnecessariamente.",
+  "tags": ["scrum_master", "deploy", "automacao", "fatiamento", "ci-cd"]
+}

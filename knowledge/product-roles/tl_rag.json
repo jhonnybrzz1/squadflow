@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "TL_ARCH_001",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-microservices-architecture",
+    "description": "Padrão/Conceito Microservices Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Microservices Architecture envolve Arquitetura de Microsserviços...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Microservices Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/microservices-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "microsserviços", "escalabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_002",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-monolithic-architecture",
+    "description": "Padrão/Conceito Monolithic Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Monolithic Architecture envolve Arquitetura Monolítica...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Monolithic Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/monolithic-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "monolito", "simplicidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_003",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-event-driven-architecture",
+    "description": "Padrão/Conceito Event-Driven Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Event-Driven Architecture envolve Arquitetura Orientada a Eventos...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Event-Driven Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/event-driven-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "eventos", "assíncrono"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_004",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-serverless-architecture",
+    "description": "Padrão/Conceito Serverless Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Serverless Architecture envolve Arquitetura Serverless...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Serverless Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/serverless-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "serverless", "nuvem"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_005",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-hexagonal-architecture",
+    "description": "Padrão/Conceito Hexagonal Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Hexagonal Architecture envolve Arquitetura Hexagonal...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Hexagonal Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/hexagonal-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "hexagonal", "ports and adapters"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_006",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-clean-architecture",
+    "description": "Padrão/Conceito Clean Architecture em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Clean Architecture envolve Arquitetura Limpa...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Clean Architecture"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/clean-architecture",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "clean architecture", "SOLID"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_007",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-domain-driven-design",
+    "description": "Padrão/Conceito Domain-Driven Design em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Domain-Driven Design envolve Design Orientado a Domínio...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Domain-Driven Design"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/domain-driven-design",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["DDD", "design", "domínio"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_008",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-cqrs",
+    "description": "Padrão/Conceito CQRS em arquitetura de software.",
+    "content": {
+      "theory": "O conceito CQRS envolve Command Query Responsibility Segregation...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre CQRS"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cqrs",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "CQRS", "leitura/escrita"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_009",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-event-sourcing",
+    "description": "Padrão/Conceito Event Sourcing em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Event Sourcing envolve Event Sourcing...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Event Sourcing"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/event-sourcing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "event sourcing", "histórico"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_010",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-api-gateway-pattern",
+    "description": "Padrão/Conceito API Gateway Pattern em arquitetura de software.",
+    "content": {
+      "theory": "O conceito API Gateway Pattern envolve Padrão API Gateway...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre API Gateway Pattern"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/api-gateway-pattern",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "API gateway", "roteamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_011",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-bff-pattern",
+    "description": "Padrão/Conceito BFF Pattern em arquitetura de software.",
+    "content": {
+      "theory": "O conceito BFF Pattern envolve Backend for Frontend...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre BFF Pattern"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/bff-pattern",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "BFF", "frontend"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_012",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-strangler-fig-pattern",
+    "description": "Padrão/Conceito Strangler Fig Pattern em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Strangler Fig Pattern envolve Padrão Strangler Fig...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Strangler Fig Pattern"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/strangler-fig-pattern",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["arquitetura", "migração", "monolito"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_013",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-circuit-breaker-pattern",
+    "description": "Padrão/Conceito Circuit Breaker Pattern em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Circuit Breaker Pattern envolve Padrão Circuit Breaker...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Circuit Breaker Pattern"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/circuit-breaker-pattern",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["resiliência", "circuit breaker", "falhas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_014",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-saga-pattern",
+    "description": "Padrão/Conceito Saga Pattern em arquitetura de software.",
+    "content": {
+      "theory": "O conceito Saga Pattern envolve Padrão Saga...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre Saga Pattern"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/saga-pattern",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["transações", "saga", "distribuído"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_ARCH_015",
+    "role": ["Tech Lead"],
+    "title": "arquitetura-cap-theorem",
+    "description": "Padrão/Conceito CAP Theorem em arquitetura de software.",
+    "content": {
+      "theory": "O conceito CAP Theorem envolve Teorema CAP...",
+      "practical_example": {
+        "scenario": "Decisão arquitetural para novo sistema",
+        "input": ["Requisitos de escalabilidade"],
+        "output": "Documento de decisão (ADR) sobre CAP Theorem"
+      },
+      "template": "Link para template ADR no GitHub"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cap-theorem",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["sistemas distribuídos", "CAP", "consistência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_001",
+    "role": ["Tech Lead"],
+    "title": "codigo-solid-principles",
+    "description": "Prática SOLID Principles para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática SOLID Principles foca em Princípios SOLID...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando SOLID Principles"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/solid-principles",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "SOLID", "orientação a objetos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_002",
+    "role": ["Tech Lead"],
+    "title": "codigo-dry-principle",
+    "description": "Prática DRY Principle para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática DRY Principle foca em Don't Repeat Yourself...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando DRY Principle"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dry-principle",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "DRY", "reutilização"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_003",
+    "role": ["Tech Lead"],
+    "title": "codigo-kiss-principle",
+    "description": "Prática KISS Principle para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática KISS Principle foca em Keep It Simple, Stupid...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando KISS Principle"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kiss-principle",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "KISS", "simplicidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_004",
+    "role": ["Tech Lead"],
+    "title": "codigo-yagni-principle",
+    "description": "Prática YAGNI Principle para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática YAGNI Principle foca em You Aren't Gonna Need It...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando YAGNI Principle"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/yagni-principle",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "YAGNI", "pragmatismo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_005",
+    "role": ["Tech Lead"],
+    "title": "codigo-clean-code",
+    "description": "Prática Clean Code para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Clean Code foca em Código Limpo...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Clean Code"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/clean-code",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "clean code", "legibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_006",
+    "role": ["Tech Lead"],
+    "title": "codigo-code-review-guidelines",
+    "description": "Prática Code Review Guidelines para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Code Review Guidelines foca em Diretrizes de Code Review...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Code Review Guidelines"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/code-review-guidelines",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "review", "qualidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_007",
+    "role": ["Tech Lead"],
+    "title": "codigo-git-flow",
+    "description": "Prática Git Flow para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Git Flow foca em Fluxo de Trabalho Git...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Git Flow"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/git-flow",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["git", "versionamento", "fluxo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_008",
+    "role": ["Tech Lead"],
+    "title": "codigo-trunk-based-development",
+    "description": "Prática Trunk-Based Development para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Trunk-Based Development foca em Desenvolvimento Baseado em Trunk...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Trunk-Based Development"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/trunk-based-development",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["git", "trunk-based", "CI/CD"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_009",
+    "role": ["Tech Lead"],
+    "title": "codigo-design-patterns",
+    "description": "Prática Design Patterns para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Design Patterns foca em Padrões de Projeto (GoF)...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Design Patterns"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-patterns",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "design patterns", "GoF"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_010",
+    "role": ["Tech Lead"],
+    "title": "codigo-refactoring-techniques",
+    "description": "Prática Refactoring Techniques para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Refactoring Techniques foca em Técnicas de Refatoração...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Refactoring Techniques"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/refactoring-techniques",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["código", "refatoração", "dívida técnica"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_011",
+    "role": ["Tech Lead"],
+    "title": "codigo-technical-debt-management",
+    "description": "Prática Technical Debt Management para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Technical Debt Management foca em Gestão de Dívida Técnica...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Technical Debt Management"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/technical-debt-management",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["dívida técnica", "gestão", "qualidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_012",
+    "role": ["Tech Lead"],
+    "title": "codigo-secure-coding-practices",
+    "description": "Prática Secure Coding Practices para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Secure Coding Practices foca em Práticas de Código Seguro...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Secure Coding Practices"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/secure-coding-practices",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["segurança", "código", "OWASP"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_013",
+    "role": ["Tech Lead"],
+    "title": "codigo-performance-optimization",
+    "description": "Prática Performance Optimization para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Performance Optimization foca em Otimização de Performance...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Performance Optimization"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/performance-optimization",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["performance", "otimização", "código"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_014",
+    "role": ["Tech Lead"],
+    "title": "codigo-error-handling-strategies",
+    "description": "Prática Error Handling Strategies para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Error Handling Strategies foca em Estratégias de Tratamento de Erros...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Error Handling Strategies"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/error-handling-strategies",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["erros", "exceções", "resiliência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_CODE_015",
+    "role": ["Tech Lead"],
+    "title": "codigo-logging-best-practices",
+    "description": "Prática Logging Best Practices para desenvolvimento de software.",
+    "content": {
+      "theory": "A prática Logging Best Practices foca em Boas Práticas de Logging...",
+      "practical_example": {
+        "scenario": "Melhoria de qualidade de código",
+        "input": ["Código legado"],
+        "output": "Código refatorado aplicando Logging Best Practices"
+      },
+      "template": "Link para guia de estilo no repositório"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/logging-best-practices",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["logging", "observabilidade", "debug"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_001",
+    "role": ["Tech Lead"],
+    "title": "infra-ci/cd-pipeline",
+    "description": "Conceito CI/CD Pipeline em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito CI/CD Pipeline trata de Pipeline de Integração e Entrega Contínuas...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de CI/CD Pipeline"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ci/cd-pipeline",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "CI/CD", "automação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_002",
+    "role": ["Tech Lead"],
+    "title": "infra-infrastructure-as-code-iac",
+    "description": "Conceito Infrastructure as Code (IaC) em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Infrastructure as Code (IaC) trata de Infraestrutura como Código...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Infrastructure as Code (IaC)"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/infrastructure-as-code-iac",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "IaC", "Terraform"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_003",
+    "role": ["Tech Lead"],
+    "title": "infra-containerization-docker",
+    "description": "Conceito Containerization (Docker) em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Containerization (Docker) trata de Conteinerização...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Containerization (Docker)"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/containerization-docker",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "containers", "Docker"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_004",
+    "role": ["Tech Lead"],
+    "title": "infra-orchestration-kubernetes",
+    "description": "Conceito Orchestration (Kubernetes) em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Orchestration (Kubernetes) trata de Orquestração de Containers...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Orchestration (Kubernetes)"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/orchestration-kubernetes",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "Kubernetes", "K8s"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_005",
+    "role": ["Tech Lead"],
+    "title": "infra-observability-metrics-logs-traces",
+    "description": "Conceito Observability (Metrics, Logs, Traces) em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Observability (Metrics, Logs, Traces) trata de Observabilidade...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Observability (Metrics, Logs, Traces)"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/observability-metrics-logs-traces",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "observabilidade", "monitoramento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_006",
+    "role": ["Tech Lead"],
+    "title": "infra-site-reliability-engineering-sre",
+    "description": "Conceito Site Reliability Engineering (SRE) em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Site Reliability Engineering (SRE) trata de Engenharia de Confiabilidade...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Site Reliability Engineering (SRE)"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/site-reliability-engineering-sre",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "SRE", "confiabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_007",
+    "role": ["Tech Lead"],
+    "title": "infra-blue-green-deployment",
+    "description": "Conceito Blue-Green Deployment em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Blue-Green Deployment trata de Implantação Blue-Green...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Blue-Green Deployment"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/blue-green-deployment",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "deployment", "zero-downtime"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_008",
+    "role": ["Tech Lead"],
+    "title": "infra-canary-release",
+    "description": "Conceito Canary Release em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Canary Release trata de Lançamento Canário...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Canary Release"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/canary-release",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "release", "risco"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_009",
+    "role": ["Tech Lead"],
+    "title": "infra-feature-flags",
+    "description": "Conceito Feature Flags em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Feature Flags trata de Feature Toggles...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Feature Flags"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/feature-flags",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["DevOps", "feature flags", "controle"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_INFRA_010",
+    "role": ["Tech Lead"],
+    "title": "infra-disaster-recovery-plan",
+    "description": "Conceito Disaster Recovery Plan em infraestrutura e DevOps.",
+    "content": {
+      "theory": "O conceito Disaster Recovery Plan trata de Plano de Recuperação de Desastres...",
+      "practical_example": {
+        "scenario": "Configuração de novo ambiente",
+        "input": ["Requisitos de infraestrutura"],
+        "output": "Implementação de Disaster Recovery Plan"
+      },
+      "template": "Link para repositório de IaC"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/disaster-recovery-plan",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["infraestrutura", "DRP", "resiliência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_001",
+    "role": ["Tech Lead"],
+    "title": "lideranca-1-on-1-meetings",
+    "description": "Prática 1-on-1 Meetings para liderança técnica.",
+    "content": {
+      "theory": "A prática 1-on-1 Meetings é focada em Reuniões 1-a-1...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de 1-on-1 Meetings"
+      },
+      "template": "Link para template 1-on-1 Meetings no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/1-on-1-meetings",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "1-on-1", "feedback"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_002",
+    "role": ["Tech Lead"],
+    "title": "lideranca-mentoring-and-coaching",
+    "description": "Prática Mentoring and Coaching para liderança técnica.",
+    "content": {
+      "theory": "A prática Mentoring and Coaching é focada em Mentoria e Coaching...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Mentoring and Coaching"
+      },
+      "template": "Link para template Mentoring and Coaching no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mentoring-and-coaching",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "mentoria", "desenvolvimento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_003",
+    "role": ["Tech Lead"],
+    "title": "lideranca-technical-onboarding",
+    "description": "Prática Technical Onboarding para liderança técnica.",
+    "content": {
+      "theory": "A prática Technical Onboarding é focada em Integração Técnica...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Technical Onboarding"
+      },
+      "template": "Link para template Technical Onboarding no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/technical-onboarding",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "onboarding", "equipe"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_004",
+    "role": ["Tech Lead"],
+    "title": "lideranca-performance-review",
+    "description": "Prática Performance Review para liderança técnica.",
+    "content": {
+      "theory": "A prática Performance Review é focada em Avaliação de Desempenho...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Performance Review"
+      },
+      "template": "Link para template Performance Review no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/performance-review",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "avaliação", "performance"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_005",
+    "role": ["Tech Lead"],
+    "title": "lideranca-delegation-poker",
+    "description": "Prática Delegation Poker para liderança técnica.",
+    "content": {
+      "theory": "A prática Delegation Poker é focada em Poker de Delegação...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Delegation Poker"
+      },
+      "template": "Link para template Delegation Poker no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/delegation-poker",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "delegação", "autonomia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_006",
+    "role": ["Tech Lead"],
+    "title": "lideranca-team-topologies",
+    "description": "Prática Team Topologies para liderança técnica.",
+    "content": {
+      "theory": "A prática Team Topologies é focada em Topologias de Equipe...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Team Topologies"
+      },
+      "template": "Link para template Team Topologies no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/team-topologies",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "organização", "times"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_007",
+    "role": ["Tech Lead"],
+    "title": "lideranca-psychological-safety",
+    "description": "Prática Psychological Safety para liderança técnica.",
+    "content": {
+      "theory": "A prática Psychological Safety é focada em Segurança Psicológica...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Psychological Safety"
+      },
+      "template": "Link para template Psychological Safety no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/psychological-safety",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "cultura", "segurança"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_008",
+    "role": ["Tech Lead"],
+    "title": "lideranca-engineering-metrics-dora",
+    "description": "Prática Engineering Metrics (DORA) para liderança técnica.",
+    "content": {
+      "theory": "A prática Engineering Metrics (DORA) é focada em Métricas de Engenharia...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Engineering Metrics (DORA)"
+      },
+      "template": "Link para template Engineering Metrics (DORA) no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/engineering-metrics-dora",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "métricas", "DORA"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_009",
+    "role": ["Tech Lead"],
+    "title": "lideranca-incident-management",
+    "description": "Prática Incident Management para liderança técnica.",
+    "content": {
+      "theory": "A prática Incident Management é focada em Gestão de Incidentes...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Incident Management"
+      },
+      "template": "Link para template Incident Management no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/incident-management",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "incidentes", "crise"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "TL_LEAD_010",
+    "role": ["Tech Lead"],
+    "title": "lideranca-tech-radar",
+    "description": "Prática Tech Radar para liderança técnica.",
+    "content": {
+      "theory": "A prática Tech Radar é focada em Radar de Tecnologia...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Necessidades do time"],
+        "output": "Aplicação de Tech Radar"
+      },
+      "template": "Link para template Tech Radar no Notion"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/tech-radar",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["liderança", "tecnologia", "inovação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

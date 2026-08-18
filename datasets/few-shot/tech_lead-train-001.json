@@ -1,0 +1,16 @@
+{
+  "id": "tech_lead-train-paginacao-002",
+  "agent": "tech_lead",
+  "split": "train",
+  "demand": {
+    "title": "Paginação na listagem de documentos",
+    "description": "A listagem de documentos carrega todos os registros de uma vez, causando timeout com muitos dados.",
+    "type": "melhoria"
+  },
+  "context": "Stack: React + Express + SQLite. Listagem atual faz SELECT sem LIMIT. ~5000 documentos.",
+  "evidence": "Endpoint /documents retorna array completo; timeout reportado com >3000 docs.",
+  "validOutput": "**Análise:** SELECT sem LIMIT em 5000 documentos causa timeout.\n**Problema Identificado:** Query sem paginação sobrecarrega DB e rede.\n**Impacto:** Timeout na UI; experiência degradada com volume.\n**Recomendação:** Implementar cursor-based pagination (mais eficiente que offset para SQLite).\n**Trade-offs:** Cursor-based (escolhido, eficiente para inserts concorrentes) vs offset-based (rejeitado, drift com inserts).\n**Riscos Técnicos:** Frontend precisa adaptar infinite scroll; testar com dados reais.\n**Integrações:** Nenhuma externa.\n**ROI:** 3:1\n**Esforço:** 2 dias\n**Prioridade:** Alta\n**Premissas:** SQLite suporta LIMIT/OFFSET nativamente.",
+  "rejectedOutput": "\"Migrar para PostgreSQL para escalar.\" Troca de banco sem avaliar se paginação resolve o problema.",
+  "rationale": "Articula trade-off cursor vs offset, mantém stack atual e dá mitigação concreta. Rejeitada propõe migração sem evidência.",
+  "tags": ["tech_lead", "paginacao", "performance", "sqlite", "trade-offs"]
+}

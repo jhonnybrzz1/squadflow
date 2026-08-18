@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "name": "AiChatFlow",
+    "displayName": "AICHATflow",
+    "tagline": "Inteligência que Entrega"
+  },
+  "colors": {
+    "primary": { "r": 0.08, "g": 0.18, "b": 0.31, "hex": "#14305F" },
+    "accent": { "r": 0.0, "g": 0.45, "b": 0.62, "hex": "#00739E" },
+    "muted": { "r": 0.38, "g": 0.43, "b": 0.5, "hex": "#616E7F" },
+    "body": { "r": 0.1, "g": 0.1, "b": 0.1, "hex": "#1A1A1A" },
+    "border": { "r": 0.82, "g": 0.85, "b": 0.88, "hex": "#D1D9E0" },
+    "headerFill": { "r": 0.96, "g": 0.98, "b": 0.99, "hex": "#F5FAFE" },
+    "zebraEven": { "r": 1.0, "g": 1.0, "b": 1.0, "hex": "#FFFFFF" },
+    "zebraOdd": { "r": 0.96, "g": 0.97, "b": 0.99, "hex": "#F5F7FC" },
+    "tableHeader": { "r": 0.08, "g": 0.18, "b": 0.31, "hex": "#14305F" },
+    "tableHeaderText": { "r": 1.0, "g": 1.0, "b": 1.0, "hex": "#FFFFFF" }
+  },
+  "typography": {
+    "heading": "Helvetica",
+    "body": "Helvetica",
+    "moods": ["professional", "clean", "technical", "executive"]
+  },
+  "layout": {
+    "pageWidth": 612,
+    "pageHeight": 792,
+    "marginX": 54,
+    "headerHeight": 116,
+    "footerHeight": 58,
+    "bodyFontSize": 10.5,
+    "bodyLineHeight": 15,
+    "sectionGap": 12,
+    "paragraphGap": 5,
+    "bulletIndent": 14,
+    "tocMinPages": 3
+  },
+  "pdf": {
+    "author": "AICHATflow Platform",
+    "subject": "Documento Gerado Automaticamente",
+    "creator": "AICHATflow PDF Engine v2",
+    "producer": "AICHATflow PDF Engine v2",
+    "keywords": ["AICHATflow", "PRD", "Product Requirements", "Executivo"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ux-train-estado-vazio-002",
+  "agent": "ux",
+  "split": "train",
+  "demand": {
+    "title": "Estado vazio da listagem de projetos",
+    "description": "Quando o usuário não tem projetos, a tela mostra lista vazia sem orientação.",
+    "type": "melhoria"
+  },
+  "context": "Listagem de projetos existe. Zero-state não implementado.",
+  "evidence": "Tela de projetos mostra lista vazia sem mensagem ou CTA.",
+  "validOutput": "**Análise:** Estado vazio sem orientação gera confusão e abandono.\n**Problema Identificado:** Ausência de zero-state na listagem de projetos.\n**Impacto:** Usuário novo não sabe o que fazer; pode abandonar.\n**Recomendação:** Mostrar ilustração + mensagem explicativa + CTA \"Criar primeiro projeto\".\n**Estados de UI:** Zero-state com CTA; loading skeleton; erro com retry.\n**Acessibilidade:** WCAG 2.1 AA — CTA focável via teclado; contraste mínimo 4.5:1.\n**ROI:** 2:1\n**Esforço:** 1 dia\n**Prioridade:** Importante\n**Validação UX:** Taxa de cliques no CTA; tempo até primeiro projeto criado.\n**Premissas:** Ilustração pode ser placeholder inicial.",
+  "rejectedOutput": "\"Deixar como está, não é prioridade.\" Ignora problema de UX que afeta retenção.",
+  "rationale": "Descreve zero-state concreto com CTA, estados de UI e validação observável. Rejeitada ignora o problema.",
+  "tags": ["ux", "zero-state", "empty-state", "onboarding", "cta"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "product_manager-train-cache-002",
+  "agent": "product_manager",
+  "split": "train",
+  "demand": {
+    "title": "Cache de respostas do chatbot",
+    "description": "Reduzir custo de chamadas ao LLM reutilizando respostas para queries similares.",
+    "type": "melhoria"
+  },
+  "context": "Chatbot faz 500 chamadas/dia ao LLM. Sem cache atual. Custo médio de $0.02/chamada.",
+  "evidence": "Logs mostram queries repetidas em 30% dos casos.",
+  "validOutput": "**Análise:** 30% das queries são repetidas — cache pode reduzir custo significativamente.\n**Problema Identificado:** Chamadas redundantes ao LLM sem reutilização.\n**Impacto:** $10/dia em chamadas que poderiam ser cacheadas (~$3/dia de economia potencial).\n**Recomendação:** Implementar cache semântico com similaridade 0.9; TTL de 1h; invalidação manual por demanda.\n**ROI:** 3:1 (economia $90/mês vs implementação ~$30)\n**Esforço:** 3 dias\n**Prioridade:** Importante\n**Métricas de Sucesso:** Cache hit rate; redução de custo; latência p95.\n**Riscos:** Respostas stale se demanda é atualizada sem invalidar cache.",
+  "rejectedOutput": "\"Usar Redis para tudo.\" Solução técnica sem análise de custo/benefício nem métrica de sucesso.",
+  "rationale": "Quantifica economia, define threshold de similaridade e TTL, e ancora em dado real (30% de repetição). Rejeitada propõe tecnologia sem métrica.",
+  "tags": ["product_manager", "cache", "custo", "llm", "roi"]
+}

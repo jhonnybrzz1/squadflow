@@ -1,0 +1,1007 @@
+{
+  "description": "Ground truth fixture for demand vagueness classification. 100 manually-labeled demands stratified by type/priority with expected_label (vaga/nao_vaga). ~40% in ambiguous zone (rule-based score 30-70).",
+  "target_accuracy_pct": 85,
+  "labels": ["vaga", "nao_vaga"],
+  "demands": [
+    {
+      "id": "vg-001",
+      "title": "Melhorar o sistema",
+      "description": "Poderia ser interessante melhorar algumas coisas no sistema para ficar melhor.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "No specific outcome, vague language ('algumas coisas', 'melhor')",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-002",
+      "title": "Implementar autenticação OAuth 2.0",
+      "description": "Migrar o sistema de autenticação atual (JWT simples) para OAuth 2.0 com refresh tokens, integração com Keycloak como IdP, e rotação automática de tokens a cada 15 minutos.",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific technology, clear scope, measurable criteria",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-003",
+      "title": "Talvez adicionar filtros",
+      "description": "Talvez seja útil ter alguns filtros na listagem. Não sei exatamente quais, mas poderia ajudar.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "Uncertain language ('talvez', 'não sei exatamente'), no specific filters defined",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-004",
+      "title": "Corrigir erro 500 no endpoint /api/demands",
+      "description": "O endpoint POST /api/demands retorna erro 500 quando o campo 'priority' é enviado como null. Stack trace aponta para validação no middleware de schema. Reproduzível com curl -X POST -d '{\"title\":\"test\",\"priority\":null}'.",
+      "type": "bug",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific endpoint, exact error, reproduction steps",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-005",
+      "title": "Algo sobre relatórios",
+      "description": "Precisamos fazer algo com os relatórios. Várias pessoas comentaram que poderiam ser diferentes.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'algo', 'diferentes' - no specifics on what to change",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-006",
+      "title": "Adicionar paginação na API de listagem",
+      "description": "Implementar cursor-based pagination no GET /api/demands. Retornar 20 itens por página, com campos next_cursor e has_more na resposta. Usar o campo created_at como cursor.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific endpoint, pagination strategy, response format defined",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-007",
+      "title": "Melhorar performance",
+      "description": "O sistema está lento. Precisa melhorar a performance em geral. Vários usuários reclamaram.",
+      "type": "melhoria",
+      "priority": "alta",
+      "expected_label": "vaga",
+      "rationale": "No specific metric, no target, 'em geral' is vague",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-008",
+      "title": "Criar endpoint de exportação CSV",
+      "description": "Criar GET /api/demands/export/csv com filtros por data_inicio, data_fim e status. Limitar a 10.000 registros. Headers: Content-Type: text/csv, Content-Disposition: attachment. Colunas: id, titulo, descricao, status, prioridade, criado_em.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Exact endpoint, filters, columns, limits all specified",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-009",
+      "title": "Repensar a experiência do usuário",
+      "description": "A UX poderia ser melhor. Talvez mudar algumas telas, repensar o fluxo. Está confuso para alguns usuários.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'poderia ser melhor', 'algumas telas', 'repensar' - no specific screens or flows",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-010",
+      "title": "Implementar dark mode",
+      "description": "Adicionar toggle de dark mode no header. Usar CSS variables existentes (--bg-primary, --text-primary). Persistir preferência no localStorage com chave 'theme'. Default: system preference via prefers-color-scheme.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific implementation details, storage mechanism, default behavior",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-011",
+      "title": "Possível melhoria no login",
+      "description": "Seria bom se o login pudesse ser mais fácil. Talvez ter opções diferentes de entrar no sistema.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'seria bom', 'talvez', 'opções diferentes' - unclear what changes",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-012",
+      "title": "Adicionar validação de email RFC 5322",
+      "description": "No formulário de cadastro (/register), validar campo email com regex RFC 5322 simplificado. Exibir mensagem inline 'Email inválido' em vermelho (#dc2626) abaixo do campo. Bloquear submit se inválido.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific form, validation standard, UI behavior, color code",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-013",
+      "title": "Verificar coisa do banco",
+      "description": "Parece que tem algo errado com o banco de dados. Às vezes os dados não aparecem. Precisa investigar.",
+      "type": "bug",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'algo errado', 'às vezes', 'investigar' - no specific error or table",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-014",
+      "title": "Rate limiting por IP no gateway",
+      "description": "Implementar rate limiting com sliding window counter usando Redis. Free tier: 100 req/min por IP. Pro tier: 1000 req/min por API key. Headers: X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After (429). Bypass para /health e IPs da VPN interna (10.0.0.0/8).",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific limits, tech stack, headers, exceptions all defined",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-015",
+      "title": "Ideia para notificações",
+      "description": "Seria interessante ter notificações no sistema. Tipo quando alguém faz algo relevante. Pode ser por email ou dentro do sistema mesmo.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'seria interessante', 'tipo quando', 'pode ser' - undefined triggers and channels",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-016",
+      "title": "Skeleton loader na listagem de demandas",
+      "description": "Enquanto GET /api/demands carrega, exibir 5 skeleton cards (animate-pulse) com altura 80px cada. Remover skeletons e renderizar dados reais quando a resposta chegar. Manter scroll position se a página já tinha dados.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific component, animation, count, behavior defined",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-017",
+      "title": "Organizar coisas do projeto",
+      "description": "O projeto precisa ser organizado melhor. Tem muita coisa espalhada e fica difícil achar as coisas.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'organizado melhor', 'muita coisa espalhada' - no specifics",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-018",
+      "title": "Migrar PostgreSQL 13 → 16 em produção",
+      "description": "Banco de 500GB, 200 conexões simultâneas. Plano: 1) pg_upgrade --check em staging, 2) Benchmark top 20 queries, 3) Rolling upgrade com pgbouncer, 4) Maintenance window sábado 02h-06h, 5) Rollback: snapshot EBS pré-migração, 6) Validar extensions (pg_stat_statements, pg_trgm).",
+      "type": "nova_funcionalidade",
+      "priority": "critica",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific versions, plan, timeline, rollback strategy",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-019",
+      "title": "Pensar em automação",
+      "description": "Deveríamos pensar em automatizar algumas coisas do processo. Pode ser que ajude na produtividade.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'pensar em', 'algumas coisas', 'pode ser que' - extremely vague",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-020",
+      "title": "Implementar CI/CD com GitHub Actions",
+      "description": "Pipeline: lint (ESLint) → typecheck (tsc --noEmit) → test (vitest --coverage min 80%) → build (vite build) → deploy staging (Vercel preview per PR). Deploy produção: manual trigger, canary 10% por 30min, rollback automático se error_rate > 2%.",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Complete pipeline, tools, thresholds, deployment strategy",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-021",
+      "title": "Melhorar busca",
+      "description": "A busca precisa ser melhor. Quando pesquiso por algo os resultados não são bons. Seria bom se fosse mais inteligente.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'melhor', 'não são bons', 'mais inteligente' - no criteria defined",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-022",
+      "title": "Adicionar campo de prioridade na criação",
+      "description": "Adicionar select dropdown 'Prioridade' com opções: baixa (green badge), média (yellow), alta (orange), crítica (red). Campo obrigatório. Default: média. Exibir como badge colorido na listagem (/demands) ao lado do título.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific field, options, colors, default, display behavior",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-023",
+      "title": "Questão sobre segurança",
+      "description": "Precisamos olhar a segurança do sistema. Pode ter vulnerabilidades. Seria bom fazer uma revisão.",
+      "type": "melhoria",
+      "priority": "alta",
+      "expected_label": "vaga",
+      "rationale": "'olhar', 'pode ter', 'seria bom' - no specific vulnerabilities or scope",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-024",
+      "title": "Hotfix: SQL injection no endpoint de busca",
+      "description": "Endpoint GET /api/demands/search aceita parâmetro q sem sanitização. Payload: q='; DROP TABLE demands;--. Fix: usar prepared statements com $1 placeholder no pg driver. Validar input com regex ^[a-zA-Z0-9\\s]{1,200}$. Deploy hotfix imediato.",
+      "type": "bug",
+      "priority": "critica",
+      "expected_label": "nao_vaga",
+      "rationale": "Exact vulnerability, payload, fix approach, regex, urgency",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-025",
+      "title": "Algo sobre mobile",
+      "description": "Podíamos pensar em ter uma versão mobile do sistema. Talvez um app ou uma versão responsiva.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'podíamos pensar', 'talvez', 'app ou versão responsiva' - undecided approach",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-026",
+      "title": "Configurar Sentry para monitoramento de erros",
+      "description": "Integrar Sentry (@sentry/node v8) no Express middleware. DSN via env SENTRY_DSN. Capturar: uncaught exceptions, unhandled rejections, 5xx responses. Sample rate: 0.1 em prod, 1.0 em staging. Adicionar tags: environment, release (git SHA), user_id.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific package, config, capture rules, sample rates",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-027",
+      "title": "Rever processo de deploy",
+      "description": "O deploy podia ser mais simples. Talvez automatizar algumas partes. Depende do que a equipe achar melhor.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'podia ser mais simples', 'talvez', 'depende' - no specifics",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-028",
+      "title": "Adicionar testes E2E com Playwright",
+      "description": "Criar suite E2E: 1) Login flow (happy path + erro), 2) CRUD de demandas, 3) Listagem com filtros, 4) Exportação CSV. Config: baseURL da env, timeout 30s, retries 2, screenshot on failure. CI: rodar em container com Chromium headless após build.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific flows, tool, config, CI integration",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-029",
+      "title": "Considerar cache",
+      "description": "Seria bom ter cache em algumas partes. O sistema fica lento em certos horários. Pode ser que um cache resolva.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'algumas partes', 'certos horários', 'pode ser que' - no specific endpoints",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-030",
+      "title": "Redis cache L1/L2 para relatórios",
+      "description": "L1: in-memory LRU (node-lru-cache, max 100 entries, TTL 60s). L2: Redis (TTL 15min, key pattern report:{type}:{hash}). Invalidação: ao criar/editar demanda, invalidar reports que incluem o demand_id. Métricas: hit_rate por camada via prom-client Counter.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific layers, libraries, TTLs, invalidation strategy, metrics",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-031",
+      "title": "Possível integração",
+      "description": "Pode ser útil integrar com algum serviço externo. Vários times pediram integrações diferentes.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'pode ser útil', 'algum serviço', 'diferentes' - completely undefined",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-032",
+      "title": "Integrar Slack Webhooks para notificações",
+      "description": "Quando demanda mudar de status (DRAFT→APPROVED, APPROVED→DONE), enviar mensagem via Slack Incoming Webhook. Payload: {text: 'Demanda #ID: título mudou para STATUS', channel: env.SLACK_CHANNEL}. Retry 3x com backoff exponencial. Circuit breaker: open após 5 falhas em 2min.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific triggers, payload format, retry strategy, circuit breaker",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-033",
+      "title": "Talvez refatorar backend",
+      "description": "O backend está ficando grande. Talvez seja hora de refatorar. Podemos ver se faz sentido separar em módulos.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'talvez', 'podemos ver se faz sentido' - no specific module boundaries",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-034",
+      "title": "Extrair módulo de autenticação",
+      "description": "Mover auth para server/modules/auth/: routes (login, register, refresh), middleware (requireAuth, requireRole), service (hashPassword, verifyToken, rotateRefreshToken). Manter interface atual inalterada. Testes: mover de tests/ para tests/modules/auth/.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific directory structure, files to move, interface contract",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-035",
+      "title": "Ideias para dashboard",
+      "description": "Seria legal ter um dashboard com métricas. Gráficos, números, essas coisas. Para acompanhar o andamento.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'seria legal', 'essas coisas' - no specific metrics or charts",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-036",
+      "title": "Dashboard de KPIs com Chart.js",
+      "description": "Página /dashboard com 4 cards: total_demandas (counter), taxa_aprovacao (% com trend arrow), tempo_medio_refinamento (horas, bar chart 30d), demandas_por_tipo (pie chart). Dados via GET /api/metrics/dashboard. Refresh automático a cada 60s. Responsivo: 2x2 grid desktop, 1 coluna mobile.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific page, cards, chart types, API, refresh rate, layout",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-037",
+      "title": "Problema com emails",
+      "description": "Os emails do sistema não estão funcionando direito. Às vezes chega, às vezes não. Precisa resolver.",
+      "type": "bug",
+      "priority": "alta",
+      "expected_label": "vaga",
+      "rationale": "'não estão funcionando direito', 'às vezes' - no specific email type or error",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-038",
+      "title": "Fix: emails de notificação não enviados quando fila SQS está cheia",
+      "description": "Quando a fila SQS excede 1000 mensagens, o SendMessage retorna ThrottlingException. Fix: implementar DLQ (dead letter queue) com maxReceiveCount=3, alarme CloudWatch quando DLQ > 0. Reprocessar DLQ via Lambda scheduled (cron 0 */6 * * *).",
+      "type": "bug",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific error, queue limit, fix approach, reprocessing strategy",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-039",
+      "title": "Pensar em acessibilidade",
+      "description": "O sistema deveria ser mais acessível. Talvez seguir algum padrão. Seria bom para todos os usuários.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'deveria ser mais acessível', 'talvez', 'algum padrão' - no WCAG level or specific issues",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-040",
+      "title": "Conformidade WCAG 2.1 AA nos formulários",
+      "description": "Auditar com axe-core os 5 formulários principais (login, register, create_demand, edit_demand, settings). Corrigir: labels associados (for/id), contrast ratio ≥ 4.5:1, focus order lógico, aria-invalid em campos com erro, skip-to-content link. Target: 0 violations axe-core.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific standard, forms, tool, violations to fix, target",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-041",
+      "title": "Explorar opções de hosting",
+      "description": "Poderíamos ver opções de hosting mais baratas ou melhores. Depende do orçamento e das necessidades.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'poderíamos ver', 'depende' - no criteria for 'melhor'",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-042",
+      "title": "Migrar de Heroku para AWS ECS Fargate",
+      "description": "Migrar os 3 serviços (api, worker, scheduler) para ECS Fargate. Terraform modules para: VPC, ALB, ECS cluster, ECR repos, RDS PostgreSQL, ElastiCache Redis. CI: buildx multi-arch → ECR push → ECS deploy via CodeDeploy blue/green. Custo estimado: $150/mês (vs $250 Heroku).",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific services, infra, IaC, CI/CD, cost comparison",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-043",
+      "title": "Algo sobre logs",
+      "description": "Os logs poderiam ser mais úteis. Talvez estruturar melhor ou centralizar em algum lugar.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'poderiam ser mais úteis', 'talvez', 'algum lugar'",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-044",
+      "title": "Centralizar logs com ELK Stack",
+      "description": "Configurar Filebeat para coletar logs JSON do stdout dos containers. Enviar para Elasticsearch (1 nó, 50GB). Index pattern: logs-{service}-{YYYY.MM.dd}. Kibana dashboards: error_rate (line), top_errors (table), latency_p95 (gauge). Retenção: 30 dias.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific stack, config, index pattern, dashboards, retention",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-045",
+      "title": "Melhorar o onboarding",
+      "description": "Novos usuários ficam perdidos. Seria bom ter alguma coisa para ajudá-los. Talvez um tour ou algo assim.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'alguma coisa', 'talvez', 'algo assim' - no specific flow",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-046",
+      "title": "Onboarding wizard de 4 passos",
+      "description": "Após primeiro login, exibir wizard: 1) Welcome (nome, cargo), 2) Criar primeira demanda (formulário simplificado), 3) Tour de 5 tooltips (sidebar, create, list, filter, settings), 4) Convite para Slack. Marcar onboarding_completed no user profile. Permitir skip em qualquer passo.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific steps, UI elements, completion tracking, skip behavior",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-047",
+      "title": "Considerar API GraphQL",
+      "description": "Talvez pudéssemos ter uma API GraphQL além da REST. Pode ser mais flexível para o frontend.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'talvez pudéssemos', 'pode ser mais flexível' - no schema or endpoints defined",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-048",
+      "title": "API GraphQL para queries de listagem",
+      "description": "Apollo Server v4 montado em /graphql. Schema: type Demand { id, title, description, status, priority, createdAt }. Query: demands(filter: DemandFilter, pagination: CursorPagination): DemandConnection. Resolver usa mesmo service layer da REST. Playground habilitado apenas em NODE_ENV=development.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific library, schema, query, resolver approach, environment config",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-049",
+      "title": "Revisar arquitetura",
+      "description": "A arquitetura do sistema pode estar ficando complexa. Devemos revisar para garantir que está no caminho certo.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'pode estar ficando complexa', 'caminho certo' - no specific concerns",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-050",
+      "title": "ADR: migrar de monolito para módulos bounded context",
+      "description": "Architecture Decision Record: separar em 4 bounded contexts (Demands, Auth, Notifications, Analytics). Comunicação inter-módulo via event bus (EventEmitter local, migrar para Redis Pub/Sub quando necessário). Shared kernel: types, logger, db client. Migration path: extrair 1 módulo por sprint, começando por Auth.",
+      "type": "melhoria",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific contexts, communication pattern, shared kernel, migration plan",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-051",
+      "title": "Melhorar mensagens de erro",
+      "description": "As mensagens de erro são genéricas. Quando dá erro o usuário não entende o que aconteceu. Precisamos melhorar isso.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'genéricas', 'melhorar isso' - no specific errors or new messages defined",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-052",
+      "title": "Mensagens de erro descritivas nos formulários",
+      "description": "Mapear os 8 erros mais comuns (título vazio, email inválido, prioridade não selecionada, descrição < 10 chars, etc.) e criar mensagens em pt-BR. Formato: 'O campo X é obrigatório' ou 'X deve ter pelo menos Y caracteres'. Exibir inline abaixo do campo com ícone AlertCircle. Cor: text-red-600.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific errors, format, language, UI placement, color",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-053",
+      "title": "Possível melhoria de testes",
+      "description": "Podíamos ter mais testes. A cobertura poderia ser melhor. Seria importante para a qualidade.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'podíamos', 'poderia ser melhor', no specific test targets",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-054",
+      "title": "Aumentar cobertura de testes para 80%",
+      "description": "Cobertura atual: 45% (vitest --coverage). Meta: 80% em branches e statements. Prioridade: 1) server/services/ (35% → 80%), 2) server/routes.ts (20% → 70%), 3) client/src/components/ (50% → 80%). Adicionar ao CI: falhar se cobertura cair > 2% vs main.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific current/target coverage, priority order, CI gate",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-055",
+      "title": "Olhar documentação",
+      "description": "A documentação está desatualizada. Talvez devêssemos atualizar algumas partes. Os devs novos se perdem.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'talvez', 'algumas partes' - no specific docs to update",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-056",
+      "title": "Atualizar README com setup e arquitetura",
+      "description": "README.md: 1) Prerequisites (Node 20, PostgreSQL 16, Redis 7), 2) Setup: cp .env.example .env && npm install && npm run db:migrate && npm run dev, 3) Architecture diagram (Mermaid: client → API → services → DB), 4) API endpoints table (method, path, description), 5) Testing: npm test, npm run test:e2e.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific sections, commands, diagram format, content defined",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-057",
+      "title": "Preocupação com escalabilidade",
+      "description": "Quando tiver mais usuários o sistema vai aguentar? Precisamos pensar em escalabilidade. Pode ser que precise mudar coisas.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'vai aguentar?', 'pensar em', 'pode ser que' - no load targets or bottlenecks",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-058",
+      "title": "Load test com k6: suportar 500 usuários simultâneos",
+      "description": "Script k6: rampa 0→500 VUs em 5min, sustain 10min, ramp-down 2min. Cenários: GET /api/demands (70%), POST /api/demands (20%), GET /api/demands/:id (10%). SLOs: p95 < 500ms, error_rate < 1%, throughput > 200 rps. Export results para Grafana Cloud (k6 extension).",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific tool, ramp profile, scenarios, SLOs, export",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-059",
+      "title": "Pode melhorar o fluxo de aprovação",
+      "description": "O fluxo de aprovação poderia ser mais prático. Talvez com menos passos ou mais automatizado. Depende do feedback.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'poderia ser mais prático', 'talvez', 'depende' - no specific steps to change",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-060",
+      "title": "Auto-aprovar demandas de baixa complexidade",
+      "description": "Demandas com classification.complexity < 30 e classification.ambiguity < 20 e tipo='bug' com prioridade='baixa' ou 'media': auto-aprovar após classificação, pular refinamento. Logar auto_approval_event com demand_id e scores. Feature flag: enableAutoApproval (default false). Reverter se taxa de retrabalho > 50%.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific criteria, conditions, logging, flag, revert trigger",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-061",
+      "title": "Coisa do frontend",
+      "description": "O frontend tem umas coisas que poderiam ser diferentes. Talvez usar outro framework ou biblioteca.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'umas coisas', 'talvez', 'outro framework ou biblioteca' - no specifics",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-062",
+      "title": "Migrar state management para Zustand",
+      "description": "Substituir React Context + useState por Zustand nos stores: demandsStore (list, create, update, delete), authStore (user, login, logout, refreshToken), uiStore (sidebar, theme, modals). Manter compatibilidade com hooks existentes (useAuth, useDemands). Bundle size: Zustand 1.1kB vs Context re-render overhead.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific library, stores, compatibility plan, size comparison",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-063",
+      "title": "Verificar integração com parceiros",
+      "description": "Precisamos verificar se as integrações com parceiros estão funcionando. Pode ter mudado algo do lado deles.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'verificar', 'pode ter mudado algo', no specific partner or integration",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-064",
+      "title": "Health check para integrações externas",
+      "description": "GET /api/health/integrations retorna status de cada serviço: {slack: {status, latencyMs, lastCheck}, sentry: {...}, database: {...}, redis: {...}}. Cada serviço tem probe específico (Slack: auth.test, Sentry: GET /api/0/, DB: SELECT 1, Redis: PING). Timeout: 5s por serviço. Parallel execution via Promise.allSettled.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific endpoint, probes, response format, timeout, execution",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-065",
+      "title": "Pensar em internacionalização",
+      "description": "Seria bom se o sistema suportasse outros idiomas. Eventualmente podemos ter usuários de outros países.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'seria bom', 'eventualmente', 'podemos' - no specific languages or approach",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-066",
+      "title": "Internacionalização com react-i18next",
+      "description": "Instalar react-i18next + i18next-browser-languagedetector. Namespaces: common, demands, auth, errors. Idiomas: pt-BR (default), en-US. Extrair strings dos 15 componentes principais. JSON files em client/src/locales/{lng}/{ns}.json. Selector de idioma no footer. Fallback: pt-BR.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific libraries, namespaces, languages, file structure, UI",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-067",
+      "title": "Rever permissões",
+      "description": "As permissões do sistema podem não estar adequadas. Talvez precise ajustar quem pode fazer o quê.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'podem não estar adequadas', 'talvez', 'quem pode fazer o quê'",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-068",
+      "title": "RBAC com 4 roles e middleware de autorização",
+      "description": "Roles: admin (full access), manager (CRUD demandas + aprovar), developer (CRUD demandas próprias), viewer (read-only). Middleware: requireRole(['admin','manager']) aplicado por rota. Tabela user_roles (user_id, role, granted_by, granted_at). UI: página /admin/roles com tabela de usuários e dropdown de role.",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific roles, permissions, middleware, schema, UI",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-069",
+      "title": "Algo sobre backup",
+      "description": "Precisamos garantir que tem backup. Se algo der errado com o banco é importante ter como recuperar.",
+      "type": "melhoria",
+      "priority": "alta",
+      "expected_label": "vaga",
+      "rationale": "'garantir que tem', 'se algo der errado' - no RPO/RTO or strategy",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-070",
+      "title": "Backup automatizado PostgreSQL com pg_dump",
+      "description": "Cron job diário às 03:00 UTC: pg_dump --format=custom --compress=9 → S3 bucket (s3://backups/db/{date}.dump). Retenção: 30 dias (S3 lifecycle rule). Backup incremental a cada 6h via WAL archiving (archive_mode=on, archive_command para S3). Teste de restore automatizado semanal em instância staging. Alerta se backup falhar 2x consecutivas.",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific tool, schedule, storage, retention, WAL, testing, alerting",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-071",
+      "title": "Melhorar fluxo de trabalho",
+      "description": "O fluxo de trabalho da equipe poderia ser otimizado. Tem muitas etapas manuais que talvez possam ser simplificadas.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'poderia ser otimizado', 'muitas etapas', 'talvez'",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-072",
+      "title": "Webhook automático: PR criado → demanda 'em revisão'",
+      "description": "GitHub webhook (event: pull_request, action: opened). Extrair demand_id do branch name (pattern: feat/demand-{id}-*). Atualizar status da demanda para 'em_revisao' via storage.updateDemand(). Logar webhook_demand_status_update event. Validar HMAC-SHA256 signature com env.GITHUB_WEBHOOK_SECRET.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific event, naming convention, status transition, security",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-073",
+      "title": "Dúvida sobre analytics",
+      "description": "Será que faz sentido ter analytics no produto? Pode ajudar a entender como os usuários usam. Não sei se vale o esforço.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'será que faz sentido', 'não sei se vale o esforço' - pure uncertainty",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-074",
+      "title": "Product analytics com PostHog self-hosted",
+      "description": "Instalar posthog-js no frontend. Events: page_view, demand_created, demand_approved, refinement_started, export_csv. Properties: user_id (hashed), demand_type, priority. Backend: posthog-node para server-side events (api_call, classification_result). Self-hosted via Docker Compose. Retenção: 90 dias.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific tool, events, properties, deployment, retention",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-075",
+      "title": "Verificar coisa do SSO",
+      "description": "Alguém mencionou que seria bom ter SSO. Pode ser com Google ou Microsoft. Depende do que é mais fácil.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'alguém mencionou', 'pode ser', 'depende do que é mais fácil'",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-076",
+      "title": "SSO com Google OAuth via Passport.js",
+      "description": "Instalar passport + passport-google-oauth20. Strategy config: clientID/clientSecret via env. Callback: /api/auth/google/callback. Scopes: ['email', 'profile']. Se email já existe na tabela users, vincular. Se não, criar conta com role='viewer'. Adicionar botão 'Entrar com Google' na tela de login abaixo do form.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific library, config, callback, scopes, user flow, UI",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-077",
+      "title": "Questão sobre microserviços",
+      "description": "Será que devemos ir para microserviços? Pode ser que faça sentido eventualmente. Precisamos avaliar.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'será que', 'pode ser que', 'eventualmente', 'precisamos avaliar'",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-078",
+      "title": "Spike: avaliar se bounded contexts justificam microserviços",
+      "description": "Timebox: 2 dias. Analisar: 1) Coupling between modules (count cross-imports), 2) Deploy frequency por módulo (git log --since='3 months' -- server/modules/*), 3) Team boundaries (1 equipe = não justifica), 4) Data boundaries (tabelas compartilhadas?). Output: ADR com recomendação (monolito modular vs microserviços) e critérios de decisão.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific timebox, analysis criteria, git commands, output format",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-079",
+      "title": "Pensar em feature flags",
+      "description": "Talvez seja útil ter um sistema de feature flags. Pode facilitar deploys e testes.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'talvez seja útil', 'pode facilitar' - no specific implementation",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-080",
+      "title": "Feature flags runtime com ConfigCat",
+      "description": "Integrar ConfigCat SDK (free tier: 10 flags, 100M requests). Flags iniciais: enableDarkMode, enableCSVExport, enableSlackNotifications, enableAutoApproval, maintenanceMode. Client-side: useFeatureFlag('enableDarkMode') hook. Server-side: configcat.getValueAsync('enableAutoApproval'). Cache: 60s. Fallback: false para todas as flags se ConfigCat indisponível.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific service, flags, SDK, caching, fallback behavior",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-081",
+      "title": "Algo sobre containerização",
+      "description": "O sistema poderia rodar em containers. Pode ser Docker ou outra coisa. Facilitaria o deploy.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'poderia rodar', 'pode ser Docker ou outra coisa' - no Dockerfile or config",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-082",
+      "title": "Dockerfile multi-stage para produção",
+      "description": "Stage 1 (build): node:20-alpine, npm ci, npm run build. Stage 2 (production): node:20-alpine, COPY --from=build /app/dist + /app/node_modules (production only). Expose 5000. HEALTHCHECK: curl -f http://localhost:5000/api/health. docker-compose.yml: api (build: .), postgres:16-alpine, redis:7-alpine. Volumes: pgdata, redisdata.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific stages, base images, ports, healthcheck, compose services",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-083",
+      "title": "Problema com prazos de demanda",
+      "description": "Os prazos das demandas não fazem muito sentido. Precisamos rever como são calculados ou definidos.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'não fazem muito sentido', 'rever' - no specific issues with calculation",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-084",
+      "title": "SLA automático por prioridade de demanda",
+      "description": "Ao criar demanda, calcular deadline baseado na prioridade: critica=4h, alta=24h, media=72h, baixa=168h (7d). Exibir countdown na listagem (badge verde > 50% restante, amarelo 25-50%, vermelho < 25%). Notificar assignee via email quando < 25% do tempo restante. Campo sla_deadline_at na tabela demands.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific times, UI indicators, notification trigger, schema change",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-085",
+      "title": "Ideia de gamificação",
+      "description": "Seria legal ter pontos ou badges para motivar a equipe. Tipo quando alguém completa muitas demandas.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'seria legal', 'tipo quando' - no specific mechanics or rewards",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-086",
+      "title": "Sistema de badges por marcos de demandas",
+      "description": "Badges: first_demand (1ª criada), speed_demon (aprovada em <1h), prolific (10 demandas/semana), quality_guru (0% retrabalho em 5 consecutive), marathon (demanda complexa sem refinamento extra). Tabela user_badges (user_id, badge_type, earned_at). UI: badges no profile e tooltip na listagem ao lado do nome.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific badges with criteria, schema, UI placement",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-087",
+      "title": "Olhar questão de CORS",
+      "description": "Acho que tem algum problema de CORS. Às vezes o frontend não consegue chamar a API. Precisa verificar.",
+      "type": "bug",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'acho que', 'às vezes', 'precisa verificar' - no specific origin or endpoint",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-088",
+      "title": "CORS: permitir origins do Vercel preview",
+      "description": "Origin pattern: /^https:\\/\\/.*\\.vercel\\.app$/. Adicionar ao cors middleware (já usa cors npm package). Allowlist estática: [env.FRONTEND_URL, 'http://localhost:5173']. Headers: Access-Control-Allow-Credentials: true. Preflight cache: Access-Control-Max-Age: 86400. Bloquear origins não listados com 403.",
+      "type": "bug",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific regex, package, origins, headers, caching, blocking",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-089",
+      "title": "Questão sobre API versioning",
+      "description": "Pode ser que precisemos versionar a API em algum momento. Seria bom pensar nisso antes que vire um problema.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'pode ser que', 'em algum momento', 'pensar nisso'",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-090",
+      "title": "API versioning via URL prefix /v1",
+      "description": "Mover todas as rotas de /api/* para /api/v1/*. Manter /api/* como alias (301 redirect para /api/v1/*) por 90 dias para backward compatibility. Header X-API-Version na response. Deprecation header quando usando /api/*. Documentar breaking changes policy no README.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific URL scheme, redirect strategy, headers, timeline, docs",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-091",
+      "title": "Pensar em webhooks",
+      "description": "Talvez os clientes queiram receber webhooks. Pode ser útil para integrações futuras.",
+      "type": "nova_funcionalidade",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'talvez', 'pode ser útil', 'futuras' - no events or payload defined",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-092",
+      "title": "Webhook system para eventos de demanda",
+      "description": "Tabela webhook_subscriptions (id, url, events[], secret, active, created_at). Eventos: demand.created, demand.updated, demand.approved, demand.completed. Payload: {event, timestamp, data: Demand}. Delivery: POST com HMAC-SHA256 signature (header X-Webhook-Signature). Retry: 3x com backoff (1s, 5s, 30s). Log delivery status em webhook_deliveries.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific schema, events, payload, security, retry, logging",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-093",
+      "title": "Alguma coisa sobre tipos",
+      "description": "Os tipos de demanda poderiam ter mais opções. Depende do que os usuários precisam. Vamos ver.",
+      "type": "melhoria",
+      "priority": "baixa",
+      "expected_label": "vaga",
+      "rationale": "'poderiam ter', 'depende', 'vamos ver'",
+      "expected_zone": "clear_vague"
+    },
+    {
+      "id": "vg-094",
+      "title": "Adicionar tipos: 'spike' e 'debt_tecnico'",
+      "description": "Adicionar ao enum DemandType: 'spike' (timebox obrigatório, campo spike_timebox_hours), 'debt_tecnico' (campo tech_debt_category: 'code_quality' | 'dependency' | 'infrastructure' | 'documentation'). Migration: ALTER TABLE demands ADD CHECK constraint para novos campos. Atualizar filtros na listagem e select no formulário de criação.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific types, fields, enum values, migration, UI updates",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-095",
+      "title": "Olhar questão de concorrência",
+      "description": "Será que tem problemas de concorrência? Se dois usuários editam a mesma demanda ao mesmo tempo pode dar conflito. Precisamos pensar nisso.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'será que', 'pode dar conflito', 'precisamos pensar' - hypothetical",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-096",
+      "title": "Optimistic locking com version field",
+      "description": "Adicionar campo version (integer, default 1) na tabela demands. UPDATE demands SET ... WHERE id = $1 AND version = $2, incrementar version. Se rowCount = 0, retornar 409 Conflict com body {error: 'CONFLICT', message: 'Demanda foi modificada por outro usuário', currentVersion: X}. Frontend: exibir dialog de conflito com opções 'Recarregar' ou 'Forçar salvamento'.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific field, SQL logic, HTTP status, response body, UI flow",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-097",
+      "title": "Rever questão de monitoramento",
+      "description": "O monitoramento do sistema não é ideal. Talvez precise de alertas ou algo mais visual.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'não é ideal', 'talvez', 'algo mais visual' - no specific metrics or alerts",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-098",
+      "title": "Alertas Grafana para SLOs de produção",
+      "description": "Alertas no Grafana via Prometheus: 1) error_rate > 2% por 5min → Slack #alerts (P1), 2) p95_latency > 1s por 10min → Slack (P2), 3) memory_heap > 1.5GB → Slack (P3), 4) disk_usage > 85% → email ops team (P2). Silencing: manutenções agendadas via annotation API. Dashboard: 4 panels com thresholds visuais.",
+      "type": "nova_funcionalidade",
+      "priority": "media",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific tool, alerts, thresholds, channels, priorities, silencing",
+      "expected_zone": "clear_not_vague"
+    },
+    {
+      "id": "vg-099",
+      "title": "Pensar em custo da IA",
+      "description": "Os custos com IA podem estar altos. Seria bom otimizar mas sem perder qualidade. Precisa analisar.",
+      "type": "melhoria",
+      "priority": "media",
+      "expected_label": "vaga",
+      "rationale": "'podem estar', 'seria bom', 'precisa analisar' - no specific costs or targets",
+      "expected_zone": "ambiguous"
+    },
+    {
+      "id": "vg-100",
+      "title": "Otimizar custo de classificação com embedding híbrido",
+      "description": "Chamar embedding (text-embedding-3-small, $0.02/1M tokens) APENAS quando score rule-based está entre 30-70 (zona ambígua). Fora dessa zona, usar apenas heurística (custo zero). Meta: custo médio ≤ $0.0005/demanda. Fallback para regras se embedding falhar. Instrumentar classification_method (rule/hybrid) e vagueza_score no aiUsageTracker.",
+      "type": "nova_funcionalidade",
+      "priority": "alta",
+      "expected_label": "nao_vaga",
+      "rationale": "Specific model, cost target, zone thresholds, fallback, instrumentation",
+      "expected_zone": "clear_not_vague"
+    }
+  ]
+}

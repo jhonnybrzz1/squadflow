@@ -1,0 +1,49 @@
+name: Public Snapshot CI
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: true
+    steps:
+      - name: Checkout public tree
+        uses: actions/checkout@v6
+
+      - name: Use project Node version
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Audit production dependencies
+        run: npm run audit:production
+
+      - name: Create placeholder local configuration
+        run: cp .env.example .env
+
+      - name: Provision and verify SQLite schema
+        run: |
+          npm run db:push
+          node --env-file=.env scripts/verify-public-db.mjs
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build production bundles
+        run: npm run build
+
+      - name: Run complete test suite
+        run: npm test

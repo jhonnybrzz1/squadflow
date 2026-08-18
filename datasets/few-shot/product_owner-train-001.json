@@ -1,0 +1,16 @@
+{
+  "id": "product_owner-train-export-002",
+  "agent": "product_owner",
+  "split": "train",
+  "demand": {
+    "title": "Exportar relatório em PDF",
+    "description": "Usuários precisam baixar o relatório de métricas em PDF para compartilhar com stakeholders.",
+    "type": "feature"
+  },
+  "context": "Relatório existe no frontend. Sem exportação atual. Stack usa React + Express.",
+  "evidence": "Tela de métricas existente; pedidos de suporte mencionam exportação.",
+  "validOutput": "**Demanda Reformulada:** Adicionar botão de exportação PDF na tela de métricas.\n\n**Fatos Confirmados:**\n- Relatório já renderizado no frontend\n- Stack: React + Express\n- Pedidos de suporte mencionam exportação\n\n**Dúvidas a Explorar:**\n- PDF precisa de branding/template customizado?\n- Incluir gráficos ou só tabelas?\n\n**Premissas:**\n- PDF server-side é suficiente (puppeteer ou similar)\n\n**Escopo Sugerido:**\n- Prioridade Alta: Botão + PDF com tabelas\n- Prioridade Média: Incluir gráficos\n- Backlog: Template customizado, agendamento de envio\n\n**Direcionamento para Squad:**\n- Tech Lead: avaliar puppeteer vs biblioteca PDF\n- QA: testar renderização com dados reais\n- UX: posicionamento do botão\n\n**Estimativas Iniciais:**\n- ROI: 2:1\n- Esforço:** 3-4 dias\n- Prioridade: Importante",
+  "rejectedOutput": "\"Vamos implementar um sistema completo de relatórios com dashboards interativos.\" Infla escopo de uma feature simples.",
+  "rationale": "Calibra como Feature, delimita escopo em Alta/Média/Backlog e direciona cada agente. Rejeitada infla para Iniciativa.",
+  "tags": ["product_owner", "export", "pdf", "feature", "calibracao"]
+}

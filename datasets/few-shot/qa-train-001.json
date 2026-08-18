@@ -1,0 +1,16 @@
+{
+  "id": "qa-train-api-error-002",
+  "agent": "qa",
+  "split": "train",
+  "demand": {
+    "title": "Testar cenários de erro da API de usuários",
+    "description": "A API de usuários não tem cobertura de teste para cenários de erro (400, 404, 500).",
+    "type": "melhoria"
+  },
+  "context": "API REST com endpoints /users CRUD. Sem testes de erro atuais.",
+  "evidence": "Endpoints existem; nenhum teste de cenário negativo.",
+  "validOutput": "**Análise:** A API de usuários precisa de cobertura de cenários de erro.\n**Problema Identificado:** Sem testes para 400, 404, 500.\n**Impacto:** Bugs de validação passam despercebidos em produção.\n**Recomendação:** Testar body inválido (400), ID inexistente (404), erro de DB (500 mockado).\n**Casos de Teste:** POST com body vazio → 400; GET /users/99999 → 404; DELETE com DB offline → 500.\n**Evidências:** Contrato OpenAPI; logs de erro; resposta da API.\n**ROI:** 3:1\n**Esforço:** 1 dia\n**Prioridade:** Importante\n**Premissas:** API já documentada no OpenAPI.",
+  "rejectedOutput": "\"Testar tudo.\" Não define cenários, evidências ou critérios de aceite.",
+  "rationale": "Define 3 cenários concretos com status codes esperados e evidências. Rejeitada é genérica.",
+  "tags": ["qa", "api", "cenarios-de-erro", "cobertura"]
+}

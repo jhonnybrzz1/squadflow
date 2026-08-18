@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "specs": [
+    {
+      "id": "10078",
+      "title": "Retrospectiva automatizada de aprendizado",
+      "category": "Workflow",
+      "status": "developed",
+      "changelog": "SM orquestra retrospectiva; resultado persistido em retrospective_sessions e reutilizado como memória ativa. Validado com 3 sessões reais."
+    },
+    {
+      "id": "10082",
+      "title": "Modelo ativo por agente + persistência do editor",
+      "category": "Observabilidade",
+      "status": "developed",
+      "changelog": "Endpoints /api/models/overview e /api/models/active; hook usePersistedState para não perder o conteúdo do editor ao trocar de tela."
+    },
+    {
+      "id": "10085",
+      "title": "Injeção de skills externas (skill.sh + GitHub raw)",
+      "category": "Refinamento",
+      "status": "developed",
+      "changelog": "Allowlist de host estendida para raw.githubusercontent.com (fonte do skills-lock.json), mantendo SSRF/size-cap/content-type."
+    },
+    {
+      "id": "10088",
+      "title": "Memória de agente (agent_memory)",
+      "category": "Agentes",
+      "status": "developed",
+      "changelog": "Tabela insert-only + endpoint paginado com filtros para sessões/aprendizados de agentes (ex.: chat do SM)."
+    },
+    {
+      "id": "10008",
+      "title": "Monorepo Turborepo + guardrail de CI",
+      "category": "Infra",
+      "status": "not-developed",
+      "justification": "Despriorizado: a estrutura client/server atual atende sem o custo de introduzir Turborepo. Reabrir se o split de pacotes virar necessidade real.",
+      "changelog": "Fechada como 'não fazer' em 2026-07-23 — sem impacto de negócio que justifique o esforço agora."
+    },
+    {
+      "id": "10091",
+      "title": "Menu Discovery + framework PMframeworks + agente PM",
+      "category": "Discovery",
+      "status": "not-developed",
+      "justification": "Depende de importar um repositório externo (PMframeworks) não disponível no ambiente. Entrega parcial possível; a importação do framework fica bloqueada.",
+      "changelog": "Bloqueada por dependência externa — priorizar quando o repositório de frameworks estiver acessível."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+:root {
+  --safe-area-base: 16px;
+  --safe-area-top: max(var(--safe-area-base), env(safe-area-inset-top, 0px));
+  --safe-area-right: max(var(--safe-area-base), env(safe-area-inset-right, 0px));
+  --safe-area-bottom: max(var(--safe-area-base), env(safe-area-inset-bottom, 0px));
+  --safe-area-left: max(var(--safe-area-base), env(safe-area-inset-left, 0px));
+}
+
+.safe-area-header {
+  padding-top: var(--safe-area-top);
+  padding-left: var(--safe-area-left);
+  padding-right: var(--safe-area-right);
+}
+
+.safe-area-chat-fullscreen {
+  inset: var(--safe-area-base);
+  max-height: calc(100dvh - (var(--safe-area-base) * 2));
+  padding-top: var(--safe-area-base);
+  padding-right: var(--safe-area-right);
+  padding-bottom: var(--safe-area-bottom);
+  padding-left: var(--safe-area-left);
+}
+
+.safe-area-scroll-bottom {
+  bottom: calc(24px + var(--safe-area-bottom));
+}
+
+.safe-area-tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.safe-area-chat-max-height {
+  max-height: calc(100dvh - 8rem);
+}
+
+@supports not (height: 100dvh) {
+  .safe-area-chat-fullscreen {
+    max-height: calc(100vh - (var(--safe-area-base) * 2));
+  }
+
+  .safe-area-chat-max-height {
+    max-height: calc(100vh - 8rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .safe-area-chat-fullscreen {
+    inset: 0;
+    max-height: 100dvh;
+    border-left: 0;
+    border-right: 0;
+  }
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "SM_CER_001",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-sprint-planning",
+    "description": "Técnica/Cerimônia Sprint Planning.",
+    "content": {
+      "theory": "A cerimônia/técnica Sprint Planning é usada para Planejamento da Sprint...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Sprint Planning"
+      },
+      "template": "Link para board do Miro de Sprint Planning"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-planning",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["cerimônias", "planejamento", "sprint"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_002",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-daily-scrum",
+    "description": "Técnica/Cerimônia Daily Scrum.",
+    "content": {
+      "theory": "A cerimônia/técnica Daily Scrum é usada para Reunião Diária...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Daily Scrum"
+      },
+      "template": "Link para board do Miro de Daily Scrum"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/daily-scrum",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["cerimônias", "daily", "alinhamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_003",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-sprint-review",
+    "description": "Técnica/Cerimônia Sprint Review.",
+    "content": {
+      "theory": "A cerimônia/técnica Sprint Review é usada para Revisão da Sprint...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Sprint Review"
+      },
+      "template": "Link para board do Miro de Sprint Review"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-review",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["cerimônias", "review", "demonstração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_004",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-sprint-retrospective",
+    "description": "Técnica/Cerimônia Sprint Retrospective.",
+    "content": {
+      "theory": "A cerimônia/técnica Sprint Retrospective é usada para Retrospectiva da Sprint...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Sprint Retrospective"
+      },
+      "template": "Link para board do Miro de Sprint Retrospective"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-retrospective",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["cerimônias", "retrospectiva", "melhoria"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_005",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-backlog-refinement",
+    "description": "Técnica/Cerimônia Backlog Refinement.",
+    "content": {
+      "theory": "A cerimônia/técnica Backlog Refinement é usada para Refinamento do Backlog...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Backlog Refinement"
+      },
+      "template": "Link para board do Miro de Backlog Refinement"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/backlog-refinement",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["cerimônias", "refinamento", "backlog"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_006",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-start-stop-continue",
+    "description": "Técnica/Cerimônia Start, Stop, Continue.",
+    "content": {
+      "theory": "A cerimônia/técnica Start, Stop, Continue é usada para Retrospectiva: Start, Stop, Continue...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Start, Stop, Continue"
+      },
+      "template": "Link para board do Miro de Start, Stop, Continue"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/start-stop-continue",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "retrospectiva", "técnica"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_007",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-mad-sad-glad",
+    "description": "Técnica/Cerimônia Mad, Sad, Glad.",
+    "content": {
+      "theory": "A cerimônia/técnica Mad, Sad, Glad é usada para Retrospectiva: Mad, Sad, Glad...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Mad, Sad, Glad"
+      },
+      "template": "Link para board do Miro de Mad, Sad, Glad"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mad-sad-glad",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "retrospectiva", "emoções"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_008",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-sailboat-retrospective",
+    "description": "Técnica/Cerimônia Sailboat Retrospective.",
+    "content": {
+      "theory": "A cerimônia/técnica Sailboat Retrospective é usada para Retrospectiva: Barco a Vela...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Sailboat Retrospective"
+      },
+      "template": "Link para board do Miro de Sailboat Retrospective"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sailboat-retrospective",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "retrospectiva", "metáfora"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_009",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-lean-coffee",
+    "description": "Técnica/Cerimônia Lean Coffee.",
+    "content": {
+      "theory": "A cerimônia/técnica Lean Coffee é usada para Lean Coffee...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Lean Coffee"
+      },
+      "template": "Link para board do Miro de Lean Coffee"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-coffee",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "reuniões", "agenda"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_010",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-fist-of-five",
+    "description": "Técnica/Cerimônia Fist of Five.",
+    "content": {
+      "theory": "A cerimônia/técnica Fist of Five é usada para Fist of Five...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Fist of Five"
+      },
+      "template": "Link para board do Miro de Fist of Five"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/fist-of-five",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "consenso", "votação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_011",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-dot-voting",
+    "description": "Técnica/Cerimônia Dot Voting.",
+    "content": {
+      "theory": "A cerimônia/técnica Dot Voting é usada para Votação por Pontos...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Dot Voting"
+      },
+      "template": "Link para board do Miro de Dot Voting"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dot-voting",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "priorização", "votação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_012",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-icebreakers",
+    "description": "Técnica/Cerimônia Icebreakers.",
+    "content": {
+      "theory": "A cerimônia/técnica Icebreakers é usada para Quebra-gelos...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Icebreakers"
+      },
+      "template": "Link para board do Miro de Icebreakers"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/icebreakers",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "engajamento", "equipe"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_013",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-timeboxing",
+    "description": "Técnica/Cerimônia Timeboxing.",
+    "content": {
+      "theory": "A cerimônia/técnica Timeboxing é usada para Timeboxing...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Timeboxing"
+      },
+      "template": "Link para board do Miro de Timeboxing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/timeboxing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "tempo", "foco"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_014",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-liberating-structures",
+    "description": "Técnica/Cerimônia Liberating Structures.",
+    "content": {
+      "theory": "A cerimônia/técnica Liberating Structures é usada para Estruturas Libertadoras...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Liberating Structures"
+      },
+      "template": "Link para board do Miro de Liberating Structures"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/liberating-structures",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "estruturas", "colaboração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_CER_015",
+    "role": ["Scrum Master"],
+    "title": "cerimonia-remote-facilitation",
+    "description": "Técnica/Cerimônia Remote Facilitation.",
+    "content": {
+      "theory": "A cerimônia/técnica Remote Facilitation é usada para Facilitação Remota...",
+      "practical_example": {
+        "scenario": "Facilitação de reunião",
+        "input": ["Objetivo da reunião"],
+        "output": "Agenda usando Remote Facilitation"
+      },
+      "template": "Link para board do Miro de Remote Facilitation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/remote-facilitation",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["facilitação", "remoto", "ferramentas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_001",
+    "role": ["Scrum Master"],
+    "title": "metrica-velocity",
+    "description": "Métrica ágil Velocity.",
+    "content": {
+      "theory": "A métrica Velocity mede Velocidade...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Velocity"
+      },
+      "template": "Link para dashboard de Velocity"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/velocity",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "velocidade", "previsibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_002",
+    "role": ["Scrum Master"],
+    "title": "metrica-sprint-burndown",
+    "description": "Métrica ágil Sprint Burndown.",
+    "content": {
+      "theory": "A métrica Sprint Burndown mede Gráfico de Burndown da Sprint...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Sprint Burndown"
+      },
+      "template": "Link para dashboard de Sprint Burndown"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-burndown",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "burndown", "progresso"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_003",
+    "role": ["Scrum Master"],
+    "title": "metrica-release-burnup",
+    "description": "Métrica ágil Release Burnup.",
+    "content": {
+      "theory": "A métrica Release Burnup mede Gráfico de Burnup da Release...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Release Burnup"
+      },
+      "template": "Link para dashboard de Release Burnup"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/release-burnup",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "burnup", "escopo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_004",
+    "role": ["Scrum Master"],
+    "title": "metrica-cumulative-flow-diagram-cfd",
+    "description": "Métrica ágil Cumulative Flow Diagram (CFD).",
+    "content": {
+      "theory": "A métrica Cumulative Flow Diagram (CFD) mede Diagrama de Fluxo Cumulativo...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Cumulative Flow Diagram (CFD)"
+      },
+      "template": "Link para dashboard de Cumulative Flow Diagram (CFD)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cumulative-flow-diagram-cfd",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "CFD", "gargalos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_005",
+    "role": ["Scrum Master"],
+    "title": "metrica-lead-time",
+    "description": "Métrica ágil Lead Time.",
+    "content": {
+      "theory": "A métrica Lead Time mede Lead Time...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Lead Time"
+      },
+      "template": "Link para dashboard de Lead Time"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lead-time",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "lead time", "entrega"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_006",
+    "role": ["Scrum Master"],
+    "title": "metrica-cycle-time",
+    "description": "Métrica ágil Cycle Time.",
+    "content": {
+      "theory": "A métrica Cycle Time mede Cycle Time...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Cycle Time"
+      },
+      "template": "Link para dashboard de Cycle Time"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cycle-time",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "cycle time", "processo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_007",
+    "role": ["Scrum Master"],
+    "title": "metrica-throughput",
+    "description": "Métrica ágil Throughput.",
+    "content": {
+      "theory": "A métrica Throughput mede Throughput...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Throughput"
+      },
+      "template": "Link para dashboard de Throughput"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/throughput",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "throughput", "vazão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_008",
+    "role": ["Scrum Master"],
+    "title": "metrica-wip-work-in-progress-limits",
+    "description": "Métrica ágil WIP (Work in Progress) Limits.",
+    "content": {
+      "theory": "A métrica WIP (Work in Progress) Limits mede Limites de WIP...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de WIP (Work in Progress) Limits"
+      },
+      "template": "Link para dashboard de WIP (Work in Progress) Limits"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/wip-work-in-progress-limits",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "WIP", "foco"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_009",
+    "role": ["Scrum Master"],
+    "title": "metrica-control-chart",
+    "description": "Métrica ágil Control Chart.",
+    "content": {
+      "theory": "A métrica Control Chart mede Gráfico de Controle...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Control Chart"
+      },
+      "template": "Link para dashboard de Control Chart"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/control-chart",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "controle", "estabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_010",
+    "role": ["Scrum Master"],
+    "title": "metrica-sprint-goal-success-rate",
+    "description": "Métrica ágil Sprint Goal Success Rate.",
+    "content": {
+      "theory": "A métrica Sprint Goal Success Rate mede Taxa de Sucesso da Meta da Sprint...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Sprint Goal Success Rate"
+      },
+      "template": "Link para dashboard de Sprint Goal Success Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-goal-success-rate",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "meta", "sucesso"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_011",
+    "role": ["Scrum Master"],
+    "title": "metrica-defect-escape-rate",
+    "description": "Métrica ágil Defect Escape Rate.",
+    "content": {
+      "theory": "A métrica Defect Escape Rate mede Taxa de Fuga de Defeitos...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Defect Escape Rate"
+      },
+      "template": "Link para dashboard de Defect Escape Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/defect-escape-rate",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "qualidade", "bugs"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_012",
+    "role": ["Scrum Master"],
+    "title": "metrica-team-happiness-metric",
+    "description": "Métrica ágil Team Happiness Metric.",
+    "content": {
+      "theory": "A métrica Team Happiness Metric mede Métrica de Felicidade da Equipe...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Team Happiness Metric"
+      },
+      "template": "Link para dashboard de Team Happiness Metric"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/team-happiness-metric",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "felicidade", "saúde"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_013",
+    "role": ["Scrum Master"],
+    "title": "metrica-agile-maturity-assessment",
+    "description": "Métrica ágil Agile Maturity Assessment.",
+    "content": {
+      "theory": "A métrica Agile Maturity Assessment mede Avaliação de Maturidade Ágil...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Agile Maturity Assessment"
+      },
+      "template": "Link para dashboard de Agile Maturity Assessment"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/agile-maturity-assessment",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "maturidade", "avaliação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_014",
+    "role": ["Scrum Master"],
+    "title": "metrica-say/do-ratio",
+    "description": "Métrica ágil Say/Do Ratio.",
+    "content": {
+      "theory": "A métrica Say/Do Ratio mede Proporção Dizer/Fazer...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Say/Do Ratio"
+      },
+      "template": "Link para dashboard de Say/Do Ratio"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/say/do-ratio",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "compromisso", "entrega"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_METR_015",
+    "role": ["Scrum Master"],
+    "title": "metrica-blocker-tracking",
+    "description": "Métrica ágil Blocker Tracking.",
+    "content": {
+      "theory": "A métrica Blocker Tracking mede Acompanhamento de Impedimentos...",
+      "practical_example": {
+        "scenario": "Análise de desempenho da equipe",
+        "input": ["Dados do Jira/Trello"],
+        "output": "Relatório de Blocker Tracking"
+      },
+      "template": "Link para dashboard de Blocker Tracking"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/blocker-tracking",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["métricas", "impedimentos", "fluxo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_001",
+    "role": ["Scrum Master"],
+    "title": "equipe-tuckman's-stages-of-group-development",
+    "description": "Conceito de equipe/coaching Tuckman's Stages of Group Development.",
+    "content": {
+      "theory": "O conceito Tuckman's Stages of Group Development aborda Estágios de Desenvolvimento de Tuckman...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Tuckman's Stages of Group Development"
+      },
+      "template": "Link para guia de Tuckman's Stages of Group Development"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/tuckman's-stages-of-group-development",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "desenvolvimento", "Tuckman"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_002",
+    "role": ["Scrum Master"],
+    "title": "equipe-servant-leadership",
+    "description": "Conceito de equipe/coaching Servant Leadership.",
+    "content": {
+      "theory": "O conceito Servant Leadership aborda Liderança Servidora...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Servant Leadership"
+      },
+      "template": "Link para guia de Servant Leadership"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/servant-leadership",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["coaching", "liderança", "servidora"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_003",
+    "role": ["Scrum Master"],
+    "title": "equipe-conflict-resolution",
+    "description": "Conceito de equipe/coaching Conflict Resolution.",
+    "content": {
+      "theory": "O conceito Conflict Resolution aborda Resolução de Conflitos...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Conflict Resolution"
+      },
+      "template": "Link para guia de Conflict Resolution"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/conflict-resolution",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "conflitos", "mediação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_004",
+    "role": ["Scrum Master"],
+    "title": "equipe-active-listening",
+    "description": "Conceito de equipe/coaching Active Listening.",
+    "content": {
+      "theory": "O conceito Active Listening aborda Escuta Ativa...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Active Listening"
+      },
+      "template": "Link para guia de Active Listening"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/active-listening",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["coaching", "comunicação", "escuta"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_005",
+    "role": ["Scrum Master"],
+    "title": "equipe-powerful-questions",
+    "description": "Conceito de equipe/coaching Powerful Questions.",
+    "content": {
+      "theory": "O conceito Powerful Questions aborda Perguntas Poderosas...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Powerful Questions"
+      },
+      "template": "Link para guia de Powerful Questions"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/powerful-questions",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["coaching", "perguntas", "reflexão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_006",
+    "role": ["Scrum Master"],
+    "title": "equipe-feedback-models-sbi",
+    "description": "Conceito de equipe/coaching Feedback Models (SBI).",
+    "content": {
+      "theory": "O conceito Feedback Models (SBI) aborda Modelos de Feedback (Situation, Behavior, Impact)...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Feedback Models (SBI)"
+      },
+      "template": "Link para guia de Feedback Models (SBI)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/feedback-models-sbi",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "feedback", "SBI"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_007",
+    "role": ["Scrum Master"],
+    "title": "equipe-psychological-safety",
+    "description": "Conceito de equipe/coaching Psychological Safety.",
+    "content": {
+      "theory": "O conceito Psychological Safety aborda Segurança Psicológica...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Psychological Safety"
+      },
+      "template": "Link para guia de Psychological Safety"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/psychological-safety",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "cultura", "segurança"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_008",
+    "role": ["Scrum Master"],
+    "title": "equipe-motivation-drive---daniel-pink",
+    "description": "Conceito de equipe/coaching Motivation (Drive - Daniel Pink).",
+    "content": {
+      "theory": "O conceito Motivation (Drive - Daniel Pink) aborda Motivação (Autonomia, Maestria, Propósito)...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Motivation (Drive - Daniel Pink)"
+      },
+      "template": "Link para guia de Motivation (Drive - Daniel Pink)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/motivation-drive---daniel-pink",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "motivação", "Pink"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_009",
+    "role": ["Scrum Master"],
+    "title": "equipe-impediment-removal",
+    "description": "Conceito de equipe/coaching Impediment Removal.",
+    "content": {
+      "theory": "O conceito Impediment Removal aborda Remoção de Impedimentos...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Impediment Removal"
+      },
+      "template": "Link para guia de Impediment Removal"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/impediment-removal",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "impedimentos", "fluxo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_TEAM_010",
+    "role": ["Scrum Master"],
+    "title": "equipe-cross-functional-teams",
+    "description": "Conceito de equipe/coaching Cross-functional Teams.",
+    "content": {
+      "theory": "O conceito Cross-functional Teams aborda Equipes Multifuncionais...",
+      "practical_example": {
+        "scenario": "Desenvolvimento da equipe",
+        "input": ["Situação atual da equipe"],
+        "output": "Aplicação de Cross-functional Teams"
+      },
+      "template": "Link para guia de Cross-functional Teams"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cross-functional-teams",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["equipe", "habilidades", "colaboração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_001",
+    "role": ["Scrum Master"],
+    "title": "framework-scrum-guide",
+    "description": "Framework ágil Scrum Guide.",
+    "content": {
+      "theory": "O framework Scrum Guide é focado em Guia do Scrum...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Scrum Guide"
+      },
+      "template": "Link para documentação de Scrum Guide"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/scrum-guide",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "Scrum", "guia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_002",
+    "role": ["Scrum Master"],
+    "title": "framework-kanban-method",
+    "description": "Framework ágil Kanban Method.",
+    "content": {
+      "theory": "O framework Kanban Method é focado em Método Kanban...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Kanban Method"
+      },
+      "template": "Link para documentação de Kanban Method"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kanban-method",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "Kanban", "fluxo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_003",
+    "role": ["Scrum Master"],
+    "title": "framework-scrumban",
+    "description": "Framework ágil Scrumban.",
+    "content": {
+      "theory": "O framework Scrumban é focado em Scrumban...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Scrumban"
+      },
+      "template": "Link para documentação de Scrumban"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/scrumban",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "Scrumban", "híbrido"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_004",
+    "role": ["Scrum Master"],
+    "title": "framework-safe-scaled-agile-framework",
+    "description": "Framework ágil SAFe (Scaled Agile Framework).",
+    "content": {
+      "theory": "O framework SAFe (Scaled Agile Framework) é focado em SAFe...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de SAFe (Scaled Agile Framework)"
+      },
+      "template": "Link para documentação de SAFe (Scaled Agile Framework)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/safe-scaled-agile-framework",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["escala", "SAFe", "enterprise"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_005",
+    "role": ["Scrum Master"],
+    "title": "framework-less-large-scale-scrum",
+    "description": "Framework ágil LeSS (Large-Scale Scrum).",
+    "content": {
+      "theory": "O framework LeSS (Large-Scale Scrum) é focado em LeSS...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de LeSS (Large-Scale Scrum)"
+      },
+      "template": "Link para documentação de LeSS (Large-Scale Scrum)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/less-large-scale-scrum",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["escala", "LeSS", "Scrum"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_006",
+    "role": ["Scrum Master"],
+    "title": "framework-nexus-framework",
+    "description": "Framework ágil Nexus Framework.",
+    "content": {
+      "theory": "O framework Nexus Framework é focado em Nexus...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Nexus Framework"
+      },
+      "template": "Link para documentação de Nexus Framework"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/nexus-framework",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["escala", "Nexus", "integração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_007",
+    "role": ["Scrum Master"],
+    "title": "framework-spotify-model",
+    "description": "Framework ágil Spotify Model.",
+    "content": {
+      "theory": "O framework Spotify Model é focado em Modelo Spotify (Tribes, Squads, Chapters, Guilds)...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Spotify Model"
+      },
+      "template": "Link para documentação de Spotify Model"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/spotify-model",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["escala", "Spotify", "organização"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_008",
+    "role": ["Scrum Master"],
+    "title": "framework-agile-manifesto",
+    "description": "Framework ágil Agile Manifesto.",
+    "content": {
+      "theory": "O framework Agile Manifesto é focado em Manifesto Ágil...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Agile Manifesto"
+      },
+      "template": "Link para documentação de Agile Manifesto"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/agile-manifesto",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "manifesto", "valores"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_009",
+    "role": ["Scrum Master"],
+    "title": "framework-extreme-programming-xp",
+    "description": "Framework ágil Extreme Programming (XP).",
+    "content": {
+      "theory": "O framework Extreme Programming (XP) é focado em Extreme Programming...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Extreme Programming (XP)"
+      },
+      "template": "Link para documentação de Extreme Programming (XP)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/extreme-programming-xp",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "XP", "engenharia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "SM_FW_010",
+    "role": ["Scrum Master"],
+    "title": "framework-lean-software-development",
+    "description": "Framework ágil Lean Software Development.",
+    "content": {
+      "theory": "O framework Lean Software Development é focado em Desenvolvimento Lean...",
+      "practical_example": {
+        "scenario": "Adoção de práticas ágeis",
+        "input": ["Contexto organizacional"],
+        "output": "Implementação de Lean Software Development"
+      },
+      "template": "Link para documentação de Lean Software Development"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-software-development",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["framework", "Lean", "desperdício"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

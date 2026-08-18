@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "REF_IDEA_001",
+    "role": ["Refinador"],
+    "title": "ideacao-brainstorming",
+    "description": "Técnica de ideação Brainstorming.",
+    "content": {
+      "theory": "A técnica Brainstorming estimula a criatividade através de Brainstorming Tradicional...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Brainstorming"
+      },
+      "template": "Link para template de Brainstorming no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/brainstorming",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "brainstorming", "ideias"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_002",
+    "role": ["Refinador"],
+    "title": "ideacao-brainwriting",
+    "description": "Técnica de ideação Brainwriting.",
+    "content": {
+      "theory": "A técnica Brainwriting estimula a criatividade através de Brainwriting...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Brainwriting"
+      },
+      "template": "Link para template de Brainwriting no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/brainwriting",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "brainwriting", "silencioso"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_003",
+    "role": ["Refinador"],
+    "title": "ideacao-scamper",
+    "description": "Técnica de ideação SCAMPER.",
+    "content": {
+      "theory": "A técnica SCAMPER estimula a criatividade através de SCAMPER (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse)...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando SCAMPER"
+      },
+      "template": "Link para template de SCAMPER no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/scamper",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "SCAMPER", "inovação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_004",
+    "role": ["Refinador"],
+    "title": "ideacao-crazy-8s",
+    "description": "Técnica de ideação Crazy 8s.",
+    "content": {
+      "theory": "A técnica Crazy 8s estimula a criatividade através de Crazy 8s...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Crazy 8s"
+      },
+      "template": "Link para template de Crazy 8s no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/crazy-8s",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "crazy 8s", "rápido"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_005",
+    "role": ["Refinador"],
+    "title": "ideacao-six-thinking-hats",
+    "description": "Técnica de ideação Six Thinking Hats.",
+    "content": {
+      "theory": "A técnica Six Thinking Hats estimula a criatividade através de Seis Chapéus do Pensamento...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Six Thinking Hats"
+      },
+      "template": "Link para template de Six Thinking Hats no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/six-thinking-hats",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "chapéus", "perspectivas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_006",
+    "role": ["Refinador"],
+    "title": "ideacao-mind-mapping",
+    "description": "Técnica de ideação Mind Mapping.",
+    "content": {
+      "theory": "A técnica Mind Mapping estimula a criatividade através de Mapeamento Mental...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Mind Mapping"
+      },
+      "template": "Link para template de Mind Mapping no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mind-mapping",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "mapa mental", "conexões"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_007",
+    "role": ["Refinador"],
+    "title": "ideacao-reverse-brainstorming",
+    "description": "Técnica de ideação Reverse Brainstorming.",
+    "content": {
+      "theory": "A técnica Reverse Brainstorming estimula a criatividade através de Brainstorming Reverso...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Reverse Brainstorming"
+      },
+      "template": "Link para template de Reverse Brainstorming no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/reverse-brainstorming",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "reverso", "problemas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_008",
+    "role": ["Refinador"],
+    "title": "ideacao-rolestorming",
+    "description": "Técnica de ideação Rolestorming.",
+    "content": {
+      "theory": "A técnica Rolestorming estimula a criatividade através de Rolestorming...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Rolestorming"
+      },
+      "template": "Link para template de Rolestorming no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/rolestorming",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "papéis", "empatia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_009",
+    "role": ["Refinador"],
+    "title": "ideacao-storyboarding",
+    "description": "Técnica de ideação Storyboarding.",
+    "content": {
+      "theory": "A técnica Storyboarding estimula a criatividade através de Storyboarding...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Storyboarding"
+      },
+      "template": "Link para template de Storyboarding no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/storyboarding",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "storyboard", "narrativa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_010",
+    "role": ["Refinador"],
+    "title": "ideacao-worst-possible-idea",
+    "description": "Técnica de ideação Worst Possible Idea.",
+    "content": {
+      "theory": "A técnica Worst Possible Idea estimula a criatividade através de Pior Ideia Possível...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Worst Possible Idea"
+      },
+      "template": "Link para template de Worst Possible Idea no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/worst-possible-idea",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "pior ideia", "criatividade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_011",
+    "role": ["Refinador"],
+    "title": "ideacao-mash-up",
+    "description": "Técnica de ideação Mash-up.",
+    "content": {
+      "theory": "A técnica Mash-up estimula a criatividade através de Mash-up (Combinação de Ideias)...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Mash-up"
+      },
+      "template": "Link para template de Mash-up no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mash-up",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "mash-up", "combinação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_012",
+    "role": ["Refinador"],
+    "title": "ideacao-analogies",
+    "description": "Técnica de ideação Analogies.",
+    "content": {
+      "theory": "A técnica Analogies estimula a criatividade através de Uso de Analogias...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Analogies"
+      },
+      "template": "Link para template de Analogies no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/analogies",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "analogias", "inspiração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_013",
+    "role": ["Refinador"],
+    "title": "ideacao-provocation",
+    "description": "Técnica de ideação Provocation.",
+    "content": {
+      "theory": "A técnica Provocation estimula a criatividade através de Provocação...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Provocation"
+      },
+      "template": "Link para template de Provocation no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/provocation",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "provocação", "desafio"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_014",
+    "role": ["Refinador"],
+    "title": "ideacao-attribute-listing",
+    "description": "Técnica de ideação Attribute Listing.",
+    "content": {
+      "theory": "A técnica Attribute Listing estimula a criatividade através de Listagem de Atributos...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Attribute Listing"
+      },
+      "template": "Link para template de Attribute Listing no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/attribute-listing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "atributos", "características"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_IDEA_015",
+    "role": ["Refinador"],
+    "title": "ideacao-morphological-analysis",
+    "description": "Técnica de ideação Morphological Analysis.",
+    "content": {
+      "theory": "A técnica Morphological Analysis estimula a criatividade através de Análise Morfológica...",
+      "practical_example": {
+        "scenario": "Geração de novas features",
+        "input": ["Desafio do produto"],
+        "output": "Lista de ideias usando Morphological Analysis"
+      },
+      "template": "Link para template de Morphological Analysis no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/morphological-analysis",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["ideação", "morfologia", "matriz"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_001",
+    "role": ["Refinador"],
+    "title": "refinamento-dot-voting",
+    "description": "Técnica de refinamento Dot Voting.",
+    "content": {
+      "theory": "A técnica Dot Voting ajuda a filtrar ideias focando em Votação por Pontos...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Dot Voting"
+      },
+      "template": "Link para planilha de Dot Voting"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dot-voting",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "votação", "priorização"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_002",
+    "role": ["Refinador"],
+    "title": "refinamento-impacteffort-matrix",
+    "description": "Técnica de refinamento Impact/Effort Matrix.",
+    "content": {
+      "theory": "A técnica Impact/Effort Matrix ajuda a filtrar ideias focando em Matriz de Impacto vs Esforço...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Impact/Effort Matrix"
+      },
+      "template": "Link para planilha de Impact/Effort Matrix"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/impacteffort-matrix",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "matriz", "priorização"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_003",
+    "role": ["Refinador"],
+    "title": "refinamento-kano-model",
+    "description": "Técnica de refinamento Kano Model.",
+    "content": {
+      "theory": "A técnica Kano Model ajuda a filtrar ideias focando em Modelo Kano...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Kano Model"
+      },
+      "template": "Link para planilha de Kano Model"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kano-model",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "kano", "satisfação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_004",
+    "role": ["Refinador"],
+    "title": "refinamento-moscow-method",
+    "description": "Técnica de refinamento MoSCoW Method.",
+    "content": {
+      "theory": "A técnica MoSCoW Method ajuda a filtrar ideias focando em Método MoSCoW...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando MoSCoW Method"
+      },
+      "template": "Link para planilha de MoSCoW Method"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/moscow-method",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "moscow", "requisitos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_005",
+    "role": ["Refinador"],
+    "title": "refinamento-nuf-test",
+    "description": "Técnica de refinamento NUF Test.",
+    "content": {
+      "theory": "A técnica NUF Test ajuda a filtrar ideias focando em Teste NUF (New, Useful, Feasible)...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando NUF Test"
+      },
+      "template": "Link para planilha de NUF Test"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/nuf-test",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "NUF", "avaliação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_006",
+    "role": ["Refinador"],
+    "title": "refinamento-co-star",
+    "description": "Técnica de refinamento CO-STAR.",
+    "content": {
+      "theory": "A técnica CO-STAR ajuda a filtrar ideias focando em CO-STAR (Customer, Opportunity, Solution, Team, Advantage, Results)...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando CO-STAR"
+      },
+      "template": "Link para planilha de CO-STAR"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/co-star",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "CO-STAR", "pitch"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_007",
+    "role": ["Refinador"],
+    "title": "refinamento-idea-selection-matrix",
+    "description": "Técnica de refinamento Idea Selection Matrix.",
+    "content": {
+      "theory": "A técnica Idea Selection Matrix ajuda a filtrar ideias focando em Matriz de Seleção de Ideias...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Idea Selection Matrix"
+      },
+      "template": "Link para planilha de Idea Selection Matrix"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/idea-selection-matrix",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "matriz", "seleção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_008",
+    "role": ["Refinador"],
+    "title": "refinamento-pros-and-cons",
+    "description": "Técnica de refinamento Pros and Cons.",
+    "content": {
+      "theory": "A técnica Pros and Cons ajuda a filtrar ideias focando em Prós e Contras...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Pros and Cons"
+      },
+      "template": "Link para planilha de Pros and Cons"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pros-and-cons",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "prós e contras", "análise"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_009",
+    "role": ["Refinador"],
+    "title": "refinamento-swot-analysis",
+    "description": "Técnica de refinamento SWOT Analysis.",
+    "content": {
+      "theory": "A técnica SWOT Analysis ajuda a filtrar ideias focando em Análise SWOT...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando SWOT Analysis"
+      },
+      "template": "Link para planilha de SWOT Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/swot-analysis",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "SWOT", "estratégia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_010",
+    "role": ["Refinador"],
+    "title": "refinamento-risk-assessment",
+    "description": "Técnica de refinamento Risk Assessment.",
+    "content": {
+      "theory": "A técnica Risk Assessment ajuda a filtrar ideias focando em Avaliação de Riscos...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Risk Assessment"
+      },
+      "template": "Link para planilha de Risk Assessment"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/risk-assessment",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "riscos", "mitigação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_011",
+    "role": ["Refinador"],
+    "title": "refinamento-feasibility-study",
+    "description": "Técnica de refinamento Feasibility Study.",
+    "content": {
+      "theory": "A técnica Feasibility Study ajuda a filtrar ideias focando em Estudo de Viabilidade...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Feasibility Study"
+      },
+      "template": "Link para planilha de Feasibility Study"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/feasibility-study",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "viabilidade", "técnica"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_012",
+    "role": ["Refinador"],
+    "title": "refinamento-user-feedback",
+    "description": "Técnica de refinamento User Feedback.",
+    "content": {
+      "theory": "A técnica User Feedback ajuda a filtrar ideias focando em Feedback de Usuários...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando User Feedback"
+      },
+      "template": "Link para planilha de User Feedback"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-feedback",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "feedback", "validação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_013",
+    "role": ["Refinador"],
+    "title": "refinamento-ab-testing-concepts",
+    "description": "Técnica de refinamento A/B Testing Concepts.",
+    "content": {
+      "theory": "A técnica A/B Testing Concepts ajuda a filtrar ideias focando em Testes A/B de Conceitos...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando A/B Testing Concepts"
+      },
+      "template": "Link para planilha de A/B Testing Concepts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ab-testing-concepts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "A/B", "validação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_014",
+    "role": ["Refinador"],
+    "title": "refinamento-prototyping-for-validation",
+    "description": "Técnica de refinamento Prototyping for Validation.",
+    "content": {
+      "theory": "A técnica Prototyping for Validation ajuda a filtrar ideias focando em Prototipação para Validação...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Prototyping for Validation"
+      },
+      "template": "Link para planilha de Prototyping for Validation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/prototyping-for-validation",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "protótipo", "teste"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_FILT_015",
+    "role": ["Refinador"],
+    "title": "refinamento-business-case-development",
+    "description": "Técnica de refinamento Business Case Development.",
+    "content": {
+      "theory": "A técnica Business Case Development ajuda a filtrar ideias focando em Desenvolvimento de Business Case...",
+      "practical_example": {
+        "scenario": "Seleção das melhores ideias",
+        "input": ["Lista de ideias brutas"],
+        "output": "Ideias priorizadas usando Business Case Development"
+      },
+      "template": "Link para planilha de Business Case Development"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/business-case-development",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "business case", "ROI"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_001",
+    "role": ["Refinador"],
+    "title": "inovacao-disruptive-innovation",
+    "description": "Conceito de inovação Disruptive Innovation.",
+    "content": {
+      "theory": "O conceito Disruptive Innovation explora Inovação Disruptiva...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Disruptive Innovation"
+      },
+      "template": "Link para guia de Disruptive Innovation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/disruptive-innovation",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "disruptiva", "mercado"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_002",
+    "role": ["Refinador"],
+    "title": "inovacao-incremental-innovation",
+    "description": "Conceito de inovação Incremental Innovation.",
+    "content": {
+      "theory": "O conceito Incremental Innovation explora Inovação Incremental...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Incremental Innovation"
+      },
+      "template": "Link para guia de Incremental Innovation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/incremental-innovation",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "incremental", "melhoria"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_003",
+    "role": ["Refinador"],
+    "title": "inovacao-blue-ocean-strategy",
+    "description": "Conceito de inovação Blue Ocean Strategy.",
+    "content": {
+      "theory": "O conceito Blue Ocean Strategy explora Estratégia do Oceano Azul...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Blue Ocean Strategy"
+      },
+      "template": "Link para guia de Blue Ocean Strategy"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/blue-ocean-strategy",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "oceano azul", "concorrência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_004",
+    "role": ["Refinador"],
+    "title": "inovacao-design-thinking",
+    "description": "Conceito de inovação Design Thinking.",
+    "content": {
+      "theory": "O conceito Design Thinking explora Design Thinking...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Design Thinking"
+      },
+      "template": "Link para guia de Design Thinking"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-thinking",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "design thinking", "empatia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_005",
+    "role": ["Refinador"],
+    "title": "inovacao-lean-startup",
+    "description": "Conceito de inovação Lean Startup.",
+    "content": {
+      "theory": "O conceito Lean Startup explora Startup Enxuta...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Lean Startup"
+      },
+      "template": "Link para guia de Lean Startup"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-startup",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "lean", "MVP"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_006",
+    "role": ["Refinador"],
+    "title": "inovacao-open-innovation",
+    "description": "Conceito de inovação Open Innovation.",
+    "content": {
+      "theory": "O conceito Open Innovation explora Inovação Aberta...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Open Innovation"
+      },
+      "template": "Link para guia de Open Innovation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/open-innovation",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "aberta", "colaboração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_007",
+    "role": ["Refinador"],
+    "title": "inovacao-trend-analysis",
+    "description": "Conceito de inovação Trend Analysis.",
+    "content": {
+      "theory": "O conceito Trend Analysis explora Análise de Tendências...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Trend Analysis"
+      },
+      "template": "Link para guia de Trend Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/trend-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "tendências", "futuro"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_008",
+    "role": ["Refinador"],
+    "title": "inovacao-technology-scouting",
+    "description": "Conceito de inovação Technology Scouting.",
+    "content": {
+      "theory": "O conceito Technology Scouting explora Prospecção Tecnológica...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Technology Scouting"
+      },
+      "template": "Link para guia de Technology Scouting"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/technology-scouting",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "tecnologia", "scouting"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_009",
+    "role": ["Refinador"],
+    "title": "inovacao-hackathons",
+    "description": "Conceito de inovação Hackathons.",
+    "content": {
+      "theory": "O conceito Hackathons explora Hackathons...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Hackathons"
+      },
+      "template": "Link para guia de Hackathons"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/hackathons",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "hackathon", "evento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_INNOV_010",
+    "role": ["Refinador"],
+    "title": "inovacao-innovation-labs",
+    "description": "Conceito de inovação Innovation Labs.",
+    "content": {
+      "theory": "O conceito Innovation Labs explora Laboratórios de Inovação...",
+      "practical_example": {
+        "scenario": "Busca por novos mercados",
+        "input": ["Análise da concorrência"],
+        "output": "Estratégia baseada em Innovation Labs"
+      },
+      "template": "Link para guia de Innovation Labs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/innovation-labs",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["inovação", "labs", "experimentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_001",
+    "role": ["Refinador"],
+    "title": "pitch-elevator-pitch",
+    "description": "Técnica de comunicação Elevator Pitch.",
+    "content": {
+      "theory": "A técnica Elevator Pitch é usada para comunicar Discurso de Elevador...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Elevator Pitch"
+      },
+      "template": "Link para template de Elevator Pitch"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/elevator-pitch",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "comunicação", "resumo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_002",
+    "role": ["Refinador"],
+    "title": "pitch-storytelling",
+    "description": "Técnica de comunicação Storytelling.",
+    "content": {
+      "theory": "A técnica Storytelling é usada para comunicar Storytelling...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Storytelling"
+      },
+      "template": "Link para template de Storytelling"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/storytelling",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "storytelling", "narrativa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_003",
+    "role": ["Refinador"],
+    "title": "pitch-pitch-deck-structure",
+    "description": "Técnica de comunicação Pitch Deck Structure.",
+    "content": {
+      "theory": "A técnica Pitch Deck Structure é usada para comunicar Estrutura de Pitch Deck...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Pitch Deck Structure"
+      },
+      "template": "Link para template de Pitch Deck Structure"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pitch-deck-structure",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "deck", "apresentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_004",
+    "role": ["Refinador"],
+    "title": "pitch-value-proposition",
+    "description": "Técnica de comunicação Value Proposition.",
+    "content": {
+      "theory": "A técnica Value Proposition é usada para comunicar Proposta de Valor...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Value Proposition"
+      },
+      "template": "Link para template de Value Proposition"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/value-proposition",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "valor", "benefício"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_005",
+    "role": ["Refinador"],
+    "title": "pitch-vision-statement",
+    "description": "Técnica de comunicação Vision Statement.",
+    "content": {
+      "theory": "A técnica Vision Statement é usada para comunicar Declaração de Visão...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Vision Statement"
+      },
+      "template": "Link para template de Vision Statement"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/vision-statement",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "visão", "futuro"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_006",
+    "role": ["Refinador"],
+    "title": "pitch-mission-statement",
+    "description": "Técnica de comunicação Mission Statement.",
+    "content": {
+      "theory": "A técnica Mission Statement é usada para comunicar Declaração de Missão...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Mission Statement"
+      },
+      "template": "Link para template de Mission Statement"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mission-statement",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "missão", "propósito"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_007",
+    "role": ["Refinador"],
+    "title": "pitch-concept-video",
+    "description": "Técnica de comunicação Concept Video.",
+    "content": {
+      "theory": "A técnica Concept Video é usada para comunicar Vídeo Conceito...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Concept Video"
+      },
+      "template": "Link para template de Concept Video"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/concept-video",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "vídeo", "demonstração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_008",
+    "role": ["Refinador"],
+    "title": "pitch-mock-press-release",
+    "description": "Técnica de comunicação Mock Press Release.",
+    "content": {
+      "theory": "A técnica Mock Press Release é usada para comunicar Press Release Falso (Amazon Style)...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Mock Press Release"
+      },
+      "template": "Link para template de Mock Press Release"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mock-press-release",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "press release", "visão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_009",
+    "role": ["Refinador"],
+    "title": "pitch-one-pager",
+    "description": "Técnica de comunicação One Pager.",
+    "content": {
+      "theory": "A técnica One Pager é usada para comunicar One Pager...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando One Pager"
+      },
+      "template": "Link para template de One Pager"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/one-pager",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "resumo", "documento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "REF_PITCH_010",
+    "role": ["Refinador"],
+    "title": "pitch-stakeholder-presentation",
+    "description": "Técnica de comunicação Stakeholder Presentation.",
+    "content": {
+      "theory": "A técnica Stakeholder Presentation é usada para comunicar Apresentação para Stakeholders...",
+      "practical_example": {
+        "scenario": "Apresentação de nova ideia",
+        "input": ["Conceito refinado"],
+        "output": "Material usando Stakeholder Presentation"
+      },
+      "template": "Link para template de Stakeholder Presentation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/stakeholder-presentation",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "stakeholders", "alinhamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

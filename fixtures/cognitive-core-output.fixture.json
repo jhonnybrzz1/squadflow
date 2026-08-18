@@ -1,0 +1,53 @@
+{
+  "demandId": 10154,
+  "classification": {
+    "type": "security",
+    "category": "legal",
+    "confidence": 62
+  },
+  "constraints": [
+    {
+      "name": "max_effort_days",
+      "severity": "high",
+      "description": "Esforço máximo: 5 dias"
+    },
+    {
+      "name": "allowed_technologies",
+      "severity": "medium",
+      "description": "Tecnologias permitidas: React, TypeScript, Express, Python, SQLite, OpenAI"
+    },
+    {
+      "name": "type_requirements",
+      "severity": "medium",
+      "description": "Requisitos: Seção Segurança, Compliance e Riscos de Dados, Threat and vulnerability assessment, LGPD and compliance impact, Data risks and mitigations with validation criteria"
+    }
+  ],
+  "specialists": [
+    {
+      "agentId": "product_owner",
+      "role": "product_owner",
+      "priority": 1
+    },
+    {
+      "agentId": "security_specialist",
+      "role": "security_specialist",
+      "priority": 2
+    },
+    {
+      "agentId": "tech_lead",
+      "role": "tech_lead",
+      "priority": 3
+    },
+    {
+      "agentId": "qa",
+      "role": "qa",
+      "priority": 4
+    }
+  ],
+  "framework": "security",
+  "numericFields": {
+    "maxEffortDays": 5,
+    "maxRounds": 3,
+    "confidence": 62
+  }
+}

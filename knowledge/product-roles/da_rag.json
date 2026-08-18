@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "DA_SQL_001",
+    "role": ["Data Analyst"],
+    "title": "sql-window-functions",
+    "description": "Conceito/Técnica Window Functions em SQL.",
+    "content": {
+      "theory": "A técnica Window Functions é usada para Funções de Janela...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Window Functions"
+      },
+      "template": "Link para snippet de Window Functions"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/window-functions",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "window functions", "análise"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_002",
+    "role": ["Data Analyst"],
+    "title": "sql-ctes-common-table-expressions",
+    "description": "Conceito/Técnica CTEs (Common Table Expressions) em SQL.",
+    "content": {
+      "theory": "A técnica CTEs (Common Table Expressions) é usada para Expressões de Tabela Comuns...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando CTEs (Common Table Expressions)"
+      },
+      "template": "Link para snippet de CTEs (Common Table Expressions)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ctes-common-table-expressions",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "CTE", "legibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_003",
+    "role": ["Data Analyst"],
+    "title": "sql-joins-inner-left-right-full",
+    "description": "Conceito/Técnica Joins (Inner, Left, Right, Full) em SQL.",
+    "content": {
+      "theory": "A técnica Joins (Inner, Left, Right, Full) é usada para Tipos de Joins...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Joins (Inner, Left, Right, Full)"
+      },
+      "template": "Link para snippet de Joins (Inner, Left, Right, Full)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/joins-inner-left-right-full",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "joins", "relacionamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_004",
+    "role": ["Data Analyst"],
+    "title": "sql-aggregations-group-by",
+    "description": "Conceito/Técnica Aggregations (GROUP BY) em SQL.",
+    "content": {
+      "theory": "A técnica Aggregations (GROUP BY) é usada para Agregações...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Aggregations (GROUP BY)"
+      },
+      "template": "Link para snippet de Aggregations (GROUP BY)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/aggregations-group-by",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "group by", "resumo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_005",
+    "role": ["Data Analyst"],
+    "title": "sql-subqueries",
+    "description": "Conceito/Técnica Subqueries em SQL.",
+    "content": {
+      "theory": "A técnica Subqueries é usada para Subconsultas...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Subqueries"
+      },
+      "template": "Link para snippet de Subqueries"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/subqueries",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "subqueries", "aninhamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_006",
+    "role": ["Data Analyst"],
+    "title": "sql-indexing",
+    "description": "Conceito/Técnica Indexing em SQL.",
+    "content": {
+      "theory": "A técnica Indexing é usada para Indexação...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Indexing"
+      },
+      "template": "Link para snippet de Indexing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/indexing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "performance", "índices"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_007",
+    "role": ["Data Analyst"],
+    "title": "sql-data-types-optimization",
+    "description": "Conceito/Técnica Data Types Optimization em SQL.",
+    "content": {
+      "theory": "A técnica Data Types Optimization é usada para Otimização de Tipos de Dados...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Data Types Optimization"
+      },
+      "template": "Link para snippet de Data Types Optimization"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-types-optimization",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "performance", "tipos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_008",
+    "role": ["Data Analyst"],
+    "title": "sql-stored-procedures",
+    "description": "Conceito/Técnica Stored Procedures em SQL.",
+    "content": {
+      "theory": "A técnica Stored Procedures é usada para Procedimentos Armazenados...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Stored Procedures"
+      },
+      "template": "Link para snippet de Stored Procedures"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/stored-procedures",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "procedures", "automação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_009",
+    "role": ["Data Analyst"],
+    "title": "sql-views-and-materialized-views",
+    "description": "Conceito/Técnica Views and Materialized Views em SQL.",
+    "content": {
+      "theory": "A técnica Views and Materialized Views é usada para Views e Views Materializadas...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Views and Materialized Views"
+      },
+      "template": "Link para snippet de Views and Materialized Views"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/views-and-materialized-views",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "views", "performance"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_010",
+    "role": ["Data Analyst"],
+    "title": "sql-pivot-and-unpivot",
+    "description": "Conceito/Técnica Pivot and Unpivot em SQL.",
+    "content": {
+      "theory": "A técnica Pivot and Unpivot é usada para Pivot e Unpivot...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Pivot and Unpivot"
+      },
+      "template": "Link para snippet de Pivot and Unpivot"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pivot-and-unpivot",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "pivot", "transformação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_011",
+    "role": ["Data Analyst"],
+    "title": "sql-date-and-time-functions",
+    "description": "Conceito/Técnica Date and Time Functions em SQL.",
+    "content": {
+      "theory": "A técnica Date and Time Functions é usada para Funções de Data e Hora...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Date and Time Functions"
+      },
+      "template": "Link para snippet de Date and Time Functions"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/date-and-time-functions",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "datas", "tempo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_012",
+    "role": ["Data Analyst"],
+    "title": "sql-string-manipulation",
+    "description": "Conceito/Técnica String Manipulation em SQL.",
+    "content": {
+      "theory": "A técnica String Manipulation é usada para Manipulação de Strings...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando String Manipulation"
+      },
+      "template": "Link para snippet de String Manipulation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/string-manipulation",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "strings", "texto"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_013",
+    "role": ["Data Analyst"],
+    "title": "sql-json-handling-in-sql",
+    "description": "Conceito/Técnica JSON Handling in SQL em SQL.",
+    "content": {
+      "theory": "A técnica JSON Handling in SQL é usada para Manipulação de JSON...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando JSON Handling in SQL"
+      },
+      "template": "Link para snippet de JSON Handling in SQL"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/json-handling-in-sql",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "JSON", "semi-estruturado"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_014",
+    "role": ["Data Analyst"],
+    "title": "sql-query-execution-plan",
+    "description": "Conceito/Técnica Query Execution Plan em SQL.",
+    "content": {
+      "theory": "A técnica Query Execution Plan é usada para Plano de Execução de Consulta...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Query Execution Plan"
+      },
+      "template": "Link para snippet de Query Execution Plan"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/query-execution-plan",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["SQL", "performance", "explain"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_SQL_015",
+    "role": ["Data Analyst"],
+    "title": "sql-data-warehousing-concepts",
+    "description": "Conceito/Técnica Data Warehousing Concepts em SQL.",
+    "content": {
+      "theory": "A técnica Data Warehousing Concepts é usada para Conceitos de Data Warehouse...",
+      "practical_example": {
+        "scenario": "Análise de dados complexa",
+        "input": ["Tabelas de banco de dados"],
+        "output": "Query SQL usando Data Warehousing Concepts"
+      },
+      "template": "Link para snippet de Data Warehousing Concepts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-warehousing-concepts",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["dados", "DW", "modelagem"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_001",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-bar-charts-vs-column-charts",
+    "description": "Técnica de visualização Bar Charts vs Column Charts.",
+    "content": {
+      "theory": "A visualização Bar Charts vs Column Charts é ideal para Gráficos de Barras vs Colunas...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Bar Charts vs Column Charts"
+      },
+      "template": "Link para template de Bar Charts vs Column Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/bar-charts-vs-column-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "barras", "colunas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_002",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-line-charts",
+    "description": "Técnica de visualização Line Charts.",
+    "content": {
+      "theory": "A visualização Line Charts é ideal para Gráficos de Linha...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Line Charts"
+      },
+      "template": "Link para template de Line Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/line-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "linha", "tempo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_003",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-pie-charts-and-donut-charts",
+    "description": "Técnica de visualização Pie Charts and Donut Charts.",
+    "content": {
+      "theory": "A visualização Pie Charts and Donut Charts é ideal para Gráficos de Pizza e Rosca...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Pie Charts and Donut Charts"
+      },
+      "template": "Link para template de Pie Charts and Donut Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pie-charts-and-donut-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "pizza", "proporção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_004",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-scatter-plots",
+    "description": "Técnica de visualização Scatter Plots.",
+    "content": {
+      "theory": "A visualização Scatter Plots é ideal para Gráficos de Dispersão...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Scatter Plots"
+      },
+      "template": "Link para template de Scatter Plots"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/scatter-plots",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "dispersão", "correlação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_005",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-heatmaps",
+    "description": "Técnica de visualização Heatmaps.",
+    "content": {
+      "theory": "A visualização Heatmaps é ideal para Mapas de Calor...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Heatmaps"
+      },
+      "template": "Link para template de Heatmaps"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/heatmaps",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "heatmap", "densidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_006",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-histograms",
+    "description": "Técnica de visualização Histograms.",
+    "content": {
+      "theory": "A visualização Histograms é ideal para Histogramas...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Histograms"
+      },
+      "template": "Link para template de Histograms"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/histograms",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "histograma", "distribuição"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_007",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-box-plots",
+    "description": "Técnica de visualização Box Plots.",
+    "content": {
+      "theory": "A visualização Box Plots é ideal para Box Plots...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Box Plots"
+      },
+      "template": "Link para template de Box Plots"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/box-plots",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "box plot", "outliers"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_008",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-funnel-charts",
+    "description": "Técnica de visualização Funnel Charts.",
+    "content": {
+      "theory": "A visualização Funnel Charts é ideal para Gráficos de Funil...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Funnel Charts"
+      },
+      "template": "Link para template de Funnel Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/funnel-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "funil", "conversão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_009",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-waterfall-charts",
+    "description": "Técnica de visualização Waterfall Charts.",
+    "content": {
+      "theory": "A visualização Waterfall Charts é ideal para Gráficos de Cascata...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Waterfall Charts"
+      },
+      "template": "Link para template de Waterfall Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/waterfall-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "waterfall", "finanças"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_010",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-gauge-charts",
+    "description": "Técnica de visualização Gauge Charts.",
+    "content": {
+      "theory": "A visualização Gauge Charts é ideal para Gráficos de Velocímetro...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Gauge Charts"
+      },
+      "template": "Link para template de Gauge Charts"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/gauge-charts",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "gauge", "meta"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_011",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-dashboard-design-principles",
+    "description": "Técnica de visualização Dashboard Design Principles.",
+    "content": {
+      "theory": "A visualização Dashboard Design Principles é ideal para Princípios de Design de Dashboards...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Dashboard Design Principles"
+      },
+      "template": "Link para template de Dashboard Design Principles"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dashboard-design-principles",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "dashboard", "design"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_012",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-data-storytelling",
+    "description": "Técnica de visualização Data Storytelling.",
+    "content": {
+      "theory": "A visualização Data Storytelling é ideal para Storytelling com Dados...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Data Storytelling"
+      },
+      "template": "Link para template de Data Storytelling"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-storytelling",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "storytelling", "narrativa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_013",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-color-palettes-for-data",
+    "description": "Técnica de visualização Color Palettes for Data.",
+    "content": {
+      "theory": "A visualização Color Palettes for Data é ideal para Paletas de Cores para Dados...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Color Palettes for Data"
+      },
+      "template": "Link para template de Color Palettes for Data"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/color-palettes-for-data",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "cores", "acessibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_014",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-interactive-dashboards",
+    "description": "Técnica de visualização Interactive Dashboards.",
+    "content": {
+      "theory": "A visualização Interactive Dashboards é ideal para Dashboards Interativos...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Interactive Dashboards"
+      },
+      "template": "Link para template de Interactive Dashboards"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/interactive-dashboards",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "interatividade", "filtros"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_VIZ_015",
+    "role": ["Data Analyst"],
+    "title": "visualizacao-tableaupower-bi-best-practices",
+    "description": "Técnica de visualização Tableau/Power BI Best Practices.",
+    "content": {
+      "theory": "A visualização Tableau/Power BI Best Practices é ideal para Boas Práticas em Ferramentas de BI...",
+      "practical_example": {
+        "scenario": "Criação de relatório executivo",
+        "input": ["Dados agregados"],
+        "output": "Gráfico/Dashboard de Tableau/Power BI Best Practices"
+      },
+      "template": "Link para template de Tableau/Power BI Best Practices"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/tableaupower-bi-best-practices",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["visualização", "BI", "Tableau", "Power BI"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_001",
+    "role": ["Data Analyst"],
+    "title": "estatistica-descriptive-statistics",
+    "description": "Conceito estatístico Descriptive Statistics.",
+    "content": {
+      "theory": "O conceito Descriptive Statistics trata de Estatística Descritiva...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Descriptive Statistics"
+      },
+      "template": "Link para script Python/R de Descriptive Statistics"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/descriptive-statistics",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "descritiva", "resumo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_002",
+    "role": ["Data Analyst"],
+    "title": "estatistica-inferential-statistics",
+    "description": "Conceito estatístico Inferential Statistics.",
+    "content": {
+      "theory": "O conceito Inferential Statistics trata de Estatística Inferencial...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Inferential Statistics"
+      },
+      "template": "Link para script Python/R de Inferential Statistics"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/inferential-statistics",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "inferencial", "população"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_003",
+    "role": ["Data Analyst"],
+    "title": "estatistica-hypothesis-testing",
+    "description": "Conceito estatístico Hypothesis Testing.",
+    "content": {
+      "theory": "O conceito Hypothesis Testing trata de Teste de Hipóteses...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Hypothesis Testing"
+      },
+      "template": "Link para script Python/R de Hypothesis Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/hypothesis-testing",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "hipóteses", "p-value"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_004",
+    "role": ["Data Analyst"],
+    "title": "estatistica-a/b-testing-analysis",
+    "description": "Conceito estatístico A/B Testing Analysis.",
+    "content": {
+      "theory": "O conceito A/B Testing Analysis trata de Análise de Testes A/B...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da A/B Testing Analysis"
+      },
+      "template": "Link para script Python/R de A/B Testing Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/a/b-testing-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "A/B", "significância"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_005",
+    "role": ["Data Analyst"],
+    "title": "estatistica-correlation-vs-causation",
+    "description": "Conceito estatístico Correlation vs Causation.",
+    "content": {
+      "theory": "O conceito Correlation vs Causation trata de Correlação vs Causalidade...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Correlation vs Causation"
+      },
+      "template": "Link para script Python/R de Correlation vs Causation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/correlation-vs-causation",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "correlação", "causalidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_006",
+    "role": ["Data Analyst"],
+    "title": "estatistica-regression-analysis",
+    "description": "Conceito estatístico Regression Analysis.",
+    "content": {
+      "theory": "O conceito Regression Analysis trata de Análise de Regressão...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Regression Analysis"
+      },
+      "template": "Link para script Python/R de Regression Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/regression-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "regressão", "previsão"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_007",
+    "role": ["Data Analyst"],
+    "title": "estatistica-time-series-analysis",
+    "description": "Conceito estatístico Time Series Analysis.",
+    "content": {
+      "theory": "O conceito Time Series Analysis trata de Análise de Séries Temporais...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Time Series Analysis"
+      },
+      "template": "Link para script Python/R de Time Series Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/time-series-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "tempo", "tendências"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_008",
+    "role": ["Data Analyst"],
+    "title": "estatistica-cohort-analysis",
+    "description": "Conceito estatístico Cohort Analysis.",
+    "content": {
+      "theory": "O conceito Cohort Analysis trata de Análise de Cohort...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Cohort Analysis"
+      },
+      "template": "Link para script Python/R de Cohort Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cohort-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["análise", "cohort", "retenção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_009",
+    "role": ["Data Analyst"],
+    "title": "estatistica-rfm-analysis",
+    "description": "Conceito estatístico RFM Analysis.",
+    "content": {
+      "theory": "O conceito RFM Analysis trata de Análise RFM (Recency, Frequency, Monetary)...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da RFM Analysis"
+      },
+      "template": "Link para script Python/R de RFM Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/rfm-analysis",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["análise", "RFM", "segmentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_STAT_010",
+    "role": ["Data Analyst"],
+    "title": "estatistica-outlier-detection",
+    "description": "Conceito estatístico Outlier Detection.",
+    "content": {
+      "theory": "O conceito Outlier Detection trata de Detecção de Outliers...",
+      "practical_example": {
+        "scenario": "Análise de comportamento do usuário",
+        "input": ["Dados brutos"],
+        "output": "Resultados da Outlier Detection"
+      },
+      "template": "Link para script Python/R de Outlier Detection"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/outlier-detection",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["estatística", "outliers", "anomalias"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_001",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-python-for-data-analysis-pandas",
+    "description": "Ferramenta/Processo Python for Data Analysis (Pandas).",
+    "content": {
+      "theory": "A ferramenta/processo Python for Data Analysis (Pandas) é essencial para Python para Análise de Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Python for Data Analysis (Pandas)"
+      },
+      "template": "Link para documentação de Python for Data Analysis (Pandas)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/python-for-data-analysis-pandas",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["ferramentas", "Python", "Pandas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_002",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-r-for-statistical-analysis",
+    "description": "Ferramenta/Processo R for Statistical Analysis.",
+    "content": {
+      "theory": "A ferramenta/processo R for Statistical Analysis é essencial para R para Análise Estatística...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de R for Statistical Analysis"
+      },
+      "template": "Link para documentação de R for Statistical Analysis"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/r-for-statistical-analysis",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["ferramentas", "R", "estatística"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_003",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-jupyter-notebooks",
+    "description": "Ferramenta/Processo Jupyter Notebooks.",
+    "content": {
+      "theory": "A ferramenta/processo Jupyter Notebooks é essencial para Jupyter Notebooks...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Jupyter Notebooks"
+      },
+      "template": "Link para documentação de Jupyter Notebooks"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/jupyter-notebooks",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["ferramentas", "Jupyter", "documentação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_004",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-etl-processes",
+    "description": "Ferramenta/Processo ETL Processes.",
+    "content": {
+      "theory": "A ferramenta/processo ETL Processes é essencial para Processos ETL (Extract, Transform, Load)...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de ETL Processes"
+      },
+      "template": "Link para documentação de ETL Processes"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/etl-processes",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "ETL", "dados"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_005",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-data-cleaning-techniques",
+    "description": "Ferramenta/Processo Data Cleaning Techniques.",
+    "content": {
+      "theory": "A ferramenta/processo Data Cleaning Techniques é essencial para Técnicas de Limpeza de Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Data Cleaning Techniques"
+      },
+      "template": "Link para documentação de Data Cleaning Techniques"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-cleaning-techniques",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "limpeza", "qualidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_006",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-data-governance",
+    "description": "Ferramenta/Processo Data Governance.",
+    "content": {
+      "theory": "A ferramenta/processo Data Governance é essencial para Governança de Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Data Governance"
+      },
+      "template": "Link para documentação de Data Governance"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-governance",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "governança", "segurança"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_007",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-data-privacy-gdprlgpd",
+    "description": "Ferramenta/Processo Data Privacy (GDPR/LGPD).",
+    "content": {
+      "theory": "A ferramenta/processo Data Privacy (GDPR/LGPD) é essencial para Privacidade de Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Data Privacy (GDPR/LGPD)"
+      },
+      "template": "Link para documentação de Data Privacy (GDPR/LGPD)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-privacy-gdprlgpd",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "privacidade", "LGPD"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_008",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-version-control-for-data-dvc",
+    "description": "Ferramenta/Processo Version Control for Data (DVC).",
+    "content": {
+      "theory": "A ferramenta/processo Version Control for Data (DVC) é essencial para Controle de Versão para Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Version Control for Data (DVC)"
+      },
+      "template": "Link para documentação de Version Control for Data (DVC)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/version-control-for-data-dvc",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["ferramentas", "DVC", "versionamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_009",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-data-cataloging",
+    "description": "Ferramenta/Processo Data Cataloging.",
+    "content": {
+      "theory": "A ferramenta/processo Data Cataloging é essencial para Catalogação de Dados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Data Cataloging"
+      },
+      "template": "Link para documentação de Data Cataloging"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/data-cataloging",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "catálogo", "metadados"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "DA_TOOL_010",
+    "role": ["Data Analyst"],
+    "title": "ferramenta-automated-reporting",
+    "description": "Ferramenta/Processo Automated Reporting.",
+    "content": {
+      "theory": "A ferramenta/processo Automated Reporting é essencial para Relatórios Automatizados...",
+      "practical_example": {
+        "scenario": "Pipeline de dados",
+        "input": ["Fontes de dados"],
+        "output": "Implementação de Automated Reporting"
+      },
+      "template": "Link para documentação de Automated Reporting"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/automated-reporting",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["processos", "automação", "relatórios"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

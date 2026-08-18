@@ -1,0 +1,16 @@
+{
+  "id": "product_manager-visibilidade-status-001",
+  "agent": "product_manager",
+  "demand": {
+    "title": "Visibilidade de status da demanda",
+    "description": "A operação perde visibilidade quando uma demanda fica sem status claro; falta um sinal simples de andamento e bloqueio.",
+    "type": "feature"
+  },
+  "context": "Último a falar antes do Scrum Master fatiar. Squad já levantou que status não é propagado para o frontend. Sem baseline de pedidos manuais de status.",
+  "evidence": "server/services/ai-squad.ts linha 225 — status não é propagado para o frontend; commit a80b1ee (branch main).",
+  "validOutput": "**Análise:** A operação perde visibilidade quando uma demanda fica sem status claro.\n**Problema Identificado:** Falta um sinal simples de andamento e bloqueio.\n**Impacto:** O time gasta tempo pedindo atualização e aumenta risco de retrabalho.\n**Recomendação:** Priorizar uma visão com status, último avanço e próximo responsável; deixar automações avançadas fora desta fase.\n**ROI:** Estimativa pendente de dados\n**Esforço:** 7 dias (baseado na complexidade: 3d visão + 2d automação + 2d validação)\n**Prioridade:** Importante\n**Evidência no código:** server/services/ai-squad.ts linha 225 - status não é propagado para o frontend\n**Referência:** commit a80b1ee (branch main)\n**Métricas de Sucesso:** Redução de pedidos manuais de status; tempo até identificar bloqueio; satisfação da operação.\n**Riscos:** Status desatualizado pode gerar falsa confiança; reduzir com data da última atualização.\n**Premissas e Pontos em Aberto:** Não há baseline de pedidos manuais informado.",
+  "rejectedOutput": "\"Implementar uma plataforma robusta com arquitetura escalável.\" Isso é técnico, amplo e não explica decisão de negócio. \"A métrica é o NPS.\" Isso é genérico e não diz qual decisão o NPS informa.",
+  "rationale": "A saída válida traduz a demanda para valor de negócio (problema, impacto, decisão), delimita escopo (\"deixar automações fora desta fase\"), respeita a integridade numérica (\"Estimativa pendente de dados\") e ancora em evidência de código. A rejeitada é jargão técnico amplo e métrica de vaidade sem decisão associada — não cumpre o contrato business.",
+  "split": "holdout",
+  "tags": ["product_manager", "prd", "valor-de-negocio", "escopo", "integridade-numerica"]
+}

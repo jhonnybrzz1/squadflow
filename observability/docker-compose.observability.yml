@@ -1,0 +1,78 @@
+# Stack de observabilidade local — AiChatFlow
+#
+# 3 containers que dão um backend para o sinal que a app JÁ emite:
+#   - tempo       → recebe OTLP em :4318 (fim do dryRun do trace-exporter)
+#   - prometheus  → scrapeia /metrics + avalia os 8 alertas (alerts.yml)
+#   - grafana     → dashboards + exploração de traces (datasources já provisionados)
+#
+# A app NÃO roda neste compose — ela continua no host (node dist/index.js ou npm run dev).
+# Por isso prometheus/grafana usam host.docker.internal para alcançar localhost:5000.
+#
+# Uso:
+#   docker compose -f observability/docker-compose.observability.yml up -d
+#   Grafana   → http://localhost:3000  (admin / admin)
+#   Prometheus→ http://localhost:9090  (alertas em Status > Rules)
+#   Tempo UI  → http://localhost:3200
+#
+# Para a app enviar traces, basta o default OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
+# (Tempo está exposto na porta 4318 do host). Zero mudança de código.
+
+services:
+  tempo:
+    image: grafana/tempo:2.6.0
+    command: ['-config.file=/etc/tempo/tempo-config.yaml']
+    volumes:
+      - ./tempo/tempo-config.yaml:/etc/tempo/tempo-config.yaml:ro
+      - tempo-data:/var/tempo
+    ports:
+      # OTLP HTTP receiver — a app posta em http://localhost:4318/v1/traces
+      - '4318:4318'
+      # OTLP gRPC (opcional, para futura instrumentação nativa OTel SDK)
+      - '4317:4317'
+      # Tempo UI / query API (usado pelo Grafana datasource)
+      - '3200:3200'
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/alerts.yml:/etc/prometheus/alerts.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=15d'
+      - '--web.enable-lifecycle'
+      # Necessário para armazenar exemplars scrapeados do /metrics (OpenMetrics).
+      # Sem esta flag, Prometheus lê os exemplars mas descarta — o link pico→trace não funciona.
+      - '--enable-feature=exemplar-storage'
+    ports:
+      - '9090:9090'
+    extra_hosts:
+      # Linux: host-gateway resolve host.docker.internal. macOS já tem nativo.
+      - 'host.docker.internal:host-gateway'
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/aichatflow-overview.json:/var/lib/grafana/dashboards/aichatflow-overview.json:ro
+      - grafana-data:/var/lib/grafana
+    ports:
+      - '3000:3000'
+    depends_on:
+      - prometheus
+      - tempo
+    restart: unless-stopped
+
+volumes:
+  tempo-data:
+  prometheus-data:
+  grafana-data:

@@ -1,0 +1,16 @@
+{
+  "id": "scrum_master-fatiamento-diagnostico-001",
+  "agent": "scrum_master",
+  "demand": {
+    "title": "Entrega que mistura diagnóstico, ajuste e validação",
+    "description": "A demanda tem objetivo claro, mas junta diagnóstico do problema, implementação do ajuste e validação em uma única entrega, sem checkpoints de decisão.",
+    "type": "melhoria"
+  },
+  "context": "Stack atual mantida. Não há capacidade do time informada. Baseline de dado depende de confirmação do dono com o PO.",
+  "evidence": "Escopo único sem pontos de decisão intermediários.",
+  "validOutput": "**Análise:** A demanda tem objetivo claro, mas mistura diagnóstico, implementação e validação em uma única entrega.\n**Problema Identificado:** Escopo grande sem checkpoints de decisão.\n**Impacto:** A squad pode avançar para implementação antes de confirmar a causa do problema.\n**Recomendação:** Fatiar em 3 etapas: diagnóstico com evidência, ajuste mínimo e validação com métrica definida.\n**Impedimentos:** Decisão — confirmar dono do dado de baseline com PO (1 dia); Capacidade — verificar se analista de dados está disponível na semana 1.\n**Fatiamento:** F1 (2d) diagnóstico com evidência; F2 (2d) ajuste mínimo; F3 (1d) validação com métrica.\n**ROI:** 4:1\n**Esforço:** 5 dias (soma do fatiamento: 2+2+1)\n**Prioridade:** Importante\n**Checklist de Execução:** Planning com hipótese de causa raiz; checkpoint após F1 com critério go/no-go (causa confirmada?); review com métrica antes/depois; pronto quando métrica for coletada e comparada.\n**Premissas:** Não há capacidade do time informada.",
+  "rejectedOutput": "\"Melhorar a comunicação do time.\" Isso não define impedimento, ação, dono ou critério de pronto.",
+  "rationale": "A saída válida fatia por valor testável (não por camada técnica), dá dono e ação mínima a cada impedimento, e define checkpoints com critério go/no-go e definição de pronto observável. A rejeitada é uma intenção vaga sem impedimento, dono ou critério de pronto — não dá para acompanhar.",
+  "split": "holdout",
+  "tags": ["scrum_master", "fatiamento", "impedimentos", "checkpoints", "definicao-de-pronto"]
+}

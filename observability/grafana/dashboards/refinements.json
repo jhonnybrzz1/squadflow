@@ -1,0 +1,75 @@
+{
+  "__inputs": [
+    {
+      "name": "DS_SQLITE",
+      "label": "AiChatFlow SQLite",
+      "description": "Datasource SQLite do AiChatFlow",
+      "type": "datasource",
+      "pluginId": "frser-sqlite-datasource",
+      "pluginName": "SQLite"
+    }
+  ],
+  "title": "AiChatFlow — Refinamentos",
+  "uid": "aichatflow-refinements",
+  "schemaVersion": 39,
+  "version": 1,
+  "editable": true,
+  "time": { "from": "now-7d", "to": "now" },
+  "refresh": "1m",
+  "tags": ["aichatflow", "refinements", "sqlite"],
+  "templating": {
+    "list": [
+      {
+        "name": "DS_SQLITE",
+        "type": "datasource",
+        "query": "frser-sqlite-datasource",
+        "label": "SQLite",
+        "includeAll": false,
+        "current": { "text": "AiChatFlow SQLite", "value": "sqlite" },
+        "hide": 0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Refinamentos por dia",
+      "type": "timeseries",
+      "datasource": { "type": "frser-sqlite-datasource", "uid": "${DS_SQLITE}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "targets": [
+        {
+          "refId": "A",
+          "queryText": "SELECT DATE(created_at / 1000, 'unixepoch') AS time, COUNT(*) AS count FROM refinements GROUP BY time ORDER BY time"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Últimos refinamentos",
+      "type": "table",
+      "datasource": { "type": "frser-sqlite-datasource", "uid": "${DS_SQLITE}" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        {
+          "refId": "A",
+          "queryText": "SELECT session_id, input, output, metadata, created_at FROM refinements ORDER BY created_at DESC LIMIT 20"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Refinamentos por modelo",
+      "type": "piechart",
+      "datasource": { "type": "frser-sqlite-datasource", "uid": "${DS_SQLITE}" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "queryText": "SELECT json_extract(metadata, '$.model') AS modelo, COUNT(*) AS total FROM refinements GROUP BY modelo ORDER BY total DESC"
+        }
+      ]
+    }
+  ]
+}

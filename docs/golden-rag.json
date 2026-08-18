@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "description": "Golden set v2 — sourceKeys reais do DB (refinement_rag_documents). Queries mapeadas a PRD, Tasks e CHAT existentes.",
+  "k": 5,
+  "cases": [
+    {
+      "id": "rag-01",
+      "query": "corrigir matriz de priorização com complexidade real",
+      "relevantSourceKeys": ["PRD_1_v1.md"],
+      "notes": "PRD 1: diagnóstico da matriz de priorização"
+    },
+    {
+      "id": "rag-02",
+      "query": "como o Aichatflow1 acessa repositórios GitHub",
+      "relevantSourceKeys": ["PRD_5_v1.md"],
+      "notes": "PRD 5: acesso a repositórios"
+    },
+    {
+      "id": "rag-03",
+      "query": "integrar protocolo MCP do GitHub no sistema",
+      "relevantSourceKeys": ["PRD_10000_v1.md"],
+      "notes": "PRD 10000: MCP do GitHub"
+    },
+    {
+      "id": "rag-04",
+      "query": "criar agente de prospecção automatizado",
+      "relevantSourceKeys": ["PRD_10002_v1.md"],
+      "notes": "PRD 10002: agente de prospecção"
+    },
+    {
+      "id": "rag-05",
+      "query": "atualização contínua de conhecimento dos agentes",
+      "relevantSourceKeys": ["PRD_10004_v1.md"],
+      "notes": "PRD 10004: atualização de conhecimento"
+    },
+    {
+      "id": "rag-06",
+      "query": "dividir monorepo em repositórios separados",
+      "relevantSourceKeys": ["PRD_10008_v1.md"],
+      "notes": "PRD 10008: divisão do monorepo"
+    },
+    {
+      "id": "rag-07",
+      "query": "posicionamento da Projetos Squad no mercado de agentes de IA",
+      "relevantSourceKeys": ["PRD_3_v1.md"],
+      "notes": "PRD 3: agência de agentes"
+    },
+    {
+      "id": "rag-08",
+      "query": "checklist de execução da matriz de priorização",
+      "relevantSourceKeys": ["Tasks_1_v1.md"],
+      "notes": "Tasks 1: correção da matriz"
+    },
+    {
+      "id": "rag-09",
+      "query": "tarefas para implementar o MCP do GitHub",
+      "relevantSourceKeys": ["Tasks_10000_v1.md"],
+      "notes": "Tasks 10000: spike MCP"
+    },
+    {
+      "id": "rag-10",
+      "query": "checklist de melhoria do monorepo com Turborepo",
+      "relevantSourceKeys": ["Tasks_10008_v1.md"],
+      "notes": "Tasks 10008: Turborepo + guardrail CI"
+    },
+    {
+      "id": "rag-11",
+      "query": "tarefas para agência de agentes",
+      "relevantSourceKeys": ["Tasks_3_v1.md"],
+      "notes": "Tasks 3: agência de agentes"
+    },
+    {
+      "id": "rag-12",
+      "query": "histórico de discussão sobre matriz de priorização",
+      "relevantSourceKeys": ["CHAT_1"],
+      "notes": "CHAT 1: debate sobre priorização"
+    },
+    {
+      "id": "rag-13",
+      "query": "como o time discutiu a agência de agentes",
+      "relevantSourceKeys": ["CHAT_3"],
+      "notes": "CHAT 3: debate sobre agência"
+    },
+    {
+      "id": "rag-14",
+      "query": "debate sobre incluir MCP do GitHub",
+      "relevantSourceKeys": ["CHAT_10000"],
+      "notes": "CHAT 10000: discussão MCP"
+    },
+    {
+      "id": "rag-15",
+      "query": "discussão sobre dividir o repositório AiChatFlow1",
+      "relevantSourceKeys": ["CHAT_10008"],
+      "notes": "CHAT 10008: debate sobre monorepo"
+    },
+    {
+      "id": "rag-16",
+      "query": "decisões técnicas sobre integração GitHub e MCP",
+      "relevantSourceKeys": ["PRD_10000_v1.md", "CHAT_10000"],
+      "notes": "Caso multi-relevante: PRD + CHAT sobre MCP"
+    },
+    {
+      "id": "rag-17",
+      "query": "plano de execução para divisão do monorepo",
+      "relevantSourceKeys": ["PRD_10008_v1.md", "Tasks_10008_v1.md"],
+      "notes": "Caso multi-relevante: PRD + Tasks sobre monorepo"
+    },
+    {
+      "id": "rag-18",
+      "query": "complexidade real versus patamares fixos na priorização",
+      "relevantSourceKeys": ["PRD_1_v1.md", "CHAT_1"],
+      "notes": "Mesmo tema, PRD + chat — testa recall semântico"
+    },
+    {
+      "id": "rag-19",
+      "query": "automatizar commit de artefatos no GitHub",
+      "relevantSourceKeys": ["PRD_5_v1.md"],
+      "notes": "Query técnica sobre o PRD de repositórios"
+    },
+    {
+      "id": "rag-20",
+      "query": "hipótese de agente IA para prospecção de profissionais liberais",
+      "relevantSourceKeys": ["PRD_10002_v1.md", "CHAT_10002"],
+      "notes": "PRD + chat sobre discovery de prospecção"
+    }
+  ]
+}

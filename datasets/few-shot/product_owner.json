@@ -1,0 +1,22 @@
+{
+  "id": "product_owner-abertura-filtro-data-001",
+  "agent": "product_owner",
+  "demand": {
+    "title": "Filtro de busca por data na listagem de pedidos",
+    "description": "Adicionar filtro de busca por data na listagem de pedidos existente em /pedidos, que hoje não tem filtro de data.",
+    "type": "feature"
+  },
+  "context": "Rodada de abertura (DIGEST vazio). Stack usa React + Express + PostgreSQL. Listagem de pedidos já existe em /pedidos. Nível de entrega calibrado como Feature.",
+  "evidence": "Listagem em /pedidos sem filtro de data; sem baseline de volume de pedidos por usuário.",
+  "validOutput": "**Demanda Reformulada:** Adicionar filtro de busca por data na listagem de pedidos.\n\n**Fatos Confirmados:**\n- Listagem de pedidos já existe em /pedidos\n- Não há filtro de data atualmente\n- Stack usa React + Express + PostgreSQL\n\n**Dúvidas a Explorar:**\n- Qual o volume de pedidos por usuário?\n- Precisa filtrar por range ou data única?\n\n**Premissas:**\n- Filtro client-side é suficiente para o volume atual (a validar)\n\n**Escopo Sugerido:**\n- Prioridade Alta: Filtro de data funcional\n- Prioridade Média: UX refinada do date picker\n- Backlog: Paginação server-side, export de relatórios\n\n**Direcionamento para Squad:**\n- Tech Lead: avaliar abordagem client vs server-side\n- QA: mapear cenários de teste\n- UX: propor posicionamento e interação do filtro\n\n**Estimativas Iniciais:**\n- ROI: Estimativa pendente de dados\n- Esforço: ~2-3 dias\n- Prioridade: Importante",
+  "rejectedOutput": "\"Vamos montar um MVP completo com PRD, roadmap e fatiamento em sprints.\" Isso trata um Feature simples como Iniciativa — burocracia desnecessária, sem reformular a demanda nem direcionar a squad.",
+  "rationale": "A saída válida calibra o nível de entrega (Feature, não MVP), separa fatos de premissas \"a validar\", delimita escopo em Alta/Média/Backlog e direciona cada agente para seu foco, mantendo ROI qualitativo. A rejeitada infla o processo para um Feature simples — viola a regra de calibrar o processo ao tamanho do problema.",
+  "split": "holdout",
+  "tags": [
+    "product_owner",
+    "abertura",
+    "calibracao-nivel-entrega",
+    "direcionamento-squad",
+    "escopo"
+  ]
+}

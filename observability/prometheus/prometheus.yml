@@ -1,0 +1,18 @@
+# Config ativa do Prometheus para o stack docker-compose.observability.yml.
+# A app roda no host (porta 5000 por .env.example); do container usamos host.docker.internal.
+# Se a app usar outra porta, defina APP_PORT e ajuste o target abaixo.
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - alerts.yml
+
+scrape_configs:
+  - job_name: aichatflow
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['host.docker.internal:5000']
+        labels:
+          service: aichatflow
+          env: local

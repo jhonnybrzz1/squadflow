@@ -1,0 +1,108 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "react-hooks", "a11y"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_", "caughtErrorsIgnorePattern": "^_" }
+    ],
+    "@typescript-eslint/no-require-imports": "off",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-namespace": "off",
+    "no-useless-escape": "off",
+    "no-control-regex": "off",
+    "no-empty": "off",
+    "no-console": "error",
+    "no-constant-condition": ["error", { "checkLoops": false }],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/immutability": "warn",
+    "react-hooks/purity": "warn",
+    "react-hooks/refs": "warn",
+    "react-hooks/set-state-in-effect": "warn",
+    "react-hooks/static-components": "warn",
+    "react-hooks/incompatible-library": "warn",
+    "react-hooks/preserve-manual-memoization": "warn",
+    "a11y/heading-order": "error"
+  },
+  "overrides": [
+    {
+      "files": ["server/test-*.ts", "server/test-multi-model.ts", "server/test-openai.ts"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["server/vite.ts"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": [
+        "scripts/**/*",
+        "server/evaluation/**/*",
+        "tests/**/*",
+        "client/src/**/*",
+        "fix-imports.ts",
+        "refactor-*.ts",
+        "test-reasoning.js"
+      ],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": [
+        "shared/agent-roles.ts",
+        "shared/demand-types.ts",
+        "server/orchestration-contracts/roundtable.ts",
+        "server/services/form-tools.ts",
+        "server/cognitive-core/agent-orchestrator.ts",
+        "tests/shared/agent-roles-consistency.test.ts"
+      ],
+      "rules": {
+        "no-restricted-syntax": [
+          "error",
+          {
+            "selector": "Literal[value=/^(product_owner|product_manager|scrum_master|tech_lead|qa|architect|analista_de_dados|security_specialist|ux|anti_overengineering|financial_analyst|devops|pm_innovation)$/]",
+            "message": "Use AgentRole enum instead of agent role magic string. Mark logs/telemetry with // eslint-disable-next-line no-restricted-syntax and a TODO if migration is not feasible in this scope."
+          }
+        ]
+      }
+    }
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/",
+    "client/dist/",
+    "*.md",
+    "agents/templates/",
+    "knowledge/",
+    "onboarding-service-vision/",
+    "backups/"
+  ]
+}

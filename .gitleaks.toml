@@ -1,0 +1,6 @@
+title = "AiChatFlow1 secret scanning"
+
+# Preserve the maintained Gitleaks ruleset. Project-specific exceptions must be
+# narrow, reviewed and justified; this file intentionally has no allowlist.
+[extend]
+useDefault = true

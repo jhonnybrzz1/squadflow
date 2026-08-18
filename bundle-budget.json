@@ -1,0 +1,4 @@
+{
+  "comment": "Spec 017 S3 (M-10/FR-007): teto do entry chunk. Baseline pré-manualChunks: 1976 kB; pós: 565 kB. Teto com folga de ~10%.",
+  "entryChunkKb": 620
+}

@@ -1,0 +1,406 @@
+{
+  "description": "Ground truth fixture for task_type classification heuristic validation. 50 manually-labeled requests covering all categories.",
+  "target_accuracy_pct": 70,
+  "requests": [
+    {
+      "id": "gt-001",
+      "prompt": "Olá, bom dia!",
+      "tokenCount": 8,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Greeting only"
+    },
+    {
+      "id": "gt-002",
+      "prompt": "O que é RADAR?",
+      "tokenCount": 12,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple definition query"
+    },
+    {
+      "id": "gt-003",
+      "prompt": "Lista os status possíveis de uma demanda",
+      "tokenCount": 18,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple list query"
+    },
+    {
+      "id": "gt-004",
+      "prompt": "Sim, pode continuar",
+      "tokenCount": 8,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Confirmation response"
+    },
+    {
+      "id": "gt-005",
+      "prompt": "Obrigado, era isso mesmo",
+      "tokenCount": 10,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Thank you / closing"
+    },
+    {
+      "id": "gt-006",
+      "prompt": "Resumo da última demanda criada",
+      "tokenCount": 15,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple summary request"
+    },
+    {
+      "id": "gt-007",
+      "prompt": "Verificar status do deploy",
+      "tokenCount": 12,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Status check"
+    },
+    {
+      "id": "gt-008",
+      "prompt": "Quem é o responsável pela demanda 42?",
+      "tokenCount": 16,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple lookup"
+    },
+    {
+      "id": "gt-009",
+      "prompt": "O que significa NCM na classificação fiscal?",
+      "tokenCount": 18,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Definition query with domain keyword"
+    },
+    {
+      "id": "gt-010",
+      "prompt": "Quando foi criada a demanda 15?",
+      "tokenCount": 14,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple date lookup"
+    },
+    {
+      "id": "gt-011",
+      "prompt": "Preciso criar uma nova funcionalidade de filtro avançado na listagem de demandas. O usuário deve poder filtrar por data, status, tipo e responsável. Cada filtro deve funcionar de forma independente e combinada.",
+      "tokenCount": 120,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "intermediate",
+      "rationale": "Standard feature request, moderate complexity"
+    },
+    {
+      "id": "gt-012",
+      "prompt": "O botão de salvar não está funcionando na tela de edição. Quando clico aparece um erro no console do navegador. Parece ser um problema de validação do formulário.",
+      "tokenCount": 95,
+      "operation": "agent_interaction:qa",
+      "expectedTaskType": "intermediate",
+      "rationale": "Bug report with moderate detail"
+    },
+    {
+      "id": "gt-013",
+      "prompt": "Adicionar campo de prioridade na criação de demandas com opções: baixa, média, alta, crítica. Mostrar como badge colorido na listagem.",
+      "tokenCount": 75,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "intermediate",
+      "rationale": "Standard enhancement"
+    },
+    {
+      "id": "gt-014",
+      "prompt": "Melhorar a mensagem de erro quando o usuário tenta criar uma demanda sem título. Atualmente mostra 'Erro', precisa ser mais descritivo tipo 'O título é obrigatório'.",
+      "tokenCount": 90,
+      "operation": "agent_interaction:ux_designer",
+      "expectedTaskType": "intermediate",
+      "rationale": "UX improvement, straightforward"
+    },
+    {
+      "id": "gt-015",
+      "prompt": "Implementar paginação na API de listagem de demandas. Retornar 20 itens por página com suporte a cursor-based pagination para evitar problemas de offset em tabelas grandes.",
+      "tokenCount": 110,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "intermediate",
+      "rationale": "Standard backend feature"
+    },
+    {
+      "id": "gt-016",
+      "prompt": "Criar validação de email no formulário de cadastro usando regex padrão RFC 5322 simplificado. Mostrar mensagem inline abaixo do campo em vermelho.",
+      "tokenCount": 85,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "intermediate",
+      "rationale": "Specific technical task, bounded scope"
+    },
+    {
+      "id": "gt-017",
+      "prompt": "A API de busca está retornando resultados duplicados quando o usuário digita rápido. Investigar se é um problema de debounce no frontend ou de cache no backend.",
+      "tokenCount": 100,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "intermediate",
+      "rationale": "Investigation needed but bounded scope"
+    },
+    {
+      "id": "gt-018",
+      "prompt": "Adicionar dark mode na aplicação. Usar as variáveis CSS existentes e criar um toggle no header. Persistir preferência no localStorage.",
+      "tokenCount": 80,
+      "operation": "agent_interaction:ux_designer",
+      "expectedTaskType": "intermediate",
+      "rationale": "Standard UI feature"
+    },
+    {
+      "id": "gt-019",
+      "prompt": "Criar endpoint REST para exportar demandas em CSV. Incluir filtros por data e status. Limitar a 10000 registros por exportação.",
+      "tokenCount": 85,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "intermediate",
+      "rationale": "Bounded API feature"
+    },
+    {
+      "id": "gt-020",
+      "prompt": "O loading spinner não aparece quando a lista de demandas está carregando. Precisa adicionar um skeleton loader como placeholder.",
+      "tokenCount": 70,
+      "operation": "agent_interaction:ux_designer",
+      "expectedTaskType": "intermediate",
+      "rationale": "Simple UI fix"
+    },
+    {
+      "id": "gt-021",
+      "prompt": "Precisamos redesenhar completamente a arquitetura de autenticação do sistema. Atualmente usamos JWT simples no localStorage, mas precisamos migrar para um fluxo OAuth 2.0 completo com refresh tokens, rotação de tokens, blacklist de tokens revogados, e integração com IdP externo (Keycloak). Considerar impacto em todos os microserviços que fazem validação de token. Definir estratégia de migração sem downtime para os 5000 usuários ativos.",
+      "tokenCount": 350,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Architecture redesign, multiple systems, migration strategy"
+    },
+    {
+      "id": "gt-022",
+      "prompt": "Implementar sistema de notificações em tempo real com WebSocket. Precisa de: 1) Servidor WebSocket com rooms por usuário, 2) Sistema de filas para garantir entrega (Redis), 3) Fallback para polling quando WebSocket não conecta, 4) Backpressure handling para evitar flood, 5) Persistência de notificações não lidas, 6) API para marcar como lida/arquivar. Considerar escalabilidade horizontal.",
+      "tokenCount": 320,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Multi-component system, distributed concerns"
+    },
+    {
+      "id": "gt-023",
+      "prompt": "Analisar o fluxo completo de importação de dados CSV e identificar os gargalos de performance. O processo atual leva 45 minutos para 1M de linhas. Precisamos reduzir para menos de 5 minutos. Considerar: batch processing, paralelismo, otimização de queries INSERT, uso de COPY ao invés de INSERT individual, transações em lote, e possível migração para processamento assíncrono com workers.",
+      "tokenCount": 280,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Performance analysis, multiple optimization strategies"
+    },
+    {
+      "id": "gt-024",
+      "prompt": "Criar um pipeline CI/CD completo para o projeto. Incluir: lint, type-check, unit tests, integration tests, build, deploy para staging (preview per PR), deploy para produção (manual trigger), rollback automático se health check falhar, notificações no Slack, caching de node_modules e build artifacts, matrix testing para Node 18 e 20.",
+      "tokenCount": 310,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Multi-step pipeline, infrastructure complexity"
+    },
+    {
+      "id": "gt-025",
+      "prompt": "Refatorar o módulo de relatórios para usar uma arquitetura baseada em eventos. Atualmente o código é procedural e acoplado. Precisamos: separar a geração de dados da renderização, implementar padrão Observer para atualizações em tempo real, criar abstract factory para diferentes formatos (PDF, Excel, CSV), adicionar caching com invalidação inteligente, e implementar testes de integração cobrindo todos os fluxos.",
+      "tokenCount": 290,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Architecture refactoring with design patterns"
+    },
+    {
+      "id": "gt-026",
+      "prompt": "Implementar busca full-text com Elasticsearch. Indexar demandas, comentários e documentos. Suportar: busca por relevância, filtros facetados, autocomplete, did-you-mean, highlighting de resultados, paginação com scroll, e sincronização incremental com o PostgreSQL via CDC (Debezium ou similar).",
+      "tokenCount": 260,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "New technology integration, multiple components"
+    },
+    {
+      "id": "gt-027",
+      "prompt": "Precisamos implementar um sistema de permissões granular (RBAC + ABAC). Definir: hierarquia de roles, permissions por recurso, herança de permissões, políticas baseadas em atributos (departamento, projeto, horário), middleware de autorização, UI para gestão de roles, e migração dos 50 usuários existentes para o novo sistema sem perda de acesso.",
+      "tokenCount": 300,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Security architecture, authorization system"
+    },
+    {
+      "id": "gt-028",
+      "prompt": "Criar wireframe completo e protótipo interativo para o novo módulo de dashboard analytics. Incluir: visão geral com KPIs principais, gráficos de tendência (últimos 30/60/90 dias), drill-down por categoria, comparativo período a período, exportação de relatórios, layout responsivo mobile-first, e acessibilidade WCAG 2.1 AA.",
+      "tokenCount": 270,
+      "operation": "agent_interaction:ux_designer",
+      "expectedTaskType": "complex",
+      "rationale": "Full design spec, multiple views, accessibility"
+    },
+    {
+      "id": "gt-029",
+      "prompt": "Implementar sistema de multi-tenancy no banco de dados. Avaliar estratégias: schema-per-tenant vs row-level security vs database-per-tenant. Considerar impacto em queries existentes, migrations, backups, performance de queries cross-tenant para admin, e isolamento de dados para LGPD compliance.",
+      "tokenCount": 250,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Architecture decision, data isolation, compliance"
+    },
+    {
+      "id": "gt-030",
+      "prompt": "Migrar a aplicação de monolito Express para uma arquitetura de microserviços. Identificar bounded contexts, definir contratos entre serviços (gRPC vs REST), implementar service mesh, distributed tracing (Jaeger), circuit breaker pattern, health checks, e orquestração com Kubernetes. Plano de migração incremental de 6 sprints.",
+      "tokenCount": 340,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Major architecture migration, multi-sprint plan"
+    },
+    {
+      "id": "gt-031",
+      "prompt": "URGENTE: Deploy para produção falhou e o sistema está fora do ar. O health check está retornando 503 desde as 14:30. Precisamos fazer rollback imediato para a versão anterior e investigar a causa root. Impacto: todos os 5000 usuários estão sem acesso. SLA de 99.9% está em risco.",
+      "tokenCount": 180,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Production incident, immediate action required"
+    },
+    {
+      "id": "gt-032",
+      "prompt": "Descobrimos uma vulnerabilidade de SQL injection no endpoint de busca. Um pesquisador de segurança reportou via bug bounty. O payload malicioso permite extrair dados de qualquer tabela incluindo credenciais. Precisamos de hotfix imediato, assessment de impacto, notificação aos usuários afetados conforme LGPD, e plano de remediação.",
+      "tokenCount": 220,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Security vulnerability, data breach risk, LGPD"
+    },
+    {
+      "id": "gt-033",
+      "prompt": "Precisamos migrar 2.5 milhões de registros financeiros do sistema legado para o novo. Os dados incluem transações financeiras, contratos, e operações de pagamento. Regras: zero perda de dados, auditoria completa de cada registro migrado, validação de integridade por hash, conformidade regulatória aplicável, e janela de migração de no máximo 4 horas (fim de semana).",
+      "tokenCount": 280,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Financial data migration, compliance, zero loss tolerance"
+    },
+    {
+      "id": "gt-034",
+      "prompt": "O módulo de compliance detectou transações suspeitas que podem indicar lavagem de dinheiro. Precisamos: bloquear as contas envolvidas, gerar relatório COAF, notificar o compliance officer, preservar evidências para auditoria, e garantir que nenhuma operação adicional seja processada até liberação manual. Prazo regulatório: 24h.",
+      "tokenCount": 200,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "AML compliance, regulatory deadline, financial crime"
+    },
+    {
+      "id": "gt-035",
+      "prompt": "Atualização crítica de segurança: a biblioteca OpenSSL usada no sistema tem CVE-2024-XXXX com CVSS 9.8. Precisamos atualizar em todos os serviços em produção sem downtime. Plano: atualizar dependência, rebuild de containers, rolling update com canary deployment, validação de TLS handshake pós-update, e comunicação aos stakeholders.",
+      "tokenCount": 240,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Critical security patch, production deployment"
+    },
+    {
+      "id": "gt-036",
+      "prompt": "Implementar mecanismo de backup e disaster recovery para o banco de dados de produção. Requisitos: RPO < 1 hora, RTO < 15 minutos, backup incremental a cada hora, backup completo diário, replicação cross-region, teste de restore automatizado semanal, e documentação de runbook para o time de plantão.",
+      "tokenCount": 220,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Disaster recovery, data protection, production infrastructure"
+    },
+    {
+      "id": "gt-037",
+      "prompt": "O gateway de pagamento reportou que nosso certificado SSL expira em 48 horas. Se expirar, todas as transações de pagamento serão rejeitadas. Precisamos renovar o certificado, atualizar em todos os load balancers, e testar a integração com os parceiros bancários antes da expiração.",
+      "tokenCount": 170,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Imminent deadline, payment disruption risk"
+    },
+    {
+      "id": "gt-038",
+      "prompt": "Uma auditoria de compliance identificou não-conformidade no registro de operações financeiras. Temos 5 dias úteis para corrigir o formato do campo 'finalidade da operação' conforme a norma aplicável. Impacto: multa de R$ 500k/dia após o prazo.",
+      "tokenCount": 180,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Regulatory compliance, financial penalty, hard deadline"
+    },
+    {
+      "id": "gt-039",
+      "prompt": "Planejar e executar a migração do banco de dados PostgreSQL da versão 13 para 16 em produção. O banco tem 500GB com 200 conexões simultâneas. Precisa de: teste de compatibilidade com todas as queries, benchmark de performance, plano de rollback, comunicação de maintenance window, e validação pós-migração.",
+      "tokenCount": 230,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "Production database migration, high-risk operation"
+    },
+    {
+      "id": "gt-040",
+      "prompt": "Recebemos notificação da LGPD sobre exercício de direito ao esquecimento de um titular. Precisamos: identificar todos os dados pessoais nos 15 sistemas, anonimizar/excluir conforme base legal, gerar certificado de exclusão, e responder ao titular em 15 dias. Documentar todo o processo para eventual fiscalização.",
+      "tokenCount": 210,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "critical",
+      "rationale": "LGPD compliance, legal deadline, data subject rights"
+    },
+    {
+      "id": "gt-041",
+      "prompt": "Classifique esta demanda como bug ou feature",
+      "tokenCount": 20,
+      "operation": "classification:demand_type",
+      "expectedTaskType": "simple",
+      "rationale": "Classification operation, very short"
+    },
+    {
+      "id": "gt-042",
+      "prompt": "Gere um JSON com os campos: título, descrição, prioridade",
+      "tokenCount": 30,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple structured output request"
+    },
+    {
+      "id": "gt-043",
+      "prompt": "Analisar os logs de erro das últimas 24h e criar um relatório com: top 5 erros por frequência, impacto estimado em usuários, e sugestão de priorização de correção.",
+      "tokenCount": 130,
+      "operation": "agent_interaction:data_analyst",
+      "expectedTaskType": "intermediate",
+      "rationale": "Data analysis, bounded scope"
+    },
+    {
+      "id": "gt-044",
+      "prompt": "Revisar o código do PR #234 focando em: segurança (SQL injection, XSS), performance (N+1 queries), e aderência aos padrões do projeto (naming conventions, error handling).",
+      "tokenCount": 120,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "intermediate",
+      "rationale": "Code review, specific criteria"
+    },
+    {
+      "id": "gt-045",
+      "prompt": "Criar testes unitários para o serviço de cache. Cobrir: hit, miss, expiration, invalidation, e concurrent access. Usar vitest com mocks para o Redis client.",
+      "tokenCount": 100,
+      "operation": "agent_interaction:qa",
+      "expectedTaskType": "intermediate",
+      "rationale": "Test writing, specific scope"
+    },
+    {
+      "id": "gt-046",
+      "prompt": "O que significa o status 'em refinamento' na listagem?",
+      "tokenCount": 22,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Simple explanation query"
+    },
+    {
+      "id": "gt-047",
+      "prompt": "Implementar rate limiting por IP e por API key no gateway. Regras: 100 req/min para free tier, 1000 req/min para pro, com sliding window counter usando Redis. Retornar headers X-RateLimit-Remaining e Retry-After. Adicionar bypass para health checks e IPs internos.",
+      "tokenCount": 200,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "intermediate",
+      "rationale": "Specific feature, moderate complexity"
+    },
+    {
+      "id": "gt-048",
+      "prompt": "Corrigir o bug onde o usuário consegue submeter o formulário com campos obrigatórios vazios quando usa o atalho Ctrl+Enter.",
+      "tokenCount": 65,
+      "operation": "agent_interaction:qa",
+      "expectedTaskType": "intermediate",
+      "rationale": "Specific bug fix"
+    },
+    {
+      "id": "gt-049",
+      "prompt": "Definir a estratégia de cache em múltiplas camadas para o módulo de relatórios: L1 (in-memory/process, TTL 1min), L2 (Redis, TTL 15min), L3 (CDN edge, TTL 1h). Incluir invalidação cascade, warm-up strategy para relatórios mais acessados, e métricas de hit rate por camada. Documentar trade-offs de consistência vs performance.",
+      "tokenCount": 280,
+      "operation": "agent_interaction:tech_lead",
+      "expectedTaskType": "complex",
+      "rationale": "Multi-layer architecture, trade-off analysis"
+    },
+    {
+      "id": "gt-050",
+      "prompt": "Não, obrigado. Pode fechar a demanda.",
+      "tokenCount": 16,
+      "operation": "agent_interaction:refinador",
+      "expectedTaskType": "simple",
+      "rationale": "Closing/rejection response"
+    }
+  ]
+}

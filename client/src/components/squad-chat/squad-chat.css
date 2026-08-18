@@ -1,0 +1,998 @@
+/**
+ * Squad Chat Styles
+ *
+ * Estética: Neo-Brutalist Terminal
+ * - Tipografia monospace bold
+ * - Bordas duras, sem arredondamentos excessivos
+ * - Cores de status semafóricas
+ * - Movimento intencional
+ */
+
+@tailwind components;
+
+@layer components {
+  /* ─── Container ──────────────────────────────────────────────────────────────── */
+
+  .squad-chat-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    border: var(--border-width-default) solid var(--border);
+    height: 100%;
+    max-height: var(--chat-max-height);
+    overflow: hidden;
+    transition:
+      color var(--duration-normal) ease,
+      background-color var(--duration-normal) ease,
+      border-color var(--duration-normal) ease;
+  }
+
+  .squad-chat-fullscreen {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-overlay);
+    max-height: 100vh;
+    border: none;
+  }
+
+  /* ─── Header ─────────────────────────────────────────────────────────────────── */
+
+  .squad-chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--background-elevated);
+    border-bottom: var(--border-width-default) solid var(--border);
+  }
+
+  .squad-chat-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .squad-chat-status-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+  }
+
+  .squad-chat-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .squad-chat-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--foreground);
+  }
+
+  .squad-chat-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .squad-chat-round-badge {
+    padding: 0.125rem 0.375rem;
+    background: var(--processing);
+    color: var(--background);
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+
+  .squad-chat-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .squad-chat-connection {
+    padding: 0.25rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .squad-chat-connection.connection-connected {
+    color: var(--success);
+  }
+
+  .squad-chat-connection.connection-reconnecting {
+    color: var(--warning);
+  }
+
+  .squad-chat-connection.connection-disconnected {
+    color: var(--destructive);
+  }
+
+  .squad-chat-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.375rem;
+    border: var(--border-width-thin) solid var(--border);
+    background: transparent;
+    color: var(--foreground-muted);
+    cursor: pointer;
+    transition:
+      border-color var(--duration-fast),
+      color var(--duration-fast),
+      transform var(--duration-fast);
+  }
+
+  .squad-chat-action-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+  }
+
+  .squad-chat-action-btn:active {
+    transform: scale(0.95);
+    background: color-mix(in srgb, var(--accent-cyan) 10%, transparent);
+  }
+
+  .squad-chat-action-btn:focus-visible {
+    outline: var(--border-width-default) solid var(--accent-cyan);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .squad-chat-action-btn {
+      transition: none;
+    }
+    .squad-chat-action-btn:active {
+      transform: none;
+    }
+  }
+
+  .squad-chat-stop-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    border: var(--border-width-default) solid var(--destructive);
+    background: transparent;
+    color: var(--destructive);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all var(--duration-fast);
+  }
+
+  .squad-chat-stop-btn:hover {
+    background: var(--destructive);
+    color: var(--background);
+  }
+
+  .squad-chat-stop-btn:focus-visible {
+    outline: var(--border-width-default) solid var(--destructive);
+    outline-offset: 2px;
+  }
+
+  .squad-chat-stop-btn:active {
+    transform: scale(0.97);
+  }
+
+  /* ─── Body ───────────────────────────────────────────────────────────────────── */
+
+  .squad-chat-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ─── Messages ───────────────────────────────────────────────────────────────── */
+
+  .squad-chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .squad-chat-messages::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .squad-chat-messages::-webkit-scrollbar-track {
+    background: var(--background-elevated);
+  }
+
+  .squad-chat-messages::-webkit-scrollbar-thumb {
+    background: var(--border);
+  }
+
+  /* ─── Empty State ────────────────────────────────────────────────────────────── */
+
+  .squad-chat-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2rem;
+  }
+
+  .squad-chat-empty-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-width-default) solid var(--border);
+    color: var(--muted-foreground);
+  }
+
+  .squad-chat-empty-title {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground-muted);
+  }
+
+  .squad-chat-empty-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+  }
+
+  /* ─── Message ────────────────────────────────────────────────────────────────── */
+
+  .squad-message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--background-elevated);
+    border-left: var(--border-width-thick) solid var(--border);
+    transition: border-color var(--duration-fast);
+  }
+
+  .squad-message:hover {
+    border-left-color: var(--accent-cyan);
+  }
+
+  .squad-message-divergence {
+    background: color-mix(in srgb, var(--destructive) 5%, transparent);
+    border-left-color: var(--destructive);
+  }
+
+  .squad-message-divergence:hover {
+    border-left-color: var(--destructive);
+  }
+
+  .squad-message-question {
+    background: color-mix(in srgb, var(--processing) 5%, transparent);
+    border-left-color: var(--processing);
+  }
+
+  .squad-message-question:hover {
+    border-left-color: var(--processing);
+  }
+
+  .squad-message-streaming {
+    background: var(--muted);
+    border-left-color: var(--accent-cyan);
+    animation: squad-streaming-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes squad-streaming-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
+
+  .squad-message-system {
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border-left: none;
+  }
+
+  .squad-message-system-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted-foreground);
+  }
+
+  .squad-message-system-icon {
+    font-size: 0.875rem;
+  }
+
+  /* Message Header */
+  .squad-message-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .squad-message-agent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .squad-message-agent-icon {
+    font-size: 1rem;
+  }
+
+  .squad-message-agent-name {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .squad-message-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .squad-message-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.375rem;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .squad-message-badge-divergence {
+    background: color-mix(in srgb, var(--destructive) 15%, transparent);
+    color: var(--destructive);
+  }
+
+  .squad-message-badge-question {
+    background: color-mix(in srgb, var(--processing) 15%, transparent);
+    color: var(--processing);
+  }
+
+  .squad-message-round {
+    padding: 0.125rem 0.25rem;
+    background: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--muted-foreground);
+  }
+
+  .squad-message-time {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--muted-foreground);
+  }
+
+  /* Reply Context */
+  .squad-message-reply-context {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.5rem;
+    background: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--foreground-muted);
+  }
+
+  /* Message Content */
+  .squad-message-content {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--foreground);
+  }
+
+  .squad-message-expand-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    border: var(--border-width-thin) solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--foreground-muted);
+    cursor: pointer;
+    transition: all var(--duration-fast);
+  }
+
+  .squad-message-expand-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+  }
+
+  .squad-message-expand-btn:focus-visible {
+    outline: var(--border-width-default) solid var(--accent-cyan);
+    outline-offset: 2px;
+  }
+
+  /* Reasoning */
+  .squad-message-reasoning {
+    border-top: var(--border-width-thin) dashed var(--border);
+    padding-top: 0.5rem;
+  }
+
+  .squad-message-reasoning-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0;
+    background: transparent;
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--warning);
+    cursor: pointer;
+    transition: color var(--duration-fast);
+  }
+
+  .squad-message-reasoning-toggle:hover {
+    color: color-mix(in srgb, var(--warning) 80%, var(--foreground));
+  }
+
+  .squad-message-reasoning-toggle:focus-visible {
+    outline: var(--border-width-default) solid var(--warning);
+    outline-offset: 2px;
+  }
+
+  .squad-message-reasoning-content {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--foreground-muted);
+    white-space: pre-wrap;
+    overflow: hidden;
+  }
+
+  /* References */
+  .squad-message-references {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+    padding-top: 0.5rem;
+    border-top: var(--border-width-thin) dashed var(--border);
+  }
+
+  .squad-message-references-label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted-foreground);
+  }
+
+  .squad-message-reference {
+    padding: 0.125rem 0.375rem;
+    background: var(--muted);
+    border: var(--border-width-thin) solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--accent-cyan);
+  }
+
+  /* Dialogue Move */
+  .squad-message-dialogue-move {
+    align-self: flex-start;
+    padding: 0.125rem 0.25rem;
+    background: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+
+  /* ─── Streaming ──────────────────────────────────────────────────────────────── */
+
+  .squad-streaming-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+    margin-left: 0.5rem;
+  }
+
+  .squad-streaming-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--accent-cyan);
+    border-radius: var(--radius-full);
+    animation: squad-dot-bounce 1.4s ease-in-out infinite;
+  }
+
+  .squad-streaming-dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .squad-streaming-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .squad-streaming-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes squad-dot-bounce {
+    0%,
+    80%,
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+
+  .squad-streaming-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--accent-cyan);
+    animation: squad-cursor-blink 1s step-start infinite;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+  }
+
+  @keyframes squad-cursor-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .squad-streaming-thinking {
+    margin-bottom: 0.5rem;
+  }
+
+  .squad-streaming-thinking-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.5rem;
+    background: color-mix(in srgb, var(--warning) 10%, transparent);
+    border: var(--border-width-thin) dashed color-mix(in srgb, var(--warning) 30%, transparent);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--warning);
+    cursor: pointer;
+    width: 100%;
+    transition: background var(--duration-fast);
+  }
+
+  .squad-streaming-thinking-toggle:hover {
+    background: color-mix(in srgb, var(--warning) 15%, transparent);
+  }
+
+  .squad-streaming-thinking-toggle:focus-visible {
+    outline: var(--border-width-default) solid var(--warning);
+    outline-offset: 2px;
+  }
+
+  .squad-streaming-thinking-content {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: color-mix(in srgb, var(--warning) 5%, transparent);
+    border: var(--border-width-thin) solid color-mix(in srgb, var(--warning) 15%, transparent);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--foreground-muted);
+    white-space: pre-wrap;
+  }
+
+  /* ─── Thinking Indicator ─────────────────────────────────────────────────────── */
+
+  .squad-thinking-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--background-elevated);
+    border-left: var(--border-width-thick) solid var(--processing);
+  }
+
+  .squad-thinking-icon {
+    font-size: 1rem;
+  }
+
+  .squad-thinking-name {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--processing);
+  }
+
+  .squad-thinking-dots {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+    margin-left: 0.5rem;
+  }
+
+  .squad-thinking-dots .dot {
+    width: 5px;
+    height: 5px;
+    background: var(--processing);
+    border-radius: var(--radius-full);
+    animation: squad-dot-bounce 1.4s ease-in-out infinite;
+  }
+
+  .squad-thinking-dots .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .squad-thinking-dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .squad-thinking-dots .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  /* ─── Agent Panel ────────────────────────────────────────────────────────────── */
+
+  .squad-agent-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 220px;
+    min-width: 220px;
+    padding: 0.75rem;
+    background: var(--background-elevated);
+    border-right: var(--border-width-default) solid var(--border);
+  }
+
+  .squad-agent-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .squad-agent-panel-title {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--foreground);
+  }
+
+  .squad-agent-panel-round {
+    display: flex;
+    align-items: baseline;
+    gap: 0.125rem;
+    font-family: var(--font-mono);
+  }
+
+  .squad-agent-panel-round-current {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--processing);
+  }
+
+  .squad-agent-panel-round-sep {
+    font-size: 0.65rem;
+    color: var(--muted-foreground);
+  }
+
+  .squad-agent-panel-round-total {
+    font-size: 0.65rem;
+    color: var(--foreground-muted);
+  }
+
+  .squad-agent-panel-progress {
+    height: 3px;
+    background: var(--muted);
+    overflow: hidden;
+  }
+
+  .squad-agent-panel-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--processing), var(--accent-cyan));
+  }
+
+  .squad-agent-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .squad-agent-panel-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.625rem;
+    background: var(--muted);
+    border: var(--border-width-thin) solid transparent;
+    transition: all var(--duration-fast);
+  }
+
+  .squad-agent-panel-item-active {
+    background: color-mix(in srgb, var(--processing) 10%, transparent);
+    border-color: var(--processing);
+  }
+
+  .squad-agent-panel-item-thinking {
+    background: color-mix(in srgb, var(--processing) 8%, transparent);
+    border-left: var(--border-width-default) solid var(--processing);
+  }
+
+  .squad-agent-panel-item-speaking {
+    background: color-mix(in srgb, var(--accent-cyan) 8%, transparent);
+    border-left: var(--border-width-default) solid var(--accent-cyan);
+  }
+
+  .squad-agent-panel-item-done {
+    background: color-mix(in srgb, var(--success) 5%, transparent);
+    border-left: var(--border-width-default) solid var(--success);
+  }
+
+  .squad-agent-panel-item-failed {
+    background: color-mix(in srgb, var(--destructive) 5%, transparent);
+    border-left: var(--border-width-default) solid var(--destructive);
+  }
+
+  .squad-agent-panel-item-icon {
+    font-size: 1rem;
+  }
+
+  .squad-agent-panel-item-name {
+    flex: 1;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--foreground);
+  }
+
+  .squad-agent-panel-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    padding-top: 0.5rem;
+    border-top: var(--border-width-thin) solid var(--border);
+    margin-top: auto;
+  }
+
+  .squad-agent-panel-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+
+  .squad-agent-panel-stat-divergence {
+    background: color-mix(in srgb, var(--warning) 10%, transparent);
+    border: var(--border-width-thin) solid color-mix(in srgb, var(--warning) 20%, transparent);
+    color: var(--warning);
+  }
+
+  .squad-agent-panel-stat-failed {
+    background: color-mix(in srgb, var(--destructive) 10%, transparent);
+    border: var(--border-width-thin) solid color-mix(in srgb, var(--destructive) 20%, transparent);
+    color: var(--destructive);
+  }
+
+  .squad-agent-panel-stat-complete {
+    background: color-mix(in srgb, var(--success) 10%, transparent);
+    border: var(--border-width-thin) solid color-mix(in srgb, var(--success) 20%, transparent);
+    color: var(--success);
+  }
+
+  /* ─── Interaction Banner ─────────────────────────────────────────────────────── */
+
+  .squad-interaction-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--warning) 10%, transparent),
+      color-mix(in srgb, var(--warning) 5%, transparent)
+    );
+    border-top: var(--border-width-default) solid var(--warning);
+  }
+
+  .squad-interaction-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .squad-interaction-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--warning);
+    color: var(--background);
+  }
+
+  .squad-interaction-title {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--foreground);
+  }
+
+  .squad-interaction-agent-icon {
+    font-size: 1rem;
+  }
+
+  .squad-interaction-agent-name {
+    font-weight: 700;
+  }
+
+  .squad-interaction-label {
+    color: var(--foreground-muted);
+  }
+
+  .squad-interaction-question {
+    padding: 0.75rem;
+    background: var(--background-elevated);
+    border-left: var(--border-width-thick) solid var(--warning);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--foreground);
+  }
+
+  .squad-interaction-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .squad-interaction-input {
+    flex: 1;
+    padding: 0.625rem 0.75rem;
+    background: var(--background-elevated);
+    border: var(--border-width-default) solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--foreground);
+    outline: none;
+    transition: border-color var(--duration-fast);
+  }
+
+  .squad-interaction-input:focus {
+    border-color: var(--warning);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--warning) 30%, transparent);
+  }
+
+  .squad-interaction-input::placeholder {
+    color: var(--muted-foreground);
+  }
+
+  .squad-interaction-submit {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.625rem 1rem;
+    background: var(--warning);
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--background);
+    cursor: pointer;
+    transition: opacity var(--duration-fast);
+  }
+
+  .squad-interaction-submit:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  .squad-interaction-submit:focus-visible {
+    outline: var(--border-width-default) solid var(--warning);
+    outline-offset: 2px;
+  }
+
+  .squad-interaction-submit:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .squad-interaction-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .squad-interaction-error {
+    padding: 0.5rem;
+    background: color-mix(in srgb, var(--destructive) 10%, transparent);
+    border: var(--border-width-thin) solid color-mix(in srgb, var(--destructive) 20%, transparent);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--destructive);
+  }
+
+  /* ─── Scroll Button ──────────────────────────────────────────────────────────── */
+
+  .squad-scroll-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--background-elevated);
+    border: var(--border-width-default) solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    cursor: pointer;
+    transition: all var(--duration-fast);
+    z-index: var(--z-dropdown);
+  }
+
+  .squad-scroll-btn:hover {
+    background: var(--accent-cyan);
+    color: var(--background);
+  }
+
+  .squad-scroll-btn:focus-visible {
+    outline: var(--border-width-default) solid var(--accent-cyan);
+    outline-offset: 2px;
+  }
+
+  /* ─── Responsive ─────────────────────────────────────────────────────────────── */
+
+  @media (max-width: 768px) {
+    .squad-agent-panel {
+      display: none;
+    }
+
+    .squad-chat-header {
+      flex-wrap: wrap;
+    }
+
+    .squad-chat-header-actions {
+      width: 100%;
+      justify-content: flex-end;
+      padding-top: 0.5rem;
+    }
+  }
+}

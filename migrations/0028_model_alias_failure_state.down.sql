@@ -1,0 +1,5 @@
+-- MR-05: Reverse the failure-state columns.
+-- SQLite does not support DROP COLUMN before 3.35.0; recreate the table.
+-- For safety we just leave the columns (they're harmless). If a true
+-- rollback is needed, recreate the table without them.
+-- No-op down migration: the columns default to 0/NULL and are inert.

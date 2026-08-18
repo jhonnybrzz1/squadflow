@@ -1,0 +1,107 @@
+# Alert rules do AiChatFlow (A2 — fechar a malha de observabilidade)
+#
+# Consomem as 8 métricas custom já expostas em /metrics (server/metrics.ts).
+# Thresholds são pontos de partida CONSERVADORES — calibrar com o baseline real
+# (ver docs/performance-baseline-*.md). Carregar via `rule_files` no prometheus.yml.
+groups:
+  - name: aichatflow-llm
+    rules:
+      # Latência da chamada de IA degradada (p95 por provider acima de 15s).
+      - alert: AiCallLatencyHighP95
+        expr: histogram_quantile(0.95, sum(rate(ai_api_call_duration_seconds_bucket[5m])) by (le, provider)) > 15
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Latência p95 das chamadas de IA alta ({{ $labels.provider }})'
+          description: 'p95 de ai_api_call_duration_seconds > 15s por 10min no provider {{ $labels.provider }}.'
+
+      # Time-To-First-Token lento (percepção do operador) — p95 > 10s.
+      - alert: AiTtftSlowP95
+        expr: histogram_quantile(0.95, sum(rate(ai_first_token_duration_seconds_bucket[5m])) by (le)) > 10
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: 'TTFT p95 lento'
+          description: 'p95 de ai_first_token_duration_seconds > 10s por 10min.'
+
+      # Custo por classificação de demanda acima do teto (p95 > US$ 0,003).
+      - alert: ClassificationCostHighP95
+        expr: histogram_quantile(0.95, sum(rate(classification_cost_per_demand_usd_bucket[15m])) by (le)) > 0.003
+        for: 15m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Custo de classificação por demanda acima do baseline'
+          description: 'p95 de classification_cost_per_demand_usd > US$ 0,003 por 15min.'
+
+      # Consumo de tokens anômalo — taxa de tokens de completion dobrou vs. 1h antes.
+      - alert: AiTokenBurnSpike
+        expr: sum(rate(ai_api_tokens_total{token_type="completion"}[10m])) > 2 * sum(rate(ai_api_tokens_total{token_type="completion"}[10m] offset 1h))
+        for: 15m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Pico no consumo de tokens de completion'
+          description: 'Taxa de tokens de completion > 2x a de 1h atrás por 15min.'
+
+  - name: aichatflow-quality
+    rules:
+      # Retrabalho alto em alguma zona de classificação (refinements > 1).
+      - alert: ReworkRateHighByZone
+        expr: max by (zone) (retrabalho_rate_by_zone) > 0.30
+        for: 30m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Taxa de retrabalho alta na zona {{ $labels.zone }}'
+          description: 'retrabalho_rate_by_zone > 30% por 30min na zona {{ $labels.zone }}.'
+
+      # Latência da classificação híbrida alta (p95 > 0,5s) — suporta o A/B do B3.
+      - alert: HybridClassificationLatencyHigh
+        expr: histogram_quantile(0.95, sum(rate(hybrid_classification_latency_seconds_bucket[5m])) by (le, method)) > 0.5
+        for: 10m
+        labels: { severity: info }
+        annotations:
+          summary: 'Latência p95 da classificação híbrida alta ({{ $labels.method }})'
+          description: 'p95 de hybrid_classification_latency_seconds > 0,5s por 10min.'
+
+      - alert: DocumentHallucinationRateHigh
+        expr: sum(rate(document_hallucination_total{result="hallucinated"}[1h])) / clamp_min(sum(rate(document_hallucination_total[1h])), 0.000001) > 0.05
+        for: 1h
+        labels: { severity: critical }
+        annotations:
+          summary: 'Taxa de alucinação documental acima de 5%'
+          description: 'Mais de 5% dos PRDs/TSDs apresentaram paths alucinados durante 1h.'
+
+      - alert: RoundtableLevel1LatencyHigh
+        expr: histogram_quantile(0.95, sum by (le) (rate(roundtable_total_duration_seconds_bucket{refinement_level="1"}[1h]))) > 300
+        for: 30m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Latência p95 da mesa nível 1 acima de 5 minutos'
+          description: 'A latência p95 de mesas nível 1 permaneceu acima de 300 segundos por 30 minutos.'
+
+      - alert: RoundtableLevel3LatencyHigh
+        expr: histogram_quantile(0.95, sum by (le) (rate(roundtable_total_duration_seconds_bucket{refinement_level="3"}[1h]))) > 1200
+        for: 30m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Latência p95 da mesa nível 3 acima de 20 minutos'
+          description: 'A latência p95 de mesas nível 3 permaneceu acima de 1200 segundos por 30 minutos.'
+
+  - name: aichatflow-http
+    rules:
+      # Latência HTTP da API degradada (p95 por rota > 5s).
+      - alert: HttpLatencyHighP95
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, route)) > 5
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: 'Latência HTTP p95 alta ({{ $labels.route }})'
+          description: 'p95 de http_request_duration_seconds > 5s por 10min na rota {{ $labels.route }}.'
+
+      # Taxa de erro 5xx acima de 5% das requisições.
+      - alert: HttpErrorRateHigh
+        expr: sum(rate(http_request_duration_seconds_count{code=~"5.."}[5m])) / sum(rate(http_request_duration_seconds_count[5m])) > 0.05
+        for: 10m
+        labels: { severity: critical }
+        annotations:
+          summary: 'Taxa de 5xx acima de 5%'
+          description: 'Mais de 5% das requisições retornando 5xx por 10min.'

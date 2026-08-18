@@ -1,0 +1,16 @@
+{
+  "id": "tech_lead-rastreabilidade-eventos-001",
+  "agent": "tech_lead",
+  "demand": {
+    "title": "Rastreabilidade de eventos de operação",
+    "description": "Permitir correlacionar falhas a partir dos logs de cada operação, hoje impossível porque não há identificador único por operação.",
+    "type": "melhoria"
+  },
+  "context": "Stack atual mantida. O projeto já possui infraestrutura de logs e storage local no módulo `events/`. Não há ferramenta externa de observabilidade disponível.",
+  "evidence": "Logs atuais sem campo de correlação; histórico de eventos salvo localmente em `events/`.",
+  "validOutput": "**Análise:** A demanda pede rastreabilidade de eventos, e o projeto já possui infraestrutura de logs e storage que pode ser aproveitada.\n**Problema Identificado:** Sem um identificador único por operação, logs não permitem correlacionar falhas.\n**Impacto:** Diagnóstico lento e risco de corrigir a causa errada.\n**Recomendação:** Adicionar `operationId` gerado no backend (camada de serviço), propagado nos eventos e salvo junto ao histórico local no módulo `events/`.\n**Trade-offs:** Helper único centralizado (escolhido) vs. gerar inline em cada handler (rejeitado por risco de inconsistência).\n**Riscos Técnicos:** Inconsistência se algum evento não receber `operationId` — mitigar com middleware obrigatório no boundary.\n**Integrações Externas:** n/a\n**ROI:** 5:1\n**Esforço:** 2 dias\n**Prioridade:** Importante\n**Premissas:** Não há ferramenta externa de observabilidade disponível.",
+  "rejectedOutput": "\"Migrar para microserviços para escalar.\" Isso ignora o stack atual, não apresenta evidência e amplia escopo.",
+  "rationale": "A saída válida encaixa a mudança na arquitetura existente (camada de serviço + módulo `events/`), articula trade-off com alternativa rejeitada e dá mitigação concreta para o risco. A rejeitada propõe reescrita arquitetural sem evidência, sem trade-off e amplia o escopo — viola a regra de usar o menor caminho dentro da stack.",
+  "split": "holdout",
+  "tags": ["tech_lead", "viabilidade", "trade-offs", "stack-atual", "observabilidade"]
+}

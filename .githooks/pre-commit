@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# Pre-commit hook versionado (compartilhado com o time via git).
+# Objetivo: rodar prettier nos arquivos staged ANTES do commit, pra não
+# quebrar o gate de lint do CI por formatação (prettier/prettier = erro).
+#
+# Roda SÓ prettier (rápido). Typecheck/lint/testes ficam no CI de propósito,
+# pra não travar cada commit. Instalado automaticamente via "npm install"
+# (script "prepare" -> git config core.hooksPath .githooks).
+
+set -e
+
+# Preserva hooks locais antigos (ex: tooling Bob Shell em .git/hooks), que
+# deixam de rodar automaticamente quando core.hooksPath aponta pra cá.
+if [ -x ".git/hooks/pre-commit" ]; then
+  .git/hooks/pre-commit || true
+fi
+
+# Bloqueia o commit se o scanner não estiver disponível. O hook é instalado
+# pelo script "prepare" do npm; gitleaks é uma dependência de segurança local.
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "[pre-commit] ERRO: gitleaks não encontrado; commit bloqueado." >&2
+  echo "[pre-commit] Instale gitleaks >= 8.30.1 e tente novamente." >&2
+  exit 1
+fi
+
+echo "[pre-commit] verificando segredos nos arquivos staged"
+gitleaks git --pre-commit --staged --redact --no-banner --log-level warn .
+
+# Formata apenas os arquivos staged suportados e re-stage o resultado.
+FILES=$(git diff --cached --name-only --diff-filter=ACM \
+  | grep -E '\.(ts|tsx|js|jsx|mjs|cjs|json|md|css|scss|yml|yaml)$' || true)
+
+if [ -n "$FILES" ]; then
+  echo "[pre-commit] prettier --write em $(echo "$FILES" | wc -l | tr -d ' ') arquivo(s) staged"
+  echo "$FILES" | xargs npx prettier --write
+  echo "$FILES" | xargs git add
+fi
+
+exit 0

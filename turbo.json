@@ -1,0 +1,24 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "inputs": [
+        "client/src/**/*",
+        "shared/**/*",
+        "server/**/*",
+        "tsconfig.json",
+        "vite.config.ts",
+        "package.json"
+      ],
+      "outputs": ["dist/**", "build/**"]
+    },
+    "typecheck": {
+      "inputs": ["client/src/**/*", "shared/**/*", "server/**/*", "tsconfig.json", "package.json"],
+      "outputs": ["node_modules/typescript/tsbuildinfo"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

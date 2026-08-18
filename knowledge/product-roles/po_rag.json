@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "PO_STORY_001",
+    "role": ["Product Owner"],
+    "title": "backlog-user-story-template",
+    "description": "Técnica/Template User Story Template para gestão de backlog.",
+    "content": {
+      "theory": "A técnica User Story Template foca em Como [persona], eu quero [ação] para que [valor]...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento User Story Template preenchido"
+      },
+      "template": "Link para template User Story Template no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-story-template",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["user story", "template", "backlog"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_002",
+    "role": ["Product Owner"],
+    "title": "backlog-invest-criteria",
+    "description": "Técnica/Template INVEST Criteria para gestão de backlog.",
+    "content": {
+      "theory": "A técnica INVEST Criteria foca em Independent, Negotiable, Valuable, Estimable, Small, Testable...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento INVEST Criteria preenchido"
+      },
+      "template": "Link para template INVEST Criteria no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/invest-criteria",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["user story", "INVEST", "qualidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_003",
+    "role": ["Product Owner"],
+    "title": "backlog-acceptance-criteria",
+    "description": "Técnica/Template Acceptance Criteria para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Acceptance Criteria foca em Critérios de Aceite...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Acceptance Criteria preenchido"
+      },
+      "template": "Link para template Acceptance Criteria no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/acceptance-criteria",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["critérios de aceite", "BDD", "Gherkin"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_004",
+    "role": ["Product Owner"],
+    "title": "backlog-epic-breakdown",
+    "description": "Técnica/Template Epic Breakdown para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Epic Breakdown foca em Quebra de Épicos...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Epic Breakdown preenchido"
+      },
+      "template": "Link para template Epic Breakdown no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/epic-breakdown",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["épicos", "quebra", "backlog"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_005",
+    "role": ["Product Owner"],
+    "title": "backlog-spike-story",
+    "description": "Técnica/Template Spike Story para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Spike Story foca em História de Investigação...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Spike Story preenchido"
+      },
+      "template": "Link para template Spike Story no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/spike-story",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["spike", "investigação", "risco"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_006",
+    "role": ["Product Owner"],
+    "title": "backlog-technical-debt-story",
+    "description": "Técnica/Template Technical Debt Story para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Technical Debt Story foca em História de Dívida Técnica...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Technical Debt Story preenchido"
+      },
+      "template": "Link para template Technical Debt Story no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/technical-debt-story",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["dívida técnica", "refatoração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_007",
+    "role": ["Product Owner"],
+    "title": "backlog-bug-report-template",
+    "description": "Técnica/Template Bug Report Template para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Bug Report Template foca em Template de Reporte de Bug...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Bug Report Template preenchido"
+      },
+      "template": "Link para template Bug Report Template no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/bug-report-template",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["bug", "reporte", "template"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_008",
+    "role": ["Product Owner"],
+    "title": "backlog-non-functional-requirements",
+    "description": "Técnica/Template Non-Functional Requirements para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Non-Functional Requirements foca em Requisitos Não Funcionais...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Non-Functional Requirements preenchido"
+      },
+      "template": "Link para template Non-Functional Requirements no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/non-functional-requirements",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["NFR", "performance", "segurança"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_009",
+    "role": ["Product Owner"],
+    "title": "backlog-definition-of-ready-(dor)",
+    "description": "Técnica/Template Definition of Ready (DoR) para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Definition of Ready (DoR) foca em Definição de Preparado...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Definition of Ready (DoR) preenchido"
+      },
+      "template": "Link para template Definition of Ready (DoR) no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/definition-of-ready-(dor)",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["DoR", "backlog", "refinamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_010",
+    "role": ["Product Owner"],
+    "title": "backlog-definition-of-done-(dod)",
+    "description": "Técnica/Template Definition of Done (DoD) para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Definition of Done (DoD) foca em Definição de Pronto...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Definition of Done (DoD) preenchido"
+      },
+      "template": "Link para template Definition of Done (DoD) no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/definition-of-done-(dod)",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["DoD", "qualidade", "entrega"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_011",
+    "role": ["Product Owner"],
+    "title": "backlog-backlog-grooming",
+    "description": "Técnica/Template Backlog Grooming para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Backlog Grooming foca em Refinamento de Backlog...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Backlog Grooming preenchido"
+      },
+      "template": "Link para template Backlog Grooming no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/backlog-grooming",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["refinamento", "grooming", "backlog"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_012",
+    "role": ["Product Owner"],
+    "title": "backlog-story-splitting-patterns",
+    "description": "Técnica/Template Story Splitting Patterns para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Story Splitting Patterns foca em Padrões de Quebra de Histórias...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Story Splitting Patterns preenchido"
+      },
+      "template": "Link para template Story Splitting Patterns no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/story-splitting-patterns",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["quebra", "padrões", "histórias"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_013",
+    "role": ["Product Owner"],
+    "title": "backlog-persona-definition",
+    "description": "Técnica/Template Persona Definition para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Persona Definition foca em Definição de Persona...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Persona Definition preenchido"
+      },
+      "template": "Link para template Persona Definition no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/persona-definition",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["persona", "usuário", "empatia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_014",
+    "role": ["Product Owner"],
+    "title": "backlog-user-journey-mapping",
+    "description": "Técnica/Template User Journey Mapping para gestão de backlog.",
+    "content": {
+      "theory": "A técnica User Journey Mapping foca em Mapeamento da Jornada do Usuário...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento User Journey Mapping preenchido"
+      },
+      "template": "Link para template User Journey Mapping no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-journey-mapping",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["jornada", "mapa", "usuário"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_STORY_015",
+    "role": ["Product Owner"],
+    "title": "backlog-value-stream-mapping",
+    "description": "Técnica/Template Value Stream Mapping para gestão de backlog.",
+    "content": {
+      "theory": "A técnica Value Stream Mapping foca em Mapeamento do Fluxo de Valor...",
+      "practical_example": {
+        "scenario": "Criação de nova funcionalidade",
+        "input": ["Requisito de negócio"],
+        "output": "Documento Value Stream Mapping preenchido"
+      },
+      "template": "Link para template Value Stream Mapping no Jira"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/value-stream-mapping",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["fluxo de valor", "lean", "processo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_001",
+    "role": ["Product Owner"],
+    "title": "planejamento-planning-poker",
+    "description": "Técnica Planning Poker para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Planning Poker é usada para Estimativa Relativa...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Planning Poker"
+      },
+      "template": "Link para template Planning Poker no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/planning-poker",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["estimativa", "planning poker", "fibonacci"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_002",
+    "role": ["Product Owner"],
+    "title": "planejamento-t-shirt-sizing",
+    "description": "Técnica T-Shirt Sizing para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica T-Shirt Sizing é usada para Tamanhos de Camiseta...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando T-Shirt Sizing"
+      },
+      "template": "Link para template T-Shirt Sizing no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/t-shirt-sizing",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["estimativa", "t-shirt sizing"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_003",
+    "role": ["Product Owner"],
+    "title": "planejamento-dot-voting",
+    "description": "Técnica Dot Voting para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Dot Voting é usada para Votação por Pontos...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Dot Voting"
+      },
+      "template": "Link para template Dot Voting no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dot-voting",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["priorização", "dot voting", "colaborativo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_004",
+    "role": ["Product Owner"],
+    "title": "planejamento-kano-model",
+    "description": "Técnica Kano Model para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Kano Model é usada para Modelo Kano...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Kano Model"
+      },
+      "template": "Link para template Kano Model no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kano-model",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["priorização", "satisfação", "kano"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_005",
+    "role": ["Product Owner"],
+    "title": "planejamento-moscow-method",
+    "description": "Técnica MoSCoW Method para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica MoSCoW Method é usada para Método MoSCoW...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando MoSCoW Method"
+      },
+      "template": "Link para template MoSCoW Method no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/moscow-method",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["priorização", "moscow"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_006",
+    "role": ["Product Owner"],
+    "title": "planejamento-cost-of-delay",
+    "description": "Técnica Cost of Delay para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Cost of Delay é usada para Custo do Atraso...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Cost of Delay"
+      },
+      "template": "Link para template Cost of Delay no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cost-of-delay",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["priorização", "custo", "atraso"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_007",
+    "role": ["Product Owner"],
+    "title": "planejamento-wsjf",
+    "description": "Técnica WSJF para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica WSJF é usada para Weighted Shortest Job First...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando WSJF"
+      },
+      "template": "Link para template WSJF no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/wsjf",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["priorização", "WSJF", "SAFe"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_008",
+    "role": ["Product Owner"],
+    "title": "planejamento-release-planning",
+    "description": "Técnica Release Planning para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Release Planning é usada para Planejamento de Release...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Release Planning"
+      },
+      "template": "Link para template Release Planning no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/release-planning",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["planejamento", "release", "roadmap"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_009",
+    "role": ["Product Owner"],
+    "title": "planejamento-sprint-goal-definition",
+    "description": "Técnica Sprint Goal Definition para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Sprint Goal Definition é usada para Definição de Meta da Sprint...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Sprint Goal Definition"
+      },
+      "template": "Link para template Sprint Goal Definition no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-goal-definition",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["sprint", "meta", "foco"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_010",
+    "role": ["Product Owner"],
+    "title": "planejamento-capacity-planning",
+    "description": "Técnica Capacity Planning para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Capacity Planning é usada para Planejamento de Capacidade...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Capacity Planning"
+      },
+      "template": "Link para template Capacity Planning no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/capacity-planning",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["capacidade", "planejamento", "time"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_011",
+    "role": ["Product Owner"],
+    "title": "planejamento-velocity-tracking",
+    "description": "Técnica Velocity Tracking para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Velocity Tracking é usada para Acompanhamento de Velocidade...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Velocity Tracking"
+      },
+      "template": "Link para template Velocity Tracking no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/velocity-tracking",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["velocidade", "métricas", "previsibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_012",
+    "role": ["Product Owner"],
+    "title": "planejamento-burn-down-chart",
+    "description": "Técnica Burn-down Chart para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Burn-down Chart é usada para Gráfico de Burn-down...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Burn-down Chart"
+      },
+      "template": "Link para template Burn-down Chart no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/burn-down-chart",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["burn-down", "acompanhamento", "sprint"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_013",
+    "role": ["Product Owner"],
+    "title": "planejamento-burn-up-chart",
+    "description": "Técnica Burn-up Chart para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Burn-up Chart é usada para Gráfico de Burn-up...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Burn-up Chart"
+      },
+      "template": "Link para template Burn-up Chart no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/burn-up-chart",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["burn-up", "acompanhamento", "release"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_014",
+    "role": ["Product Owner"],
+    "title": "planejamento-cumulative-flow-diagram",
+    "description": "Técnica Cumulative Flow Diagram para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Cumulative Flow Diagram é usada para Diagrama de Fluxo Cumulativo...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Cumulative Flow Diagram"
+      },
+      "template": "Link para template Cumulative Flow Diagram no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cumulative-flow-diagram",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["CFD", "fluxo", "gargalos"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_PLAN_015",
+    "role": ["Product Owner"],
+    "title": "planejamento-lead-time-&-cycle-time",
+    "description": "Técnica Lead Time & Cycle Time para planejamento e priorização.",
+    "content": {
+      "theory": "A técnica Lead Time & Cycle Time é usada para Tempo de Entrega e Ciclo...",
+      "practical_example": {
+        "scenario": "Planejamento da próxima Sprint",
+        "input": ["Backlog priorizado", "Capacidade do time"],
+        "output": "Plano usando Lead Time & Cycle Time"
+      },
+      "template": "Link para template Lead Time & Cycle Time no Confluence"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lead-time-&-cycle-time",
+        "trust_score": 0.85
+      }
+    ],
+    "tags": ["métricas", "lead time", "cycle time"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_001",
+    "role": ["Product Owner"],
+    "title": "comunicacao-stakeholder-management-plan",
+    "description": "Ferramenta Stakeholder Management Plan para comunicação.",
+    "content": {
+      "theory": "A ferramenta Stakeholder Management Plan ajuda em Plano de Gestão de Stakeholders...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Stakeholder Management Plan atualizado"
+      },
+      "template": "Link para template Stakeholder Management Plan no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/stakeholder-management-plan",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["stakeholders", "gestão", "plano"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_002",
+    "role": ["Product Owner"],
+    "title": "comunicacao-sprint-review-template",
+    "description": "Ferramenta Sprint Review Template para comunicação.",
+    "content": {
+      "theory": "A ferramenta Sprint Review Template ajuda em Template de Revisão da Sprint...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Sprint Review Template atualizado"
+      },
+      "template": "Link para template Sprint Review Template no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/sprint-review-template",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["sprint review", "demonstração", "feedback"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_003",
+    "role": ["Product Owner"],
+    "title": "comunicacao-product-vision-statement",
+    "description": "Ferramenta Product Vision Statement para comunicação.",
+    "content": {
+      "theory": "A ferramenta Product Vision Statement ajuda em Declaração de Visão do Produto...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Product Vision Statement atualizado"
+      },
+      "template": "Link para template Product Vision Statement no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/product-vision-statement",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["visão", "produto", "alinhamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_004",
+    "role": ["Product Owner"],
+    "title": "comunicacao-elevator-pitch",
+    "description": "Ferramenta Elevator Pitch para comunicação.",
+    "content": {
+      "theory": "A ferramenta Elevator Pitch ajuda em Discurso de Elevador...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Elevator Pitch atualizado"
+      },
+      "template": "Link para template Elevator Pitch no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/elevator-pitch",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["pitch", "comunicação", "resumo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_005",
+    "role": ["Product Owner"],
+    "title": "comunicacao-release-notes",
+    "description": "Ferramenta Release Notes para comunicação.",
+    "content": {
+      "theory": "A ferramenta Release Notes ajuda em Notas de Lançamento...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Release Notes atualizado"
+      },
+      "template": "Link para template Release Notes no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/release-notes",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["release notes", "comunicação", "usuários"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_006",
+    "role": ["Product Owner"],
+    "title": "comunicacao-feedback-loop",
+    "description": "Ferramenta Feedback Loop para comunicação.",
+    "content": {
+      "theory": "A ferramenta Feedback Loop ajuda em Ciclo de Feedback...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Feedback Loop atualizado"
+      },
+      "template": "Link para template Feedback Loop no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/feedback-loop",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["feedback", "melhoria contínua"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_007",
+    "role": ["Product Owner"],
+    "title": "comunicacao-empathy-map",
+    "description": "Ferramenta Empathy Map para comunicação.",
+    "content": {
+      "theory": "A ferramenta Empathy Map ajuda em Mapa de Empatia...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Empathy Map atualizado"
+      },
+      "template": "Link para template Empathy Map no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/empathy-map",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["empatia", "usuário", "entendimento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_008",
+    "role": ["Product Owner"],
+    "title": "comunicacao-raci-matrix",
+    "description": "Ferramenta RACI Matrix para comunicação.",
+    "content": {
+      "theory": "A ferramenta RACI Matrix ajuda em Matriz RACI...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento RACI Matrix atualizado"
+      },
+      "template": "Link para template RACI Matrix no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/raci-matrix",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["responsabilidades", "RACI", "comunicação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_009",
+    "role": ["Product Owner"],
+    "title": "comunicacao-communication-plan",
+    "description": "Ferramenta Communication Plan para comunicação.",
+    "content": {
+      "theory": "A ferramenta Communication Plan ajuda em Plano de Comunicação...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Communication Plan atualizado"
+      },
+      "template": "Link para template Communication Plan no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/communication-plan",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["comunicação", "plano", "stakeholders"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_COMM_010",
+    "role": ["Product Owner"],
+    "title": "comunicacao-conflict-resolution",
+    "description": "Ferramenta Conflict Resolution para comunicação.",
+    "content": {
+      "theory": "A ferramenta Conflict Resolution ajuda em Resolução de Conflitos...",
+      "practical_example": {
+        "scenario": "Alinhamento com stakeholders",
+        "input": ["Progresso da Sprint"],
+        "output": "Documento Conflict Resolution atualizado"
+      },
+      "template": "Link para template Conflict Resolution no Google Docs"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/conflict-resolution",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["conflitos", "negociação", "facilitação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_001",
+    "role": ["Product Owner"],
+    "title": "agilidade-scrum-framework",
+    "description": "Conceito Scrum Framework em agilidade.",
+    "content": {
+      "theory": "O conceito Scrum Framework refere-se a Framework Scrum...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Scrum Framework"
+      },
+      "template": "Link para guia Scrum Framework na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/scrum-framework",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["scrum", "framework", "agilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_002",
+    "role": ["Product Owner"],
+    "title": "agilidade-kanban-method",
+    "description": "Conceito Kanban Method em agilidade.",
+    "content": {
+      "theory": "O conceito Kanban Method refere-se a Método Kanban...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Kanban Method"
+      },
+      "template": "Link para guia Kanban Method na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/kanban-method",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["kanban", "fluxo", "agilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_003",
+    "role": ["Product Owner"],
+    "title": "agilidade-lean-startup",
+    "description": "Conceito Lean Startup em agilidade.",
+    "content": {
+      "theory": "O conceito Lean Startup refere-se a Startup Enxuta...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Lean Startup"
+      },
+      "template": "Link para guia Lean Startup na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-startup",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["lean", "startup", "MVP"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_004",
+    "role": ["Product Owner"],
+    "title": "agilidade-design-thinking",
+    "description": "Conceito Design Thinking em agilidade.",
+    "content": {
+      "theory": "O conceito Design Thinking refere-se a Pensamento de Design...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Design Thinking"
+      },
+      "template": "Link para guia Design Thinking na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-thinking",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["design thinking", "inovação", "empatia"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_005",
+    "role": ["Product Owner"],
+    "title": "agilidade-agile-manifesto",
+    "description": "Conceito Agile Manifesto em agilidade.",
+    "content": {
+      "theory": "O conceito Agile Manifesto refere-se a Manifesto Ágil...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Agile Manifesto"
+      },
+      "template": "Link para guia Agile Manifesto na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/agile-manifesto",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["manifesto ágil", "valores", "princípios"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_006",
+    "role": ["Product Owner"],
+    "title": "agilidade-continuous-integration",
+    "description": "Conceito Continuous Integration em agilidade.",
+    "content": {
+      "theory": "O conceito Continuous Integration refere-se a Integração Contínua...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Continuous Integration"
+      },
+      "template": "Link para guia Continuous Integration na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/continuous-integration",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["CI", "DevOps", "qualidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_007",
+    "role": ["Product Owner"],
+    "title": "agilidade-continuous-delivery",
+    "description": "Conceito Continuous Delivery em agilidade.",
+    "content": {
+      "theory": "O conceito Continuous Delivery refere-se a Entrega Contínua...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Continuous Delivery"
+      },
+      "template": "Link para guia Continuous Delivery na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/continuous-delivery",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["CD", "DevOps", "entrega"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_008",
+    "role": ["Product Owner"],
+    "title": "agilidade-test-driven-development",
+    "description": "Conceito Test-Driven Development em agilidade.",
+    "content": {
+      "theory": "O conceito Test-Driven Development refere-se a Desenvolvimento Orientado a Testes...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Test-Driven Development"
+      },
+      "template": "Link para guia Test-Driven Development na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/test-driven-development",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["TDD", "qualidade", "testes"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_009",
+    "role": ["Product Owner"],
+    "title": "agilidade-behavior-driven-development",
+    "description": "Conceito Behavior-Driven Development em agilidade.",
+    "content": {
+      "theory": "O conceito Behavior-Driven Development refere-se a Desenvolvimento Orientado a Comportamento...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Behavior-Driven Development"
+      },
+      "template": "Link para guia Behavior-Driven Development na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/behavior-driven-development",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["BDD", "colaboração", "testes"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "PO_AGILE_010",
+    "role": ["Product Owner"],
+    "title": "agilidade-pair-programming",
+    "description": "Conceito Pair Programming em agilidade.",
+    "content": {
+      "theory": "O conceito Pair Programming refere-se a Programação em Par...",
+      "practical_example": {
+        "scenario": "Melhoria de processo",
+        "input": ["Problema atual"],
+        "output": "Aplicação de Pair Programming"
+      },
+      "template": "Link para guia Pair Programming na Wiki"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/pair-programming",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["pair programming", "qualidade", "colaboração"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]

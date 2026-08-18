@@ -1,0 +1,16 @@
+{
+  "id": "analista_de_dados-train-metricas-002",
+  "agent": "analista_de_dados",
+  "split": "train",
+  "demand": {
+    "title": "Medir taxa de conversão do funil de onboarding",
+    "description": "Precisamos saber quantos usuários concluem o onboarding completo para justificar investimento em melhorias.",
+    "type": "melhoria"
+  },
+  "context": "Onboarding tem 5 etapas. Sem telemetria atual. Squad quer dado para decidir se prioriza onboarding ou outra feature.",
+  "evidence": "Nenhum evento de onboarding instrumentado.",
+  "validOutput": "**Análise:** Sem telemetria, não dá para medir conversão — partimos do zero.\n**Problema Identificado:** Ausência de eventos por etapa do onboarding.\n**Impacto:** Squad decide sem dado, risco de priorizar errado.\n**Decisão que Precisa de Dados:** \"Vale investir em onboarding?\" precisa da taxa de conclusão atual.\n**Baseline:** Inexistente. Primeiro sinal: evento `onboarding_step_completed` com step_number.\n**Risco Analítico:** Medir só conclusão final ignora abandono por etapa — usar funil.\n**Recomendação:** Instrumentar eventos por etapa; coletar por 2 semanas; calcular conversão por step.\n**Métrica Principal:** Taxa de conclusão do onboarding (step 5 / step 1).\n**Métricas Auxiliares:** Taxa de abandono por etapa; tempo médio por step.\n**ROI:** Não calculável sem baseline.\n**Esforço:** 2 dias para instrumentar.\n**Prioridade:** Importante\n**Premissas:** ASSUMPTION — 2 semanas de coleta é suficiente para sinal inicial.",
+  "rejectedOutput": "\"Precisamos de um dashboard completo de analytics.\" Propõe ferramenta antes de definir o que medir.",
+  "rationale": "Foca no menor sinal a instrumentar, define métrica principal e auxiliares, e delimita janela de coleta. Rejeitada propõe solução antes da decisão.",
+  "tags": ["analista_de_dados", "funil", "onboarding", "telemetria", "primeiro-sinal"]
+}

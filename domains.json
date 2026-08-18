@@ -1,0 +1,11 @@
+[
+  {
+    "name": "legaltech_lgpd",
+    "embeddingModel": "text-embedding-3-small",
+    "hybridWeight": 0.5,
+    "chunkConfig": {
+      "maxTokens": 512,
+      "overlap": 50
+    }
+  }
+]

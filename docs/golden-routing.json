@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "description": "Golden set rotulado para medir acurácia do roteamento de modelo (task→tier). Cada caso tem um contexto (demand + classification + stageName) e o modelo esperado ('nano' ou 'mini'). Use evaluate-routing.ts para computar acurácia. O mapeamento esperado segue a política em model-routing.ts: stages de qa/template_validator OU complexity>=70 OU risk>=70 OU criticality>=80 OU clarity<=35 → mini; senão nano.",
+  "cases": [
+    {
+      "id": "rt-01",
+      "description": "Demanda técnica simples, prioria baixa, stage de geração",
+      "demand": { "priority": "baixa", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 30, "interpretationRisk": 20, "ambiguity": 30, "urgency": 10 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-02",
+      "description": "Demanda técnica complexa → mini",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 75, "interpretationRisk": 30, "ambiguity": 20, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-03",
+      "description": "Stage de QA sempre mini",
+      "demand": { "priority": "baixa", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 20, "interpretationRisk": 10, "ambiguity": 20, "urgency": 10 }
+      },
+      "stageName": "qa",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-04",
+      "description": "Stage de template_validator sempre mini",
+      "demand": { "priority": "baixa", "type": "analytical" },
+      "classification": {
+        "criteria": { "complexity": 25, "interpretationRisk": 15, "ambiguity": 25, "urgency": 10 }
+      },
+      "stageName": "template_validator",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-05",
+      "description": "Risco alto → mini",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 50, "interpretationRisk": 75, "ambiguity": 30, "urgency": 60 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-06",
+      "description": "Criticalidade alta (prioridade crítica) → mini",
+      "demand": { "priority": "critica", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 40, "interpretationRisk": 30, "ambiguity": 30, "urgency": 30 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-07",
+      "description": "Clarity baixa (ambiguity alta) → mini",
+      "demand": { "priority": "media", "type": "creative" },
+      "classification": {
+        "criteria": { "complexity": 40, "interpretationRisk": 30, "ambiguity": 80, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-08",
+      "description": "Demanda criativa simples → nano",
+      "demand": { "priority": "baixa", "type": "creative" },
+      "classification": {
+        "criteria": { "complexity": 35, "interpretationRisk": 20, "ambiguity": 35, "urgency": 15 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-09",
+      "description": "Demanda analítica simples → nano",
+      "demand": { "priority": "media", "type": "analytical" },
+      "classification": {
+        "criteria": { "complexity": 40, "interpretationRisk": 25, "ambiguity": 30, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-10",
+      "description": "Demanda técnica, prioridade alta mas baixa complexidade → nano",
+      "demand": { "priority": "alta", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 30, "interpretationRisk": 20, "ambiguity": 30, "urgency": 30 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-11",
+      "description": "Complexidade no limite (70) → mini",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 70, "interpretationRisk": 30, "ambiguity": 30, "urgency": 30 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-12",
+      "description": "Risco no limite (70) → mini",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 50, "interpretationRisk": 70, "ambiguity": 30, "urgency": 50 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-13",
+      "description": "Sem classificação, demanda técnica simples → nano (default)",
+      "demand": { "priority": "baixa", "type": "technical" },
+      "classification": null,
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-14",
+      "description": "Sem classificação, stage QA → mini",
+      "demand": { "priority": "baixa", "type": "technical" },
+      "classification": null,
+      "stageName": "qa",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-15",
+      "description": "Demanda criativa complexa → mini",
+      "demand": { "priority": "media", "type": "creative" },
+      "classification": {
+        "criteria": { "complexity": 80, "interpretationRisk": 30, "ambiguity": 40, "urgency": 30 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-16",
+      "description": "Demanda analítica de alto risco → mini",
+      "demand": { "priority": "alta", "type": "analytical" },
+      "classification": {
+        "criteria": { "complexity": 55, "interpretationRisk": 80, "ambiguity": 30, "urgency": 70 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-17",
+      "description": "Clarity no limite (ambiguity=65 → clarity=35) → mini",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 40, "interpretationRisk": 30, "ambiguity": 65, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-18",
+      "description": "Clarity acima do limite (ambiguity=64 → clarity=36) → nano",
+      "demand": { "priority": "media", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 40, "interpretationRisk": 30, "ambiguity": 64, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "nano"
+    },
+    {
+      "id": "rt-19",
+      "description": "Criticalidade no limite (prioridade critical → 80) → mini",
+      "demand": { "priority": "critica", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 20, "interpretationRisk": 20, "ambiguity": 30, "urgency": 20 }
+      },
+      "stageName": "prd_generation",
+      "expectedTier": "mini"
+    },
+    {
+      "id": "rt-20",
+      "description": "Demanda técnica, tudo baixo, stage de tasks → nano",
+      "demand": { "priority": "baixa", "type": "technical" },
+      "classification": {
+        "criteria": { "complexity": 25, "interpretationRisk": 15, "ambiguity": 25, "urgency": 10 }
+      },
+      "stageName": "tasks_generation",
+      "expectedTier": "nano"
+    }
+  ]
+}

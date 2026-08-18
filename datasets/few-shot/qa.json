@@ -1,0 +1,16 @@
+{
+  "id": "qa-form-validation-001",
+  "agent": "qa",
+  "demand": {
+    "title": "Validação no envio de formulário",
+    "description": "Alterar o envio de formulário para preservar dados válidos e bloquear dados inválidos.",
+    "type": "melhoria"
+  },
+  "context": "Não há matriz de validação existente informada. Stack atual deve ser mantida.",
+  "evidence": "Screenshot da mensagem, log da resposta e registro salvo no banco.",
+  "validOutput": "**Análise:** A demanda altera o envio de formulário, então o comportamento crítico é preservar dados válidos e bloquear dados inválidos.\n**Problema Identificado:** Não há critérios de aceite para erro de validação.\n**Impacto:** Usuários podem perder dados ou enviar informações incompletas.\n**Recomendação:** Testar envio válido, campo obrigatório vazio, formato inválido e erro de servidor.\n**Casos de Teste:** Happy path com sucesso; edge case com campo opcional vazio; negativo com e-mail inválido; regressão na lista de registros após envio.\n**Evidências:** Screenshot da mensagem, log da resposta e registro salvo no banco.\n**ROI:** 4:1\n**Esforço:** 2 dias\n**Prioridade:** Importante\n**Premissas:** Não há matriz de validação existente informada.",
+  "rejectedOutput": "\"Testar tudo antes de subir.\" Isso não define casos, evidência ou critério de aceite.",
+  "rationale": "A saída válida define casos de teste concretos, evidências reproduzíveis e critérios de aceite verificáveis; a rejeitada é uma opinião genérica sem casos, evidência ou critério.",
+  "split": "holdout",
+  "tags": ["qa", "criterios-de-aceite", "evidencia", "plano-de-testes"]
+}

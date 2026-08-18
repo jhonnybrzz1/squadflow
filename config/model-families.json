@@ -1,0 +1,183 @@
+{
+  "$schema": "../server/services/model-family-rules.ts",
+  "version": 1,
+  "families": [
+    {
+      "alias": "mimo-pro-latest",
+      "family": "mimo-pro",
+      "provider": "xiaomi",
+      "initialModelId": "mimo-v2.5-pro",
+      "fallbackModelId": "deepseek/deepseek-v4-pro",
+      "includePatterns": ["^mimo-v\\d+(?:\\.\\d+)*-pro$"],
+      "excludePatterns": ["ultraspeed", "preview", "beta", "experimental", "free"],
+      "minimumContextLength": 131072,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "mimo-general-latest",
+      "family": "mimo-general",
+      "provider": "xiaomi",
+      "initialModelId": "mimo-v2.5",
+      "fallbackModelId": "mistral-medium-3.5",
+      "includePatterns": ["^mimo-v\\d+(?:\\.\\d+)*$"],
+      "excludePatterns": ["pro", "ultraspeed", "preview", "beta", "experimental", "free"],
+      "minimumContextLength": 131072,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "codestral-latest",
+      "family": "codestral",
+      "provider": "mistral",
+      "initialModelId": "codestral-latest",
+      "fallbackModelId": "mistral-small-2603",
+      "includePatterns": ["^codestral-(?:latest|[0-9]+\\.[0-9]+)$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "native-latest-alias",
+      "autoPromote": false
+    },
+    {
+      "alias": "mistral-medium-latest",
+      "family": "mistral-medium",
+      "provider": "mistral",
+      "initialModelId": "mistral-medium-3.5",
+      "fallbackModelId": "deepseek/deepseek-v4-pro",
+      "includePatterns": ["^mistral-medium-[0-9]+(?:\\.[0-9]+)*$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "mistral-small-latest",
+      "family": "mistral-small",
+      "provider": "mistral",
+      "initialModelId": "mistral-small-2603",
+      "fallbackModelId": "deepseek/deepseek-v4-flash",
+      "includePatterns": ["^mistral-small-[0-9]+(?:\\.[0-9]+)*$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "minimax-m-latest",
+      "family": "minimax-m",
+      "provider": "tencent",
+      "initialModelId": "minimax-m3",
+      "fallbackModelId": "mistral-medium-3.5",
+      "includePatterns": [
+        "^minimax-m[0-9]+(?:\\.[0-9]+)*$",
+        "^minimax/minimax-m[0-9]+(?:\\.[0-9]+)*$"
+      ],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "numeric-generation",
+      "autoPromote": false
+    },
+    {
+      "alias": "glm-latest",
+      "family": "glm",
+      "provider": "tencent",
+      "initialModelId": "glm-5.2",
+      "fallbackModelId": "deepseek/deepseek-v4-pro",
+      "includePatterns": ["^z-ai/glm-[0-9]+(?:\\.[0-9]+)*$", "^glm-[0-9]+(?:\\.[0-9]+)*$"],
+      "excludePatterns": ["flash", "preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "glm-flash-latest",
+      "family": "glm-flash",
+      "provider": "tencent",
+      "initialModelId": "glm-5.2",
+      "fallbackModelId": "mistral-small-2603",
+      "includePatterns": ["^z-ai/glm-[0-9]+(?:\\.[0-9]+)*-flash$", "^glm-[0-9]+(?:\\.[0-9]+)*$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "semantic-version",
+      "autoPromote": false
+    },
+    {
+      "alias": "deepseek-v4-pro-latest",
+      "family": "deepseek-v4-pro",
+      "provider": "tencent",
+      "initialModelId": "deepseek/deepseek-v4-pro",
+      "fallbackModelId": "mistral-medium-3.5",
+      "includePatterns": ["^deepseek/deepseek-v[0-9]+-pro$"],
+      "excludePatterns": ["flash", "preview", "beta", "experimental", "free"],
+      "minimumContextLength": 64000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "numeric-generation",
+      "autoPromote": false
+    },
+    {
+      "alias": "deepseek-v4-flash-latest",
+      "family": "deepseek-v4-flash",
+      "provider": "tencent",
+      "initialModelId": "deepseek/deepseek-v4-flash",
+      "fallbackModelId": "mistral-small-2603",
+      "includePatterns": ["^deepseek/deepseek-v[0-9]+-flash$"],
+      "excludePatterns": ["pro", "preview", "beta", "experimental", "free"],
+      "minimumContextLength": 64000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "numeric-generation",
+      "autoPromote": false
+    },
+    {
+      "alias": "qwen-coder-latest",
+      "family": "qwen-coder",
+      "provider": "openrouter",
+      "initialModelId": "qwen/qwen3-coder-next",
+      "fallbackModelId": "codestral-latest",
+      "includePatterns": ["^qwen/qwen[0-9]+-coder(?:-next)?$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "explicit-priority",
+      "preferredSuffixes": ["-next"],
+      "excludedSuffixes": ["-preview", "-free"],
+      "autoPromote": false
+    },
+    {
+      "alias": "mimo-flash-latest",
+      "family": "mimo-flash",
+      "provider": "xiaomi",
+      "initialModelId": "mimo-v2.5",
+      "fallbackModelId": "deepseek/deepseek-v4-flash",
+      "includePatterns": ["^mimo-v\\d+(?:\\.\\d+)*-flash$"],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 131072,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "no-auto-comparison",
+      "autoPromote": false
+    },
+    {
+      "alias": "kimi-latest",
+      "family": "kimi",
+      "provider": "tencent",
+      "initialModelId": "kimi-k2.6",
+      "fallbackModelId": "mistral-medium-3.5",
+      "includePatterns": [
+        "^moonshotai/kimi-k[0-9]+(?:\\.[0-9]+)*$",
+        "^kimi-k[0-9]+(?:\\.[0-9]+)*$"
+      ],
+      "excludePatterns": ["preview", "beta", "experimental", "free"],
+      "minimumContextLength": 32000,
+      "requiredInputModalities": ["text"],
+      "comparisonStrategy": "no-auto-comparison",
+      "autoPromote": false
+    }
+  ]
+}

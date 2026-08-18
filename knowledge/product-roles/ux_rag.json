@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "UX_RES_001",
+    "role": ["UX Designer"],
+    "title": "pesquisa-user-interviews",
+    "description": "Método de pesquisa User Interviews.",
+    "content": {
+      "theory": "O método User Interviews é utilizado para Entrevistas com Usuários...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de User Interviews"
+      },
+      "template": "Link para roteiro de User Interviews"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-interviews",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "entrevistas", "qualitativo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_002",
+    "role": ["UX Designer"],
+    "title": "pesquisa-contextual-inquiry",
+    "description": "Método de pesquisa Contextual Inquiry.",
+    "content": {
+      "theory": "O método Contextual Inquiry é utilizado para Investigação Contextual...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Contextual Inquiry"
+      },
+      "template": "Link para roteiro de Contextual Inquiry"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/contextual-inquiry",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "contexto", "observação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_003",
+    "role": ["UX Designer"],
+    "title": "pesquisa-diary-studies",
+    "description": "Método de pesquisa Diary Studies.",
+    "content": {
+      "theory": "O método Diary Studies é utilizado para Estudos de Diário...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Diary Studies"
+      },
+      "template": "Link para roteiro de Diary Studies"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/diary-studies",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "diário", "longitudinal"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_004",
+    "role": ["UX Designer"],
+    "title": "pesquisa-card-sorting",
+    "description": "Método de pesquisa Card Sorting.",
+    "content": {
+      "theory": "O método Card Sorting é utilizado para Card Sorting...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Card Sorting"
+      },
+      "template": "Link para roteiro de Card Sorting"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/card-sorting",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "arquitetura de informação", "card sorting"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_005",
+    "role": ["UX Designer"],
+    "title": "pesquisa-tree-testing",
+    "description": "Método de pesquisa Tree Testing.",
+    "content": {
+      "theory": "O método Tree Testing é utilizado para Tree Testing...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Tree Testing"
+      },
+      "template": "Link para roteiro de Tree Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/tree-testing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "arquitetura de informação", "navegação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_006",
+    "role": ["UX Designer"],
+    "title": "pesquisa-ab-testing",
+    "description": "Método de pesquisa A/B Testing.",
+    "content": {
+      "theory": "O método A/B Testing é utilizado para Testes A/B...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de A/B Testing"
+      },
+      "template": "Link para roteiro de A/B Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ab-testing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "testes", "quantitativo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_007",
+    "role": ["UX Designer"],
+    "title": "pesquisa-surveys-and-questionnaires",
+    "description": "Método de pesquisa Surveys and Questionnaires.",
+    "content": {
+      "theory": "O método Surveys and Questionnaires é utilizado para Pesquisas e Questionários...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Surveys and Questionnaires"
+      },
+      "template": "Link para roteiro de Surveys and Questionnaires"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/surveys-and-questionnaires",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "surveys", "quantitativo"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_008",
+    "role": ["UX Designer"],
+    "title": "pesquisa-heuristic-evaluation",
+    "description": "Método de pesquisa Heuristic Evaluation.",
+    "content": {
+      "theory": "O método Heuristic Evaluation é utilizado para Avaliação Heurística...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Heuristic Evaluation"
+      },
+      "template": "Link para roteiro de Heuristic Evaluation"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/heuristic-evaluation",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "heurísticas", "usabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_009",
+    "role": ["UX Designer"],
+    "title": "pesquisa-cognitive-walkthrough",
+    "description": "Método de pesquisa Cognitive Walkthrough.",
+    "content": {
+      "theory": "O método Cognitive Walkthrough é utilizado para Percurso Cognitivo...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Cognitive Walkthrough"
+      },
+      "template": "Link para roteiro de Cognitive Walkthrough"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/cognitive-walkthrough",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "cognitivo", "tarefas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_010",
+    "role": ["UX Designer"],
+    "title": "pesquisa-eye-tracking",
+    "description": "Método de pesquisa Eye Tracking.",
+    "content": {
+      "theory": "O método Eye Tracking é utilizado para Rastreamento Ocular...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Eye Tracking"
+      },
+      "template": "Link para roteiro de Eye Tracking"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/eye-tracking",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "eye tracking", "atenção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_011",
+    "role": ["UX Designer"],
+    "title": "pesquisa-click-testing",
+    "description": "Método de pesquisa Click Testing.",
+    "content": {
+      "theory": "O método Click Testing é utilizado para Testes de Clique...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Click Testing"
+      },
+      "template": "Link para roteiro de Click Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/click-testing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "cliques", "interação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_012",
+    "role": ["UX Designer"],
+    "title": "pesquisa-desirability-testing",
+    "description": "Método de pesquisa Desirability Testing.",
+    "content": {
+      "theory": "O método Desirability Testing é utilizado para Testes de Desejabilidade...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Desirability Testing"
+      },
+      "template": "Link para roteiro de Desirability Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/desirability-testing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "desejabilidade", "emoção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_013",
+    "role": ["UX Designer"],
+    "title": "pesquisa-concept-testing",
+    "description": "Método de pesquisa Concept Testing.",
+    "content": {
+      "theory": "O método Concept Testing é utilizado para Testes de Conceito...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Concept Testing"
+      },
+      "template": "Link para roteiro de Concept Testing"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/concept-testing",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "conceito", "validação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_014",
+    "role": ["UX Designer"],
+    "title": "pesquisa-usability-benchmarking",
+    "description": "Método de pesquisa Usability Benchmarking.",
+    "content": {
+      "theory": "O método Usability Benchmarking é utilizado para Benchmarking de Usabilidade...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Usability Benchmarking"
+      },
+      "template": "Link para roteiro de Usability Benchmarking"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/usability-benchmarking",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "benchmark", "concorrência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_RES_015",
+    "role": ["UX Designer"],
+    "title": "pesquisa-ethnographic-studies",
+    "description": "Método de pesquisa Ethnographic Studies.",
+    "content": {
+      "theory": "O método Ethnographic Studies é utilizado para Estudos Etnográficos...",
+      "practical_example": {
+        "scenario": "Entendimento do usuário",
+        "input": ["Objetivos de pesquisa"],
+        "output": "Resultados de Ethnographic Studies"
+      },
+      "template": "Link para roteiro de Ethnographic Studies"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ethnographic-studies",
+        "trust_score": 0.95
+      }
+    ],
+    "tags": ["pesquisa", "etnografia", "cultura"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_001",
+    "role": ["UX Designer"],
+    "title": "design-wireframing",
+    "description": "Conceito/Prática de Wireframing.",
+    "content": {
+      "theory": "A prática de Wireframing envolve Criação de Wireframes...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Wireframing"
+      },
+      "template": "Link para recursos de Wireframing no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/wireframing",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "wireframes", "baixa fidelidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_002",
+    "role": ["UX Designer"],
+    "title": "design-prototyping",
+    "description": "Conceito/Prática de Prototyping.",
+    "content": {
+      "theory": "A prática de Prototyping envolve Prototipação...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Prototyping"
+      },
+      "template": "Link para recursos de Prototyping no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/prototyping",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "protótipos", "interação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_003",
+    "role": ["UX Designer"],
+    "title": "design-user-flows",
+    "description": "Conceito/Prática de User Flows.",
+    "content": {
+      "theory": "A prática de User Flows envolve Fluxos de Usuário...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de User Flows"
+      },
+      "template": "Link para recursos de User Flows no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/user-flows",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "fluxos", "navegação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_004",
+    "role": ["UX Designer"],
+    "title": "design-information-architecture",
+    "description": "Conceito/Prática de Information Architecture.",
+    "content": {
+      "theory": "A prática de Information Architecture envolve Arquitetura de Informação...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Information Architecture"
+      },
+      "template": "Link para recursos de Information Architecture no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/information-architecture",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "IA", "estrutura"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_005",
+    "role": ["UX Designer"],
+    "title": "design-design-systems",
+    "description": "Conceito/Prática de Design Systems.",
+    "content": {
+      "theory": "A prática de Design Systems envolve Sistemas de Design...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Design Systems"
+      },
+      "template": "Link para recursos de Design Systems no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-systems",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "design system", "consistência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_006",
+    "role": ["UX Designer"],
+    "title": "design-ui-kits",
+    "description": "Conceito/Prática de UI Kits.",
+    "content": {
+      "theory": "A prática de UI Kits envolve Kits de Interface de Usuário...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de UI Kits"
+      },
+      "template": "Link para recursos de UI Kits no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/ui-kits",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "UI kit", "componentes"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_007",
+    "role": ["UX Designer"],
+    "title": "design-responsive-design",
+    "description": "Conceito/Prática de Responsive Design.",
+    "content": {
+      "theory": "A prática de Responsive Design envolve Design Responsivo...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Responsive Design"
+      },
+      "template": "Link para recursos de Responsive Design no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/responsive-design",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "responsivo", "mobile"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_008",
+    "role": ["UX Designer"],
+    "title": "design-mobile-first-design",
+    "description": "Conceito/Prática de Mobile-First Design.",
+    "content": {
+      "theory": "A prática de Mobile-First Design envolve Design Mobile-First...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Mobile-First Design"
+      },
+      "template": "Link para recursos de Mobile-First Design no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/mobile-first-design",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "mobile-first", "prioridade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_009",
+    "role": ["UX Designer"],
+    "title": "design-microinteractions",
+    "description": "Conceito/Prática de Microinteractions.",
+    "content": {
+      "theory": "A prática de Microinteractions envolve Microinterações...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Microinteractions"
+      },
+      "template": "Link para recursos de Microinteractions no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/microinteractions",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "microinterações", "feedback"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_010",
+    "role": ["UX Designer"],
+    "title": "design-typography",
+    "description": "Conceito/Prática de Typography.",
+    "content": {
+      "theory": "A prática de Typography envolve Tipografia...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Typography"
+      },
+      "template": "Link para recursos de Typography no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/typography",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "tipografia", "legibilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_011",
+    "role": ["UX Designer"],
+    "title": "design-color-theory",
+    "description": "Conceito/Prática de Color Theory.",
+    "content": {
+      "theory": "A prática de Color Theory envolve Teoria das Cores...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Color Theory"
+      },
+      "template": "Link para recursos de Color Theory no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/color-theory",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "cores", "emoção"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_012",
+    "role": ["UX Designer"],
+    "title": "design-grid-systems",
+    "description": "Conceito/Prática de Grid Systems.",
+    "content": {
+      "theory": "A prática de Grid Systems envolve Sistemas de Grid...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Grid Systems"
+      },
+      "template": "Link para recursos de Grid Systems no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/grid-systems",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "grid", "alinhamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_013",
+    "role": ["UX Designer"],
+    "title": "design-accessibility-wcag",
+    "description": "Conceito/Prática de Accessibility (WCAG).",
+    "content": {
+      "theory": "A prática de Accessibility (WCAG) envolve Acessibilidade...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Accessibility (WCAG)"
+      },
+      "template": "Link para recursos de Accessibility (WCAG) no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/accessibility-wcag",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "acessibilidade", "WCAG"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_014",
+    "role": ["UX Designer"],
+    "title": "design-dark-patterns",
+    "description": "Conceito/Prática de Dark Patterns.",
+    "content": {
+      "theory": "A prática de Dark Patterns envolve Padrões Obscuros...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Dark Patterns"
+      },
+      "template": "Link para recursos de Dark Patterns no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/dark-patterns",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "ética", "dark patterns"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_DES_015",
+    "role": ["UX Designer"],
+    "title": "design-gamification",
+    "description": "Conceito/Prática de Gamification.",
+    "content": {
+      "theory": "A prática de Gamification envolve Gamificação...",
+      "practical_example": {
+        "scenario": "Criação de nova interface",
+        "input": ["Requisitos de design"],
+        "output": "Aplicação de Gamification"
+      },
+      "template": "Link para recursos de Gamification no Figma"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/gamification",
+        "trust_score": 0.9
+      }
+    ],
+    "tags": ["design", "gamificação", "engajamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_001",
+    "role": ["UX Designer"],
+    "title": "estrategia-design-thinking",
+    "description": "Ferramenta estratégica Design Thinking.",
+    "content": {
+      "theory": "A ferramenta Design Thinking é usada para Design Thinking...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Design Thinking"
+      },
+      "template": "Link para template de Design Thinking no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-thinking",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "design thinking", "inovação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_002",
+    "role": ["UX Designer"],
+    "title": "estrategia-design-sprints",
+    "description": "Ferramenta estratégica Design Sprints.",
+    "content": {
+      "theory": "A ferramenta Design Sprints é usada para Design Sprints...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Design Sprints"
+      },
+      "template": "Link para template de Design Sprints no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/design-sprints",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "sprint", "ideação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_003",
+    "role": ["UX Designer"],
+    "title": "estrategia-lean-ux",
+    "description": "Ferramenta estratégica Lean UX.",
+    "content": {
+      "theory": "A ferramenta Lean UX é usada para Lean UX...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Lean UX"
+      },
+      "template": "Link para template de Lean UX no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/lean-ux",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "lean", "agilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_004",
+    "role": ["UX Designer"],
+    "title": "estrategia-service-design",
+    "description": "Ferramenta estratégica Service Design.",
+    "content": {
+      "theory": "A ferramenta Service Design é usada para Design de Serviços...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Service Design"
+      },
+      "template": "Link para template de Service Design no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/service-design",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "serviços", "jornada"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_005",
+    "role": ["UX Designer"],
+    "title": "estrategia-jobs-to-be-done-jtbd",
+    "description": "Ferramenta estratégica Jobs to be Done (JTBD).",
+    "content": {
+      "theory": "A ferramenta Jobs to be Done (JTBD) é usada para Jobs to be Done...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Jobs to be Done (JTBD)"
+      },
+      "template": "Link para template de Jobs to be Done (JTBD) no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/jobs-to-be-done-jtbd",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "JTBD", "necessidades"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_006",
+    "role": ["UX Designer"],
+    "title": "estrategia-value-proposition-canvas",
+    "description": "Ferramenta estratégica Value Proposition Canvas.",
+    "content": {
+      "theory": "A ferramenta Value Proposition Canvas é usada para Canvas de Proposta de Valor...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Value Proposition Canvas"
+      },
+      "template": "Link para template de Value Proposition Canvas no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/value-proposition-canvas",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "valor", "canvas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_007",
+    "role": ["UX Designer"],
+    "title": "estrategia-empathy-mapping",
+    "description": "Ferramenta estratégica Empathy Mapping.",
+    "content": {
+      "theory": "A ferramenta Empathy Mapping é usada para Mapeamento de Empatia...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Empathy Mapping"
+      },
+      "template": "Link para template de Empathy Mapping no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/empathy-mapping",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "empatia", "usuário"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_008",
+    "role": ["UX Designer"],
+    "title": "estrategia-persona-creation",
+    "description": "Ferramenta estratégica Persona Creation.",
+    "content": {
+      "theory": "A ferramenta Persona Creation é usada para Criação de Personas...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Persona Creation"
+      },
+      "template": "Link para template de Persona Creation no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/persona-creation",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "personas", "representação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_009",
+    "role": ["UX Designer"],
+    "title": "estrategia-journey-mapping",
+    "description": "Ferramenta estratégica Journey Mapping.",
+    "content": {
+      "theory": "A ferramenta Journey Mapping é usada para Mapeamento de Jornada...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Journey Mapping"
+      },
+      "template": "Link para template de Journey Mapping no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/journey-mapping",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "jornada", "experiência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_STRAT_010",
+    "role": ["UX Designer"],
+    "title": "estrategia-storyboarding",
+    "description": "Ferramenta estratégica Storyboarding.",
+    "content": {
+      "theory": "A ferramenta Storyboarding é usada para Storyboarding...",
+      "practical_example": {
+        "scenario": "Alinhamento estratégico",
+        "input": ["Problema de negócio"],
+        "output": "Workshop de Storyboarding"
+      },
+      "template": "Link para template de Storyboarding no Miro"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/storyboarding",
+        "trust_score": 0.88
+      }
+    ],
+    "tags": ["estratégia", "storyboard", "narrativa"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_001",
+    "role": ["UX Designer"],
+    "title": "metricas-system-usability-scale-sus",
+    "description": "Métrica de UX System Usability Scale (SUS).",
+    "content": {
+      "theory": "A métrica System Usability Scale (SUS) mede Escala de Usabilidade do Sistema...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de System Usability Scale (SUS)"
+      },
+      "template": "Link para calculadora de System Usability Scale (SUS)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/system-usability-scale-sus",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "SUS", "usabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_002",
+    "role": ["UX Designer"],
+    "title": "metricas-net-promoter-score-nps",
+    "description": "Métrica de UX Net Promoter Score (NPS).",
+    "content": {
+      "theory": "A métrica Net Promoter Score (NPS) mede Net Promoter Score...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Net Promoter Score (NPS)"
+      },
+      "template": "Link para calculadora de Net Promoter Score (NPS)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/net-promoter-score-nps",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "NPS", "lealdade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_003",
+    "role": ["UX Designer"],
+    "title": "metricas-customer-satisfaction-csat",
+    "description": "Métrica de UX Customer Satisfaction (CSAT).",
+    "content": {
+      "theory": "A métrica Customer Satisfaction (CSAT) mede Satisfação do Cliente...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Customer Satisfaction (CSAT)"
+      },
+      "template": "Link para calculadora de Customer Satisfaction (CSAT)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/customer-satisfaction-csat",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "CSAT", "satisfação"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_004",
+    "role": ["UX Designer"],
+    "title": "metricas-customer-effort-score-ces",
+    "description": "Métrica de UX Customer Effort Score (CES).",
+    "content": {
+      "theory": "A métrica Customer Effort Score (CES) mede Índice de Esforço do Cliente...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Customer Effort Score (CES)"
+      },
+      "template": "Link para calculadora de Customer Effort Score (CES)"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/customer-effort-score-ces",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "CES", "esforço"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_005",
+    "role": ["UX Designer"],
+    "title": "metricas-task-success-rate",
+    "description": "Métrica de UX Task Success Rate.",
+    "content": {
+      "theory": "A métrica Task Success Rate mede Taxa de Sucesso da Tarefa...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Task Success Rate"
+      },
+      "template": "Link para calculadora de Task Success Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/task-success-rate",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "sucesso", "tarefas"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_006",
+    "role": ["UX Designer"],
+    "title": "metricas-time-on-task",
+    "description": "Métrica de UX Time on Task.",
+    "content": {
+      "theory": "A métrica Time on Task mede Tempo na Tarefa...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Time on Task"
+      },
+      "template": "Link para calculadora de Time on Task"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/time-on-task",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "tempo", "eficiência"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_007",
+    "role": ["UX Designer"],
+    "title": "metricas-error-rate",
+    "description": "Métrica de UX Error Rate.",
+    "content": {
+      "theory": "A métrica Error Rate mede Taxa de Erro...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Error Rate"
+      },
+      "template": "Link para calculadora de Error Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/error-rate",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "erros", "usabilidade"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_008",
+    "role": ["UX Designer"],
+    "title": "metricas-conversion-rate",
+    "description": "Métrica de UX Conversion Rate.",
+    "content": {
+      "theory": "A métrica Conversion Rate mede Taxa de Conversão...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Conversion Rate"
+      },
+      "template": "Link para calculadora de Conversion Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/conversion-rate",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "conversão", "negócios"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_009",
+    "role": ["UX Designer"],
+    "title": "metricas-retention-rate",
+    "description": "Métrica de UX Retention Rate.",
+    "content": {
+      "theory": "A métrica Retention Rate mede Taxa de Retenção...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Retention Rate"
+      },
+      "template": "Link para calculadora de Retention Rate"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/retention-rate",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "retenção", "engajamento"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  },
+  {
+    "id": "UX_METR_010",
+    "role": ["UX Designer"],
+    "title": "metricas-heart-framework",
+    "description": "Métrica de UX Heart Framework.",
+    "content": {
+      "theory": "A métrica Heart Framework mede Framework HEART...",
+      "practical_example": {
+        "scenario": "Avaliação de interface",
+        "input": ["Dados de uso"],
+        "output": "Relatório de Heart Framework"
+      },
+      "template": "Link para calculadora de Heart Framework"
+    },
+    "sources": [
+      {
+        "url": "https://example.com/heart-framework",
+        "trust_score": 0.92
+      }
+    ],
+    "tags": ["métricas", "HEART", "Google"],
+    "last_updated": "2026-05-06",
+    "version": "1.0"
+  }
+]
