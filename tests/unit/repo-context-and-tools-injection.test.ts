@@ -60,8 +60,8 @@ describe('extractRepoFullNameFromText', () => {
   });
 
   it('extrai repo quando há texto ao redor', () => {
-    const desc = 'Demanda de feature. Repositório: josedev/aichatflow. Implementar cache.';
-    expect(extractRepoFullNameFromText(desc)).toBe('josedev/aichatflow');
+    const desc = 'Demanda de feature. Repositório: example-org/aichatflow. Implementar cache.';
+    expect(extractRepoFullNameFromText(desc)).toBe('example-org/aichatflow');
   });
 
   it('retorna null quando não há padrão Repositório', () => {

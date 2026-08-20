@@ -41,7 +41,13 @@ export interface AgentPromptConfig {
 
 const DISC_PERSONALITY_MARKER = '--- PERSONALIZACAO DISC DO PO ---';
 
-export const JOSE_JONATHAN_DISC_TRAITS: DiscTraitMap = {
+/**
+ * Perfil DISC padrao do PO, usado quando o chamador nao fornece traits proprios.
+ * Os pesos calibram o tom em `normalizePersonalityTraits` (concisao, clareza de
+ * sequencia e enfase em risco). Para outro perfil, passe um `DiscTraitMap`
+ * explicito nas funcoes que aceitam `traits` em vez de editar este default.
+ */
+export const DEFAULT_DISC_TRAITS: DiscTraitMap = {
   paciencia: { natural: 40, adapted: 83 },
   planejamento: { natural: 58, adapted: 76 },
   prudencia: { natural: 52, adapted: 74 },
@@ -147,9 +153,7 @@ export function applyPmInnovationToProductManager<T extends AgentPromptConfig>(
   } as T;
 }
 
-export function normalizePersonalityTraits(
-  traits: DiscTraitMap = JOSE_JONATHAN_DISC_TRAITS,
-): string {
+export function normalizePersonalityTraits(traits: DiscTraitMap = DEFAULT_DISC_TRAITS): string {
   const paciencia = findTrait(traits, ['paciência', 'paciencia']);
   const planejamento = findTrait(traits, ['planejamento', 'organizacao', 'organização']);
   const prudencia = findTrait(traits, ['prudência', 'prudencia', 'cautela']);
@@ -173,7 +177,7 @@ export function normalizePersonalityTraits(
 }
 
 export function buildDiscPersonalityPromptBlock(
-  traits: DiscTraitMap = JOSE_JONATHAN_DISC_TRAITS,
+  traits: DiscTraitMap = DEFAULT_DISC_TRAITS,
 ): string {
   return [
     DISC_PERSONALITY_MARKER,
