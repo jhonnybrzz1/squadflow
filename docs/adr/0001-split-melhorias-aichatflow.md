@@ -18,7 +18,7 @@ tracing distribuído OTLP, tags de descoberta do GitHub e ADRs, e integração
 com Jira. Nenhuma delas tinha usuário, problema, job story, métrica de
 sucesso ou plano de rollout definidos — o formato clássico de _checkbox
 engineering_: adicionar capacidades para parecer mais completo, não para
-resolver uma dor real. O time de execução é pequeno (1 pleno + 2 juniores) e
+resolver uma dor real. O time de execução é pequeno e
 não havia baseline de custo (OpenRouter), latência ou dependências externas
 para nenhuma das 5 iniciativas — risco real de paralisia por escopo
 indefinido.

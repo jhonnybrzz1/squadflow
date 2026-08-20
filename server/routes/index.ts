@@ -56,6 +56,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.use('/api/demands', rateLimitLLM);
   app.use('/api/refinement', rateLimitLLM);
   app.use('/api/agent-jobs', rateLimitLLM);
+  // `app.use('/api/refinement')` casa apenas `/api/refinement` e `/api/refinement/*`;
+  // os caminhos abaixo sao irmaos, nao filhos, e ficavam sem teto por IP.
+  app.use('/api/refinement-response', rateLimitLLM);
+  app.use('/api/refinement-pause', rateLimitLLM);
+  app.use('/api/refinement-resume', rateLimitLLM);
+  app.use('/api/refinements', rateLimitLLM);
 
   // Legacy / Original Modularized
   app.use('/api', cognitiveRoutes);

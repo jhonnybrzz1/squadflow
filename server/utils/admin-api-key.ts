@@ -13,6 +13,11 @@ const KNOWN_PLACEHOLDERS = [
   'password',
   '123456',
   '00000000',
+  // Valores publicados em `.env.example`. O README instrui `cp .env.example .env`,
+  // entao qualquer um consegue ler estes valores no repositorio: aceita-los como
+  // chave valida transformaria a porta admin numa credencial publica.
+  'local_dev_dummy_admin_api_key',
+  'local_dev_dummy_reload_token',
 ];
 
 export interface AdminApiKeyValidation {

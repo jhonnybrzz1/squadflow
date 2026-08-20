@@ -8,7 +8,22 @@
 import type { Request, Response, NextFunction } from 'express';
 import { verifyAdminApiKey } from '../utils/admin-api-key';
 
-const ADMIN_PREFIXES = ['/api/admin', '/api/billing', '/api/governance', '/admin'];
+// `/debug` expoe o audit log de LLM (prompts e respostas) e `/api/safety` expoe
+// eventos de guardrail: ambos sao superficie administrativa e precisam do mesmo
+// gate quando o bind nao e loopback.
+const ADMIN_PREFIXES = [
+  '/api/admin',
+  '/api/billing',
+  '/api/governance',
+  '/admin',
+  '/debug',
+  '/api/safety',
+  // `/api/ai/*` e `/api/metrics/*` expoem operacoes destrutivas (reset de uso,
+  // limpeza de cache e de metricas, reset de circuit breaker) atras de
+  // middlewares de auditoria que nao autenticam.
+  '/api/ai',
+  '/api/metrics',
+];
 
 let loopbackFlag: boolean | null = null;
 

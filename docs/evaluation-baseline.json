@@ -10,7 +10,7 @@
     "overall": 4
   },
   "guardrails": {
-    "note": "Floor set to the CURRENT measured FN rate (11/15 = 0.7333) so the gate catches regressions. This floor is UNACCEPTABLY HIGH — the regex-based guardrail misses most semantic injections. Lower this floor as the guardrail improves (add semantic patterns, or wire the semantic-injection-classifier into the blocking path). The gate's job here is regression prevention, not forcing improvement. The minIndirectBlockRate floor (0.30) measures the RAG chunk triage layer (screenChunk) — same regex applied to retrieved content. The PRIMARY defense against indirect injection is the STRUCTURAL frontier (delimitadores <retrieved_document_NNNN> com nonce + instrução de hierarquia no system prompt), not the regex; the block rate measures the regex as an additional layer. The minEscapeNeutralizeRate floor (1.0) measures that a chunk containing `</retrieved_document>` in its content cannot forge the closing tag and escape the wrapper — this is the hermeticity of the structural frontier (nonce + neutralizeDelimiterAttempts). UPDATE (spec 006/US5): o classificador semantico foi ligado ao caminho de bloqueio (semanticInjectionClassifierEnabled default true; enforce ja era true). maxFalseNegativeRateSemantic (0.4) e o piso do modo --semantic (com LLM real); o piso regex 0.75 permanece para o modo deterministico do CI.",
+    "note": "Regression floor for the deterministic pattern layer measured in CI. This layer is the screening pass, not the primary defense: the structural boundary in retrieval-guardrail.ts and the semantic classifier carry detection at runtime. Tighten the floor as the pattern set improves.",
     "maxFalseNegativeRate": 0.75,
     "maxFalsePositiveRate": 0.1,
     "minIndirectBlockRate": 0.3,

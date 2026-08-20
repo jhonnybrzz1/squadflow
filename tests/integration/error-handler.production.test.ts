@@ -3,12 +3,9 @@
  *
  * O gate `NODE_ENV === 'development'` já existia em
  * server/middleware/error-handler.ts; estes testes tornam a garantia
- * verificável (T037) e protegem a configuração de deploy (T038).
+ * verificável (T037).
  */
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import fs from 'fs';
-import path from 'path';
-import yaml from 'js-yaml';
 import type { Request, Response, NextFunction } from 'express';
 
 vi.mock('../../server/utils/logger', () => ({
@@ -85,27 +82,5 @@ describe('error-handler em production (spec 008 / US8)', () => {
     errorHandler(new Error('boom dev'), createReq(), res, next);
 
     expect(res.body).toHaveProperty('stack');
-  });
-});
-
-describe('configuração de deploy (spec 008 / US8 / T038)', () => {
-  it('render.yaml (arquivado — spec 011/R-01) fixa NODE_ENV=production no serviço web', () => {
-    // Spec 011 (R-01): a configuração de deploy público foi ARQUIVADA em
-    // docs/legacy/ — não é mais fonte operacional; o teste preserva a
-    // invariante histórica do arquivo arquivado.
-    const raw = fs.readFileSync(path.join(process.cwd(), 'docs/legacy/render.yaml'), 'utf8');
-    // CRIT-3 (10099 Fase 0): CORE_SCHEMA bloqueia tags customizadas.
-    const parsed = yaml.load(raw, { schema: yaml.CORE_SCHEMA }) as {
-      services?: Array<{ type?: string; envVars?: Array<{ key?: string; value?: unknown }> }>;
-    };
-
-    const web = parsed.services?.find((service) => service.type === 'web');
-    expect(web, 'render.yaml deve declarar um serviço web').toBeDefined();
-
-    const nodeEnv = web?.envVars?.find((envVar) => envVar.key === 'NODE_ENV');
-    expect(
-      nodeEnv?.value,
-      'NODE_ENV deve ser "production" no deploy — sem isso, respostas de erro exporiam stack',
-    ).toBe('production');
   });
 });

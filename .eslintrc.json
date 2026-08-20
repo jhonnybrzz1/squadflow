@@ -102,7 +102,6 @@
     "*.md",
     "agents/templates/",
     "knowledge/",
-    "onboarding-service-vision/",
     "backups/"
   ]
 }

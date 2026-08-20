@@ -50,9 +50,6 @@ tests/
 # Curated technical documentation
 docs/adr/
 docs/architecture/
-docs/api/admin-routes.md
-docs/agent-coordination.md
-docs/ai-native-squad-playbook.md
 docs/classification-heuristics.md
 docs/evaluation-baseline.json
 docs/evaluation-golden-set.md
@@ -60,8 +57,6 @@ docs/feature-flags.md
 docs/golden-guardrails.json
 docs/golden-rag.json
 docs/golden-routing.json
-docs/groundedness-degrade-counter.json
-docs/legacy/render.yaml
 docs/models.md
 docs/snapshots/
 docs/threat-model.md
