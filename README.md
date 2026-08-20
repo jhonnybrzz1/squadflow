@@ -145,7 +145,7 @@ The complete, commented configuration reference is [`.env.example`](.env.example
 The beta `/vibe` surface additionally requires strong `JWT_SECRET` and `GIT_TOKEN_SECRET` values. GitHub OAuth and Paddle are opt-in and require their corresponding variables from `.env.example`.
 
 > [!WARNING]
-> Do not expose the local operator surface to a network by accident. Non-loopback binds are explicit and administrative routes fail closed when the required protection is missing.
+> This is a local-first application with no authentication layer: the request context is a fixed local administrator and the role guards are pass-throughs. `npm start` sets `NODE_ENV=production`, and the default host in that mode is `0.0.0.0` — set `HOST=127.0.0.1` explicitly, or front the service with an authenticating proxy. Administrative prefixes additionally require `ADMIN_API_KEY` on non-loopback binds, but that is damage control, not an authorization model. Replace every secret from `.env.example` before exposing anything: those values are published in this repository and are rejected at startup for that reason. See [the threat model](docs/threat-model.md).
 
 ## Commands
 
@@ -197,7 +197,7 @@ npm test
 git diff --check
 ```
 
-Security-sensitive behavior includes fail-closed administrative access outside loopback, rate limits on model-triggering endpoints, encrypted stored Git/database credentials, signed OAuth state, security headers, bounded repository reads, prompt-injection defenses, and explicit opt-ins for networked caches and external tracing.
+Security-relevant behavior includes fail-closed access to administrative prefixes on non-loopback binds, per-IP rate limits on model-triggering endpoints, AES-256-GCM encryption for stored Git and database credentials, signed OAuth state, security headers, bounded repository reads, and layered prompt-injection defenses. Redis caching is opt-in through `REDIS_URL`. Trace export is enabled by default and points at `http://localhost:4318`, so review `OTEL_EXPORTER_OTLP_ENDPOINT` before pointing it at a collector you do not control. The application has no user authentication — read [the threat model](docs/threat-model.md) before deploying it anywhere but localhost.
 
 Report vulnerabilities through GitHub private vulnerability reporting as described in [`SECURITY.md`](SECURITY.md). Never put credentials or exploit details in a public issue.
 
@@ -209,5 +209,3 @@ Report vulnerabilities through GitHub private vulnerability reporting as describ
 - [Feature flags](docs/feature-flags.md)
 - [Observability guide](observability/README.md)
 - [Threat model](docs/threat-model.md)
-- [AI-native squad playbook](docs/ai-native-squad-playbook.md)
-- [Agent coordination](docs/agent-coordination.md)

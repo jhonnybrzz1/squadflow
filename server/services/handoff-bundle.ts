@@ -36,7 +36,7 @@ const FIXED_ENTRY_DATE = new Date('1980-01-01T00:00:00Z');
 
 const CONSTITUTION_TEMPLATE = `# Constituição do Projeto — Handoff AiChatFlow
 
-> Documento gerado automaticamente pelo AiChatFlow como parte do bundle de handoff
+> Documento gerado automaticamente pelo SquadFlow como parte do bundle de handoff
 > da demanda "{{title}}" (tipo: {{type}}, prioridade: {{priority}}).
 > Ajuste estes princípios às regras do repositório destino antes de implementar.
 

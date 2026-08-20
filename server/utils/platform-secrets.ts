@@ -14,6 +14,11 @@ const KNOWN_PLACEHOLDERS = [
   'password',
   '123456',
   '00000000',
+  // Valores publicados em `.env.example`. Aceita-los permitiria a qualquer leitor
+  // do repositorio forjar JWT de sessao, forjar o `state` do OAuth e derivar a
+  // chave AES que cifra tokens do GitHub e credenciais de banco em repouso.
+  'change_this_to_a_long_random_dev_only_secret',
+  'change_this_to_a_long_random_dev_only_secret_too',
 ];
 
 export interface PlatformSecretValidation {

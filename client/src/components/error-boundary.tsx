@@ -262,7 +262,9 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
         `Erro: ${this.state.error?.message || 'N/A'}\n\n` +
         `Descreva o que você estava fazendo quando o erro ocorreu:\n`,
     );
-    safeWindowOpen(`mailto:suporte@aichatflow.com?subject=${subject}&body=${body}`);
+    safeWindowOpen(
+      `https://github.com/jhonnybrzz1/squadflow/issues/new?title=${subject}&body=${body}`,
+    );
   };
 
   render(): ReactNode {

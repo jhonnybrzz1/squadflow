@@ -23,7 +23,20 @@ describe('validateAdminApiKey', () => {
     expect(validateAdminApiKey('admin')).toEqual({ ok: false, reason: 'too_short' });
   });
 
+  it('rejeita os valores publicados no .env.example', () => {
+    // Estes valores estão no repositório e o README instrui `cp .env.example .env`.
+    // Aceitá-los tornaria a porta admin uma credencial pública.
+    expect(validateAdminApiKey('local_dev_dummy_admin_api_key')).toEqual({
+      ok: false,
+      reason: 'placeholder',
+    });
+    expect(validateAdminApiKey('local_dev_dummy_reload_token')).toEqual({
+      ok: false,
+      reason: 'placeholder',
+    });
+  });
+
   it('aceita chave com 16+ chars não-placeholder', () => {
-    expect(validateAdminApiKey('local_dev_dummy_admin_api_key')).toEqual({ ok: true });
+    expect(validateAdminApiKey('Zx7Z2QhcOe3mVnR1t8Ka5PbLd0Yw9Fj4')).toEqual({ ok: true });
   });
 });
