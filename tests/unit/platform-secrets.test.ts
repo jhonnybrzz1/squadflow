@@ -28,6 +28,8 @@ describe('validatePlatformSecret', () => {
   });
 
   it('aceita segredo forte', () => {
-    expect(validatePlatformSecret('Qw8pR2vXm5Lz7Nb1Kd4Yj6Ht0Cs3Ga9F')).toEqual({ ok: true });
+    expect(validatePlatformSecret('example-platform-secret-used-only-in-tests')).toEqual({
+      ok: true,
+    });
   });
 });

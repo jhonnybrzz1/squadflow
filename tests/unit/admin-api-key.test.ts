@@ -37,6 +37,6 @@ describe('validateAdminApiKey', () => {
   });
 
   it('aceita chave com 16+ chars não-placeholder', () => {
-    expect(validateAdminApiKey('Zx7Z2QhcOe3mVnR1t8Ka5PbLd0Yw9Fj4')).toEqual({ ok: true });
+    expect(validateAdminApiKey('example-admin-key-used-only-in-tests')).toEqual({ ok: true });
   });
 });
