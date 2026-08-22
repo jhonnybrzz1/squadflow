@@ -145,7 +145,7 @@ export function HistorySidebar({
   }, []);
 
   // Envia as demandas selecionadas para a API Headless do DocuMente
-  // DOC-001: now calls the AiChatFlow1 server endpoint, which makes the
+  // DOC-001: now calls the SquadFlow server endpoint, which makes the
   // export traceable (persists external id/url) and idempotent (skips
   // re-export if one already succeeded for this demand+type). The
   // returned externalUrl is displayed as a clickable link so the user
@@ -165,7 +165,7 @@ export function HistorySidebar({
         const demandObj = demands.find((d) => d.id === id);
         if (!demandObj) continue;
 
-        // 1. Gera o Épico no DocuMente (via AiChatFlow1 server — idempotent)
+        // 1. Gera o Épico no DocuMente (via SquadFlow server — idempotent)
         const epicRes = await fetch(`/api/demands/${id}/export-documente`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -175,7 +175,7 @@ export function HistorySidebar({
           }),
         });
 
-        // 2. Gera os User Stories no DocuMente (via AiChatFlow1 server — idempotent)
+        // 2. Gera os User Stories no DocuMente (via SquadFlow server — idempotent)
         const storyRes = await fetch(`/api/demands/${id}/export-documente`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

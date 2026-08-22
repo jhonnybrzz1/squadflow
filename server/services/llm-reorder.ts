@@ -472,7 +472,7 @@ export class LlmReorderService {
             Authorization: `Bearer ${this.apiKey}`,
             'Content-Type': 'application/json',
             'HTTP-Referer': process.env.OPENROUTER_SITE_URL || 'http://localhost:5000',
-            'X-Title': process.env.OPENROUTER_APP_NAME || 'AiChatFlow',
+            'X-Title': process.env.OPENROUTER_APP_NAME || 'SquadFlow',
           },
           body: JSON.stringify({
             model: RERANK_MODEL,

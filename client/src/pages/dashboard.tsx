@@ -150,7 +150,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-page-title">Dashboard</h1>
           <p className="mt-1 text-body text-muted-foreground">
-            Visão geral de telemetria, custos e governança do AiChatFlow
+            Visão geral de telemetria, custos e governança do SquadFlow
           </p>
         </div>
         <div className="flex items-center gap-2 rounded-md border border-border bg-muted px-3 py-1.5">

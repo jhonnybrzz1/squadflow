@@ -17,8 +17,8 @@ export function generateOpenApiDocument() {
     openapi: '3.0.0',
     info: {
       version: '1.0.0',
-      title: 'AiChatFlow API',
-      description: 'Documentação da API para a plataforma AiChatFlow (Zod-based)',
+      title: 'SquadFlow API',
+      description: 'Documentação da API para a plataforma SquadFlow (Zod-based)',
     },
     servers: [{ url: '/', description: 'Servidor atual' }],
   });

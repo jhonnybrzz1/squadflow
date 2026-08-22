@@ -1,4 +1,4 @@
-// Cognitive Core - AICHATflow
+// Cognitive Core - SquadFlow
 // Main exports for the cognitive core modules
 
 export * from './demand-classifier';

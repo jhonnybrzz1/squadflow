@@ -105,7 +105,7 @@ describe('B-1: createLogger e traceIdMiddleware', () => {
       level: 'info',
       timestamp: expect.any(String),
       message: 'mensagem de teste',
-      service: 'AIChatFlow',
+      service: 'SquadFlow',
       traceId: 'trace-123',
       context: { foo: 'bar' },
     });

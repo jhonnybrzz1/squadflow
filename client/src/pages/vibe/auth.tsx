@@ -53,7 +53,7 @@ export default function VibeAuthPage() {
     try {
       if (mode === 'signup') {
         await signup(trimmedEmail, password);
-        toast({ title: 'Conta criada!', description: 'Bem-vindo ao VibeFlow.' });
+        toast({ title: 'Conta criada!', description: 'Bem-vindo ao SquadFlow.' });
       } else {
         await login(trimmedEmail, password);
         toast({ title: 'Login realizado', description: 'Bem-vindo de volta.' });

@@ -1,6 +1,6 @@
 import { resolvePath } from '@shared/utils/paths';
 /**
- * Serviço de logging estruturado para AIChatFlow
+ * Serviço de logging estruturado para SquadFlow
  * Implementa logging com níveis, contexto e suporte para diferentes transportes
  */
 
@@ -35,7 +35,7 @@ class LoggerService {
   private logger: winston.Logger;
   private serviceName: string;
 
-  constructor(serviceName: string = 'AIChatFlow') {
+  constructor(serviceName: string = 'SquadFlow') {
     this.serviceName = serviceName;
     this.logger = this.createLogger();
   }
@@ -382,7 +382,7 @@ export function createLogger(req?: Request): StructuredLogger {
   }
 
   const traceId = req?.traceId ?? randomUUID();
-  const serviceName = 'AIChatFlow';
+  const serviceName = 'SquadFlow';
 
   const baseLog = (level: LogLevel, message: string, options?: LogOptions): void => {
     const timestamp = new Date().toISOString();

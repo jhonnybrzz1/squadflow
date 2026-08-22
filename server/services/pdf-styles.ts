@@ -80,8 +80,8 @@ export const spacing = {
  * PDF metadata defaults.
  */
 export const pdfMetadata = {
-  author: 'AICHATflow Platform',
-  creator: 'AICHATflow PDF Engine v2',
-  producer: 'AICHATflow PDF Engine v2',
-  keywords: ['AICHATflow', 'PRD', 'Document'],
+  author: 'SquadFlow Platform',
+  creator: 'SquadFlow PDF Engine v2',
+  producer: 'SquadFlow PDF Engine v2',
+  keywords: ['SquadFlow', 'PRD', 'Document'],
 } as const;

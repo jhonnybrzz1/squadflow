@@ -11,7 +11,7 @@ export function drawProfessionalHeader(
 ): void {
   const layout = professionalLayout;
   const { width, height } = page.getSize();
-  const brandName: string = designTokens?.brand?.displayName ?? 'AICHATflow';
+  const brandName: string = designTokens?.brand?.displayName ?? 'SquadFlow';
   const reportLabel = docTitle ?? 'PRD Executivo';
 
   page.drawRectangle({
@@ -100,7 +100,7 @@ export function drawProfessionalFooter(
 ): void {
   const layout = professionalLayout;
   const { width } = page.getSize();
-  const brandName: string = designTokens?.brand?.displayName ?? 'AICHATflow';
+  const brandName: string = designTokens?.brand?.displayName ?? 'SquadFlow';
 
   page.drawLine({
     start: { x: layout.marginX, y: 50 },
@@ -164,7 +164,7 @@ export function drawSimpleHeader(
     borderWidth: 1,
   });
 
-  page.drawText('AICHATflow', {
+  page.drawText('SquadFlow', {
     x: 120,
     y: height - 60,
     size: 24,
@@ -214,7 +214,7 @@ export function drawSimpleFooter(page: PDFPage, font: PDFFont, pageNumber: numbe
     color: rgb(0.8, 0.8, 0.8),
   });
 
-  page.drawText('AICHATflow - Documento confidencial', {
+  page.drawText('SquadFlow - Documento confidencial', {
     x: 50,
     y: 30,
     size: 10,

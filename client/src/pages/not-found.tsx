@@ -33,7 +33,7 @@ export default function NotFound() {
 
           <p className="flex items-center gap-2 pt-2 font-mono text-xs text-[var(--foreground-muted)]">
             <Terminal className="h-3.5 w-3.5" aria-hidden="true" />
-            AICHATFLOW — Squad de refinamento
+            SQUADFLOW — Squad de refinamento
           </p>
         </div>
       </div>

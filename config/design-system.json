@@ -1,7 +1,7 @@
 {
   "brand": {
-    "name": "AiChatFlow",
-    "displayName": "AICHATflow",
+    "name": "SquadFlow",
+    "displayName": "SquadFlow",
     "tagline": "Inteligência que Entrega"
   },
   "colors": {
@@ -35,10 +35,10 @@
     "tocMinPages": 3
   },
   "pdf": {
-    "author": "AICHATflow Platform",
+    "author": "SquadFlow Platform",
     "subject": "Documento Gerado Automaticamente",
-    "creator": "AICHATflow PDF Engine v2",
-    "producer": "AICHATflow PDF Engine v2",
-    "keywords": ["AICHATflow", "PRD", "Product Requirements", "Executivo"]
+    "creator": "SquadFlow PDF Engine v2",
+    "producer": "SquadFlow PDF Engine v2",
+    "keywords": ["SquadFlow", "PRD", "Product Requirements", "Executivo"]
   }
 }

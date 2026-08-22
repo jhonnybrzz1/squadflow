@@ -251,7 +251,7 @@ export default function Home() {
       <footer className="border-t-2 border-[var(--border)] mt-12">
         <div className="max-w-[1600px] mx-auto px-4 py-4">
           <div className="flex items-center justify-between font-mono text-xs text-[var(--foreground-muted)]">
-            <span>© 2024 AICHATFLOW</span>
+            <span>© 2026 SQUADFLOW</span>
             <span>v2.0.0</span>
           </div>
         </div>

@@ -168,7 +168,7 @@ function AdminSurface() {
         <Router />
         <footer className="mt-auto">
           <CustomDisclaimer
-            title="Sobre o AICHATflow"
+            title="Sobre o SquadFlow"
             variant="note"
             className="border-0 rounded-none dark:border-darkBorder"
           >

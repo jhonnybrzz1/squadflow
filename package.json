@@ -1,6 +1,7 @@
 {
-  "name": "rest-express",
+  "name": "squadflow",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "license": "MIT",
   "packageManager": "npm@10.8.2",

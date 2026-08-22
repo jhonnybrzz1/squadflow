@@ -26,7 +26,7 @@ function Brand({ compact = false }: { compact?: boolean }) {
       </div>
       {!compact && (
         <span className="whitespace-nowrap font-display text-base font-bold tracking-tight text-sidebar-foreground">
-          AiChatFlow
+          SquadFlow
         </span>
       )}
     </div>

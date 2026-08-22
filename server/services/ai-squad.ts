@@ -109,7 +109,7 @@ export class AISquadService {
 
   public async initializeCognitiveCore(): Promise<void> {
     try {
-      logger.info('AICHATflow Cognitive Core inicializado', {
+      logger.info('SquadFlow Cognitive Core inicializado', {
         context: { components: ['DemandClassifier', 'AgentOrchestrator'] },
       });
     } catch (error) {

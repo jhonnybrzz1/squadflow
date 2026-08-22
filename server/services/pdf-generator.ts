@@ -533,7 +533,7 @@ export class PDFGenerator {
     const docTitle = h1Match
       ? h1Match[1].trim().replace(/^PRD\s*[-–]\s*/i, '')
       : `Demanda #${demandId}`;
-    const brandName: string = designTokens?.brand?.displayName ?? 'AICHATflow';
+    const brandName: string = designTokens?.brand?.displayName ?? 'SquadFlow';
     const dateStr = new Date().toISOString().slice(0, 10);
 
     // Create a new PDFDocument
@@ -546,7 +546,7 @@ export class PDFGenerator {
     pdfDoc.setCreator(designTokens?.pdf?.creator ?? `${brandName} PDF Engine v2`);
     pdfDoc.setProducer(designTokens?.pdf?.producer ?? `${brandName} PDF Engine v2`);
     pdfDoc.setKeywords(
-      (designTokens?.pdf?.keywords ?? ['AICHATflow', 'PRD', 'Product Requirements']) as string[],
+      (designTokens?.pdf?.keywords ?? ['SquadFlow', 'PRD', 'Product Requirements']) as string[],
     );
     pdfDoc.setCreationDate(new Date());
     pdfDoc.setModificationDate(new Date());
@@ -653,7 +653,7 @@ export class PDFGenerator {
 
     const h1MatchTasks = content.match(/^#\s+(.+)$/m);
     const docTitleTasks = h1MatchTasks ? h1MatchTasks[1].trim() : `Tasks - Demanda #${demandId}`;
-    const brandNameTasks: string = designTokens?.brand?.displayName ?? 'AICHATflow';
+    const brandNameTasks: string = designTokens?.brand?.displayName ?? 'SquadFlow';
 
     // Create a new PDFDocument
     const pdfDoc = await PDFDocument.create();
@@ -664,7 +664,7 @@ export class PDFGenerator {
     pdfDoc.setSubject(`Tasks Document - Demanda #${demandId}`);
     pdfDoc.setCreator(designTokens?.pdf?.creator ?? `${brandNameTasks} PDF Engine v2`);
     pdfDoc.setProducer(designTokens?.pdf?.producer ?? `${brandNameTasks} PDF Engine v2`);
-    pdfDoc.setKeywords((designTokens?.pdf?.keywords ?? ['AICHATflow', 'Tasks']) as string[]);
+    pdfDoc.setKeywords((designTokens?.pdf?.keywords ?? ['SquadFlow', 'Tasks']) as string[]);
     pdfDoc.setCreationDate(new Date());
     pdfDoc.setModificationDate(new Date());
 

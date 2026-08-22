@@ -201,7 +201,7 @@ export default function VibeLandingPage() {
           'border-t border-white/10 py-6 text-center text-xs text-[--foreground-muted]',
         )}
       >
-        <p>VibeFlow — Fatia 1 beta. Feito para Vibe Coders.</p>
+        <p>SquadFlow — experiência beta para Vibe Coders.</p>
       </footer>
     </div>
   );
