@@ -16,7 +16,10 @@ import { gitConnections } from '@shared/schema-unified';
 
 const router = Router();
 
-router.use(rateLimitPlatformAuthByIp);
+// Scope the auth limiter to auth endpoints only. This router is mounted at the
+// application root, so an unscoped `router.use(...)` would also count the
+// frontend HTML, Vite assets, and HMR requests and could block the UI itself.
+router.use('/api/auth', rateLimitPlatformAuthByIp);
 
 const credentialsSchema = z.object({
   body: z.object({
