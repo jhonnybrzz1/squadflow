@@ -10,7 +10,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Getting started](#getting-started) · [Configuration](#configuration) · [Documentation](#documentation)
+[Overview](#overview) · [Capabilities](#capabilities) · [Architecture](#architecture) · [Getting started](#getting-started) · [Configuration](#configuration) · [GitHub access](#github-access) · [Documentation](#documentation)
 
 </div>
 
@@ -20,8 +20,8 @@ SquadFlow is the public codebase for an AI-assisted product and engineering work
 
 The repository contains two complementary product surfaces:
 
-- **AiChatFlow** — the local-first operator workspace for demand intake, multi-agent orchestration, governance, audit trails, evaluations, and downstream handoffs.
-- **VibeFlow** — a beta self-service experience under `/vibe` with account flows, usage controls, optional read-only GitHub context, repository previews, database-schema context, and subscription hooks.
+- **SquadFlow Operator** — the local-first workspace for demand intake, multi-agent orchestration, governance, audit trails, evaluations, and downstream handoffs.
+- **SquadFlow Vibe** — a beta self-service experience under `/vibe` with account flows, usage controls, optional read-only GitHub context, repository previews, database-schema context, and subscription hooks.
 
 > [!NOTE]
 > This project is under active development. Treat checked-in code, tests, configuration, and CI as the source of truth; older screenshots and generated planning artifacts may describe previous behavior.
@@ -44,7 +44,7 @@ The repository contains two complementary product surfaces:
 
 ```mermaid
 flowchart LR
-    UI[Operator UI / VibeFlow] --> API[Express API]
+    UI[SquadFlow Operator / Vibe] --> API[Express API]
     API --> CLASSIFY[Classification and routing]
     CLASSIFY --> SQUAD[AI squad and roundtable]
     SQUAD --> GATES[Evidence, safety and governance gates]
@@ -139,13 +139,56 @@ The complete, commented configuration reference is [`.env.example`](.env.example
 | `OPENROUTER_API_KEY`                                  | Primary OpenRouter-backed model access                           |
 | `OPENAI_API_KEY`, `MISTRAL_API_KEY`, `XIAOMI_API_KEY` | Optional provider integrations                                   |
 | `ADMIN_API_KEY`                                       | Protects administrative routes when binding beyond loopback      |
+| `GITHUB_ACCESS_TOKEN`                                 | Optional local fine-grained PAT for selected repositories        |
+| `GITHUB_APP_*`                                        | Read-only GitHub App used by the multi-user `/vibe` flow         |
 | `REDIS_URL`                                           | Optional distributed backing store for supported caches          |
 | `OTEL_EXPORTER_OTLP_ENDPOINT`                         | Optional trace export destination                                |
 
-The beta `/vibe` surface additionally requires strong `JWT_SECRET` and `GIT_TOKEN_SECRET` values. GitHub OAuth and Paddle are opt-in and require their corresponding variables from `.env.example`.
+The beta `/vibe` surface additionally requires strong `JWT_SECRET` and `GIT_TOKEN_SECRET` values. GitHub App and Paddle integrations are opt-in and require their corresponding variables from `.env.example`.
 
 > [!WARNING]
 > Do not expose the local operator surface to a network by accident. Non-loopback binds are explicit and administrative routes fail closed when the required protection is missing.
+
+## GitHub access
+
+SquadFlow supports two intentionally separate read-only connection modes.
+
+### Local operator: fine-grained token
+
+For the local `/` workspace, create a fine-grained personal access token in GitHub with:
+
+- **Repository access:** `Only select repositories`
+- **Contents:** `Read-only`
+- **Metadata:** `Read-only`
+
+Then place it only in your ignored `.env` file:
+
+```env
+GITHUB_ACCESS_TOKEN=github_pat_your_token
+```
+
+Do not use a classic PAT or reuse the broad OAuth token from GitHub CLI for a shared installation. `GITHUB_TOKEN` remains a legacy alias for existing local setups.
+
+### Multi-user `/vibe`: GitHub App
+
+Deployers should create a GitHub App instead of an OAuth App. Configure it with:
+
+1. Repository permissions `Contents: Read-only` and `Metadata: Read-only`; no write permissions.
+2. **Request user authorization (OAuth) during installation** enabled.
+3. Callback URL `http://127.0.0.1:5000/api/git/auth/github/callback` locally, or the equivalent HTTPS URL in production.
+4. Repository selection left to the user during installation (`Only select repositories`).
+5. Expiring user access tokens enabled; SquadFlow encrypts the access/refresh credential and rotates it automatically.
+
+Copy the non-public App credentials into `.env`:
+
+```env
+GITHUB_APP_SLUG=your-app-slug
+GITHUB_APP_CLIENT_ID=Iv1.your_client_id
+GITHUB_APP_CLIENT_SECRET=your_client_secret
+GITHUB_APP_CALLBACK_URL=http://127.0.0.1:5000/api/git/auth/github/callback
+```
+
+The server rejects classic OAuth tokens in this flow and lists repositories through the GitHub App installation endpoints, so repositories not selected by the user are not returned to SquadFlow.
 
 ## Commands
 
@@ -167,7 +210,7 @@ Evaluation and maintenance commands for RAG, routing, prompts, agents, and class
 ## Project layout
 
 ```text
-client/          React application, operator UI and VibeFlow pages
+client/          React application, operator UI and SquadFlow Vibe pages
 server/          Express routes, orchestration, workers, guardrails and providers
 shared/          Drizzle schemas, Zod contracts and shared TypeScript types
 agents/          Versioned agent definitions and templates

@@ -2196,7 +2196,7 @@ export const waitlist = sqliteTable('waitlist', {
 export type WaitlistEntry = typeof waitlist.$inferSelect;
 export type InsertWaitlistEntry = typeof waitlist.$inferInsert;
 
-// --- git_connections: OAuth GitHub por usuário, somente leitura (T4) ---
+// --- git_connections: GitHub App por usuário, somente leitura ---
 export const gitConnections = sqliteTable(
   'git_connections',
   {
@@ -2207,7 +2207,7 @@ export const gitConnections = sqliteTable(
     provider: text('provider', { enum: ['github'] })
       .notNull()
       .default('github'),
-    // AES-256-GCM (iv + authTag + ciphertext) — ver server/services/git-token-cipher.ts.
+    // AES-256-GCM (iv + authTag + ciphertext) — access/refresh em envelope versionado.
     accessTokenEncrypted: text('access_token_encrypted').notNull(),
     githubUsername: text('github_username'),
     createdAt: integer('created_at', { mode: 'timestamp' })

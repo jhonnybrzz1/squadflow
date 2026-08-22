@@ -155,9 +155,16 @@ export const vibeApi = {
     get: () => vibeFetch('GET', '/api/me/plan').then((r) => r.json() as Promise<VibePlan>),
   },
   git: {
-    getAuthorizeUrl: () =>
+    listConnections: () =>
+      vibeFetch('GET', '/api/git/connections').then(
+        (r) =>
+          r.json() as Promise<{
+            connections: { id: number; provider: string; githubUsername: string | null }[];
+          }>,
+      ),
+    getConnectUrl: () =>
       vibeFetch('GET', '/api/git/auth/github').then(
-        (r) => r.json() as Promise<{ authorizeUrl: string }>,
+        (r) => r.json() as Promise<{ connectUrl: string }>,
       ),
     listRepos: () =>
       vibeFetch('GET', '/api/git/repos').then((r) => r.json() as Promise<{ repos: VibeRepo[] }>),

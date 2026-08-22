@@ -1,5 +1,5 @@
 /**
- * Demanda #10358 T4 — conexões Git por usuário (OAuth GitHub, somente leitura).
+ * Conexões GitHub App por usuário, com credenciais cifradas e somente leitura.
  */
 import { and, eq } from 'drizzle-orm';
 import { db } from '../db';
@@ -9,6 +9,69 @@ import { ensureVibePlatformSchema } from './vibe-platform-schema';
 import { encryptGitToken, decryptGitToken } from './git-token-cipher';
 
 export type GitProvider = 'github';
+
+const GITHUB_CREDENTIAL_VERSION = 1;
+
+export interface GitHubUserCredential {
+  accessToken: string;
+  refreshToken: string | null;
+  accessTokenExpiresAt: number | null;
+  refreshTokenExpiresAt: number | null;
+}
+
+interface StoredGitHubCredentialEnvelope extends GitHubUserCredential {
+  kind: 'github_app_user';
+  version: typeof GITHUB_CREDENTIAL_VERSION;
+}
+
+/**
+ * Stores the access and refresh tokens as one encrypted value so existing
+ * databases do not need a plaintext or multi-column credential migration.
+ */
+export function serializeGitHubCredential(credential: GitHubUserCredential): string {
+  if (!credential.accessToken) throw new Error('GitHub access token is required.');
+  return JSON.stringify({
+    kind: 'github_app_user',
+    version: GITHUB_CREDENTIAL_VERSION,
+    ...credential,
+  } satisfies StoredGitHubCredentialEnvelope);
+}
+
+/** Backward-compatible with OAuth/PAT values encrypted by earlier releases. */
+export function deserializeGitHubCredential(value: string): GitHubUserCredential {
+  if (value.trimStart().startsWith('{')) {
+    try {
+      const parsed = JSON.parse(value) as Partial<StoredGitHubCredentialEnvelope>;
+      if (
+        parsed.kind === 'github_app_user' &&
+        parsed.version === GITHUB_CREDENTIAL_VERSION &&
+        typeof parsed.accessToken === 'string' &&
+        parsed.accessToken.length > 0
+      ) {
+        return {
+          accessToken: parsed.accessToken,
+          refreshToken: typeof parsed.refreshToken === 'string' ? parsed.refreshToken : null,
+          accessTokenExpiresAt:
+            typeof parsed.accessTokenExpiresAt === 'number' ? parsed.accessTokenExpiresAt : null,
+          refreshTokenExpiresAt:
+            typeof parsed.refreshTokenExpiresAt === 'number' ? parsed.refreshTokenExpiresAt : null,
+        };
+      }
+    } catch {
+      throw new Error('Stored GitHub credential envelope is not valid JSON.');
+    }
+    throw new Error('Stored GitHub credential envelope has an unsupported format.');
+  }
+
+  // Legacy rows contain the token itself instead of a JSON envelope.
+  if (!value) throw new Error('Stored GitHub credential is empty.');
+  return {
+    accessToken: value,
+    refreshToken: null,
+    accessTokenExpiresAt: null,
+    refreshTokenExpiresAt: null,
+  };
+}
 
 class GitConnectionService {
   async findConnection(userId: number, provider: GitProvider): Promise<GitConnection | undefined> {
@@ -43,12 +106,12 @@ class GitConnectionService {
   async upsertConnection(input: {
     userId: number;
     provider: GitProvider;
-    accessToken: string;
+    credential: GitHubUserCredential;
     githubUsername: string | null;
   }): Promise<{ connection: GitConnection; created: boolean }> {
     await ensureVibePlatformSchema();
     const existing = await this.findConnection(input.userId, input.provider);
-    const accessTokenEncrypted = encryptGitToken(input.accessToken);
+    const accessTokenEncrypted = encryptGitToken(serializeGitHubCredential(input.credential));
 
     if (existing) {
       const [updated] = await db
@@ -72,9 +135,27 @@ class GitConnectionService {
   }
 
   async getDecryptedToken(userId: number, provider: GitProvider): Promise<string | null> {
+    const credential = await this.getCredential(userId, provider);
+    return credential?.accessToken ?? null;
+  }
+
+  async getCredential(userId: number, provider: GitProvider): Promise<GitHubUserCredential | null> {
     const connection = await this.findConnection(userId, provider);
     if (!connection) return null;
-    return decryptGitToken(connection.accessTokenEncrypted);
+    return deserializeGitHubCredential(decryptGitToken(connection.accessTokenEncrypted));
+  }
+
+  async updateCredential(
+    userId: number,
+    provider: GitProvider,
+    credential: GitHubUserCredential,
+  ): Promise<void> {
+    await ensureVibePlatformSchema();
+    const accessTokenEncrypted = encryptGitToken(serializeGitHubCredential(credential));
+    await db
+      .update(gitConnections)
+      .set({ accessTokenEncrypted })
+      .where(and(eq(gitConnections.userId, userId), eq(gitConnections.provider, provider)));
   }
 }
 

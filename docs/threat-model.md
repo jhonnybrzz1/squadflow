@@ -1,14 +1,14 @@
-# Threat Model — AiChatFlow1 (single-user)
+# Threat Model — SquadFlow
 
-Última revisão: 2025-01-XX
+Última revisão: 2026-08-22
 
 ## Contexto
 
-AiChatFlow1 é um sistema **single-user** (1 operador, sem tenants, sem UGC público).
-O threat model é dominado por dois vetores reais, não por um checklist genérico:
+SquadFlow possui uma superfície local de operador e uma superfície autenticada
+opcional em `/vibe`. O threat model é dominado por dois vetores reais:
 
 1. **Dado não-confiável entrando no LLM** (injection indireta via RAG/repo)
-2. **Exposição do deploy público** (Render URL — qualquer um dirige os agentes e queima API keys)
+2. **Exposição acidental da superfície local ou de credenciais de integrações**
 
 ## Vetor 1 — Injection indireta via RAG (AMEAÇA #1)
 
@@ -58,36 +58,32 @@ Defesa em 3 camadas (do mais durável ao mais tático):
 4. Sem (a)+(b): o chunk entra como texto plano e o modelo segue a instrução.
 5. O caso `indirect-01` em `docs/golden-guardrails.json` mede isto no CI.
 
-## Vetor 2 — Exposição do deploy (Render público)
+## Vetor 2 — Exposição da superfície e de credenciais
 
-### Status: RISCO ACEITO PELO OPERADOR (não mitigado)
+### Status: MITIGADO EM CAMADAS, COM RISCO RESIDUAL LOCAL
 
-- Deploy: `https://aichatflow.onrender.com` (público, plano free, Oregon).
-- Auth-stub retorna `role: 'admin'` para todo mundo — sem perímetro real.
-- Sem rate limiting.
+- Desenvolvimento liga em loopback por padrão; bind externo é explícito.
+- Rotas administrativas falham fechadas fora de loopback sem `ADMIN_API_KEY` válido.
+- `/vibe` usa JWT por usuário, segredos validados e limites por IP nas rotas de autenticação/IA.
+- Credenciais GitHub por usuário são cifradas com AES-256-GCM.
+- O fluxo público usa GitHub App com `Contents: Read-only`, seleção explícita de
+  repositórios e tokens curtos com rotação. O escopo OAuth clássico `repo` é rejeitado.
+- O operador local pode usar `GITHUB_ACCESS_TOKEN` como fallback; para instalações
+  compartilhadas ele deve ser um fine-grained PAT limitado a repositórios selecionados.
 
-**Decisão do operador (2025-01):** produto de uso único/single-user. O operador
-aceita o risco de key-burn / cost-DoS. Auth de perímetro e rate limiting foram
-considerados overengineering para o contexto atual e **não implementados**.
-
-**Risco residual:** qualquer um com a URL pode disparar demandas e queimar API
-keys. Se o uso mudar (múltiplos operadores, deploy de longa duração, ou
-qualquer sinal de abuso), reavaliar e implementar:
-
-1. `AUTH_TOKEN` env var + middleware de perímetro (1 segredo, não RBAC)
-2. `express-rate-limit` em endpoints de IA (10 req/min por IP)
-
-**Gatilho para reavaliar:** key-burn real observado, múltiplos operadores,
-ou deploy que não seja throwaway.
+**Risco residual:** expor a superfície local, reutilizar um token amplo do GitHub
+CLI ou configurar chaves de modelo sem controles de custo aumenta o raio de
+explosão. Não publique `.env`, não coloque tokens no frontend e não use bind
+externo sem as proteções documentadas.
 
 ## Decisões explícitas (não fazer agora)
 
-| Item                          | Razão                             | Quando reavaliar            |
-| ----------------------------- | --------------------------------- | --------------------------- |
-| RBAC completo                 | Não há tenant (1 usuário)         | Quando virar multi-user     |
-| Isolamento multi-tenant       | Não há tenant                     | Quando virar multi-user     |
-| Content moderation (camada 3) | Não é UGC público (PRD interno)   | Quando houver input público |
-| Autorização por-tool granular | Per-agent flag já cobre 1 usuário | Quando múltiplos operadores |
+| Item                          | Razão                               | Quando reavaliar               |
+| ----------------------------- | ----------------------------------- | ------------------------------ |
+| RBAC administrativo completo  | Operador local continua single-user | Quando houver vários admins    |
+| Isolamento adicional          | `/vibe` já separa dados por usuário | Antes de novos dados sensíveis |
+| Content moderation (camada 3) | Não é UGC público (PRD interno)     | Quando houver input público    |
+| Autorização por-tool granular | Per-agent flag já cobre 1 usuário   | Quando múltiplos operadores    |
 
 ## Correções à auditoria anterior
 
@@ -108,10 +104,13 @@ Fronteira de dado: RAG/repo como untrusted                 ✅ implementado
 (delimitação + triagem + hierarquia de instrução)
         │
         ▼
-Perímetro: auth real + rate limit (deploy público)         ⏸️ risco aceito
-        │                                                   pelo operador
-        ▼   ─── só quando virar multi-user ───
-RBAC + isolamento de tenant + autorização por-tool         ⛔ adiado
+Perímetro: auth real + rate limit                           ✅ implementado
+        │
+        ▼
+GitHub App read-only + seleção de repos                     ✅ implementado
+        │
+        ▼
+RBAC administrativo granular                               ⛔ adiado
         │
         ▼
 Content moderation + DLP + auditoria de acesso             ⛔ adiado

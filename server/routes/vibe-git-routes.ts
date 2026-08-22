@@ -1,5 +1,5 @@
 /**
- * Demanda #10358 T4 — integração Git OAuth com GitHub (somente leitura).
+ * Integração GitHub App com seleção explícita de repositórios (somente leitura).
  *
  * Fluxo read-only confirmado: nenhuma rota deste módulo executa push, commit
  * ou criação de branch — apenas leitura de perfil/repos/árvore de arquivos.
@@ -18,9 +18,10 @@ import { requirePlatformAuth } from '../middleware/platform-auth';
 import { assertGitConnectAllowed } from '../middleware/check-free-tier';
 import { getJwtSecret } from '../utils/platform-secrets';
 import {
-  buildAuthorizeUrl,
+  buildInstallUrl,
   exchangeCodeForToken,
   fetchGithubUsername,
+  getValidGithubAccessToken,
   listUserRepos,
   listRepoRootFiles,
 } from '../services/github-oauth-service';
@@ -31,6 +32,7 @@ const router = Router();
 
 const OAUTH_STATE_PURPOSE = 'vibe_git_oauth_state';
 const OAUTH_STATE_TTL = '10m';
+const VIBE_APP_PATH = '/vibe/app';
 
 interface OAuthStatePayload {
   purpose: typeof OAUTH_STATE_PURPOSE;
@@ -38,10 +40,10 @@ interface OAuthStatePayload {
 }
 
 /**
- * Devolve a URL de consentimento do GitHub como JSON (não um 302) — uma
+ * Devolve a URL de instalação do GitHub App como JSON (não um 302) — uma
  * navegação de browser não carrega o header `Authorization`, então o cliente
  * precisa buscar isto via `fetch` (com o Bearer token) e só então fazer
- * `window.location.href = authorizeUrl`. O `state` assinado (CSRF + qual
+ * `window.location.href = connectUrl`. O `state` assinado (CSRF + qual
  * usuário) fica embutido nessa URL, não o JWT de sessão do usuário.
  */
 router.get(
@@ -53,7 +55,7 @@ router.get(
       getJwtSecret(),
       { expiresIn: OAUTH_STATE_TTL },
     );
-    res.status(200).json({ authorizeUrl: buildAuthorizeUrl(state) });
+    res.status(200).json({ connectUrl: buildInstallUrl(state) });
   }),
 );
 
@@ -98,23 +100,42 @@ router.get(
       await assertGitConnectAllowed(userId);
     } catch (error) {
       if (error instanceof ForbiddenError) {
-        return res.redirect('/app?git=limit_reached');
+        return res.redirect(`${VIBE_APP_PATH}?git=limit_reached`);
       }
       throw error;
     }
 
-    const accessToken = await exchangeCodeForToken(req.query.code as string);
-    const githubUsername = await fetchGithubUsername(accessToken);
+    const credential = await exchangeCodeForToken(req.query.code as string);
+    const githubUsername = await fetchGithubUsername(credential.accessToken);
     const { created } = await gitConnectionService.upsertConnection({
       userId,
       provider: 'github',
-      accessToken,
+      credential,
       githubUsername,
     });
     if (created) {
       await usageCounterService.incrementConnectedRepos(userId);
     }
-    res.redirect('/app?git=connected');
+    res.redirect(`${VIBE_APP_PATH}?git=connected`);
+  }),
+);
+
+router.get(
+  '/api/git/connections',
+  requirePlatformAuth,
+  asyncHandler(async (req: Request, res: Response) => {
+    const connection = await gitConnectionService.findConnection(req.platformUser!.id, 'github');
+    res.status(200).json({
+      connections: connection
+        ? [
+            {
+              id: connection.id,
+              provider: connection.provider,
+              githubUsername: connection.githubUsername,
+            },
+          ]
+        : [],
+    });
   }),
 );
 
@@ -122,7 +143,7 @@ router.get(
   '/api/git/repos',
   requirePlatformAuth,
   asyncHandler(async (req: Request, res: Response) => {
-    const token = await gitConnectionService.getDecryptedToken(req.platformUser!.id, 'github');
+    const token = await getValidGithubAccessToken(req.platformUser!.id);
     if (!token) {
       throw new AppError('Nenhuma conexão GitHub encontrada.', 409, 'GIT_NOT_CONNECTED');
     }
@@ -135,7 +156,7 @@ router.get(
   '/api/git/repos/:owner/:repo/files',
   requirePlatformAuth,
   asyncHandler(async (req: Request, res: Response) => {
-    const token = await gitConnectionService.getDecryptedToken(req.platformUser!.id, 'github');
+    const token = await getValidGithubAccessToken(req.platformUser!.id);
     if (!token) {
       throw new AppError('Nenhuma conexão GitHub encontrada.', 409, 'GIT_NOT_CONNECTED');
     }

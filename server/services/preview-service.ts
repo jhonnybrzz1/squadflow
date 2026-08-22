@@ -13,7 +13,7 @@ import { and, eq, lt } from 'drizzle-orm';
 import { db } from '../db';
 import { previewCache, previewJobs } from '@shared/schema-unified';
 import { ensureVibePlatformSchema } from './vibe-platform-schema';
-import { gitConnectionService } from './git-connection-service';
+import { getValidGithubAccessToken } from './github-oauth-service';
 import { openAIService } from './openai-ai';
 import { usageCounterService } from './usage-counter-service';
 import { subscriptionService } from './subscription-service';
@@ -357,7 +357,7 @@ Devolva SOMENTE um JSON (sem markdown) com este formato exato:
       }
 
       // Busca token GitHub do usuário
-      const token = await gitConnectionService.getDecryptedToken(userId, 'github');
+      const token = await getValidGithubAccessToken(userId);
       if (!token) {
         throw new AppError('GitHub não conectado.', 401, 'GITHUB_NOT_CONNECTED');
       }

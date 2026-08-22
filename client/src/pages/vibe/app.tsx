@@ -114,7 +114,7 @@ export default function VibeAppPage() {
     }
   }, []);
 
-  // Callback OAuth: se voltou com ?git=connected, carrega repos.
+  // Callback do GitHub App: se voltou com ?git=connected, carrega repos.
   // Deve rodar antes do early return de auth (regras de hooks).
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -177,13 +177,14 @@ export default function VibeAppPage() {
   async function handleConnectGithub() {
     setConnectingGit(true);
     try {
-      const { authorizeUrl } = await vibeApi.git.getAuthorizeUrl();
-      // OAuth flow: navega para GitHub, callback volta para /vibe/app?git=connected
-      window.location.href = authorizeUrl;
-    } catch {
+      const { connectUrl } = await vibeApi.git.getConnectUrl();
+      // O GitHub mostra as permissões e deixa o usuário escolher os repos.
+      window.location.href = connectUrl;
+    } catch (err) {
       toast({
         title: 'Erro',
-        description: 'Não foi possível iniciar a conexão GitHub.',
+        description:
+          err instanceof ApiError ? err.message : 'Não foi possível iniciar a conexão GitHub.',
         variant: 'destructive',
       });
       setConnectingGit(false);
@@ -300,7 +301,8 @@ export default function VibeAppPage() {
               <div>
                 <p className="font-medium">Quer enriquecer o próximo refinamento?</p>
                 <p className="text-sm text-[--foreground-muted]">
-                  Conecte seu GitHub (somente leitura) para adicionar contexto do seu repo.
+                  Conecte seu GitHub em modo somente leitura e escolha exatamente quais repos
+                  liberar.
                 </p>
               </div>
             </div>

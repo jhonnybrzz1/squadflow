@@ -103,6 +103,10 @@ export class GitHubService {
       logger.debug('GitHub API key carregada com sucesso');
       if (!isSupportedGitHubToken(this.token)) {
         logger.warn(`Formato de token GitHub pode estar incorreto. ${supportedTokenMessage}`);
+      } else if (this.token.startsWith('ghp_') || this.token.startsWith('gho_')) {
+        logger.warn(
+          'Token GitHub legado/amplo detectado. Em instalações compartilhadas, use um fine-grained PAT limitado a repositórios selecionados ou o fluxo GitHub App do /vibe.',
+        );
       }
     }
 
@@ -113,7 +117,7 @@ export class GitHubService {
     try {
       this.client = new MyOctokit({
         auth: this.token,
-        userAgent: 'AiChatFlow/1.0.0',
+        userAgent: 'SquadFlow/1.0.0',
         baseUrl: 'https://api.github.com',
         request: {
           timeout: 30000,

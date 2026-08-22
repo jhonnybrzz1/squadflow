@@ -1,5 +1,5 @@
 /**
- * Demanda #10358 — Plataforma Online do Aichatflow para Vibe Coders (Fatia 1).
+ * Plataforma online do SquadFlow para Vibe Coders.
  * Demanda #10364 — Fatia 2A: tabela `subscriptions` + coluna `platform_user_id`
  * em `llm_audit_logs` para correlação de custo de IA por usuário.
  *

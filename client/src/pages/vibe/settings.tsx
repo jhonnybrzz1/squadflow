@@ -53,11 +53,8 @@ export default function VibeSettingsPage() {
   async function loadGitConnections() {
     setLoadingGit(true);
     try {
-      // Reuse the git repos endpoint to check if connected
-      await vibeApi.git.listRepos();
-      // If we can list repos, there's a connection. We don't have a direct
-      // list-connections endpoint, so we check via repos.
-      setGitConnections([{ id: 1, provider: 'github', githubUsername: null }]);
+      const { connections } = await vibeApi.git.listConnections();
+      setGitConnections(connections);
     } catch {
       // No connection or error
       setGitConnections([]);
@@ -229,7 +226,10 @@ export default function VibeSettingsPage() {
                 >
                   <div className="flex items-center gap-2">
                     <Github className="h-4 w-4" />
-                    <span>GitHub conectado</span>
+                    <span>
+                      GitHub conectado
+                      {conn.githubUsername ? ` — @${conn.githubUsername}` : ''}
+                    </span>
                   </div>
                   <Button
                     size="sm"
